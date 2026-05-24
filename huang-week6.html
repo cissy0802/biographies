@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>人物传记 · Jensen Huang 黄仁勋 · Week 6</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Noto Serif SC","Songti SC",Georgia,serif;background:#1a1f2e;color:#e8e4d8;line-height:1.85}
+.container{max-width:780px;margin:0 auto;padding:24px 20px 60px}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px solid rgba(212,175,55,0.2)}
+.week-tag{display:inline-block;padding:4px 14px;border:1px solid #d4af37;border-radius:20px;color:#d4af37;font-size:0.78rem;letter-spacing:2px;font-family:Georgia,serif;margin-bottom:18px}
+header h1{font-size:2.2rem;font-weight:800;background:linear-gradient(135deg,#d4af37 0%,#f4e3a1 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:2px;line-height:1.3}
+header .years{margin-top:12px;font-size:0.95rem;color:#a0a4b0;font-family:Georgia,serif;letter-spacing:1px}
+header .role{margin-top:8px;font-size:1rem;color:#f4e3a1;font-style:italic}
+.epigraph{margin:32px auto 0;padding:18px 24px;max-width:640px;border-left:2px solid #d4af37;background:rgba(212,175,55,0.05);font-style:italic;color:#c8c4b8;font-size:0.95rem;text-align:left}
+.card{margin-top:28px;padding:28px 26px;background:rgba(255,255,255,0.04);border:1px solid rgba(212,175,55,0.18);border-radius:10px;border-left:3px solid #d4af37}
+.card h2{font-size:1.1rem;color:#d4af37;margin-bottom:16px;letter-spacing:2px;font-weight:700;padding-bottom:10px;border-bottom:1px dashed rgba(212,175,55,0.25)}
+.card h2 .icon{margin-right:8px}
+.card p{margin-bottom:14px;font-size:1rem;color:#e8e4d8}
+.card p:last-child{margin-bottom:0}
+.card .source{font-size:0.84rem;color:#8a8e98;font-style:italic;margin-top:10px;display:block}
+blockquote{margin:14px 0;padding:12px 18px;border-left:2px solid #d4af37;background:rgba(0,0,0,0.2);font-style:italic;color:#f4e3a1;font-size:0.95rem}
+.quote-list{list-style:none}
+.quote-list li{margin-bottom:18px;padding-left:18px;border-left:2px solid rgba(212,175,55,0.4)}
+.quote-list .en{color:#f4e3a1;font-style:italic;display:block;margin-bottom:4px}
+.quote-list .cn{color:#c8c4b8;font-size:0.92rem;display:block;margin-bottom:4px}
+.quote-list .src{color:#8a8e98;font-size:0.8rem}
+.think{background:linear-gradient(135deg,rgba(212,175,55,0.08) 0%,rgba(212,175,55,0.02) 100%);border-left:3px solid #f4e3a1}
+.think p{font-size:1.05rem;color:#f4e3a1;font-style:italic}
+.read-list{list-style:none}
+.read-list li{padding:10px 0;border-bottom:1px dotted rgba(255,255,255,0.1)}
+.read-list li:last-child{border:none}
+.read-list .book{color:#f4e3a1;font-weight:600}
+.read-list .note{color:#a0a4b0;font-size:0.9rem;display:block;margin-top:4px}
+.english{background:rgba(0,0,0,0.25);font-family:Georgia,serif;font-size:0.95rem;color:#c8c4b8;line-height:1.75}
+.english h2{font-family:Georgia,serif;letter-spacing:1px}
+.timeline{margin:18px 0 6px;padding:18px 20px;background:rgba(0,0,0,0.25);border-radius:8px;border:1px dashed rgba(212,175,55,0.25)}
+.timeline ol{list-style:none;counter-reset:tl}
+.timeline li{position:relative;padding:8px 0 8px 64px;counter-increment:tl;border-left:1px solid rgba(212,175,55,0.3);margin-left:16px;padding-left:24px}
+.timeline li::before{content:attr(data-year);position:absolute;left:-58px;top:8px;font-family:Georgia,serif;color:#d4af37;font-weight:700;font-size:0.85rem;width:54px;text-align:right}
+.timeline li::after{content:"";position:absolute;left:-5px;top:14px;width:9px;height:9px;border-radius:50%;background:#d4af37;border:2px solid #1a1f2e}
+.timeline strong{color:#f4e3a1}
+nav{margin-top:48px;text-align:center}
+nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-radius:6px;color:#d4af37;text-decoration:none;font-size:0.9rem;letter-spacing:2px;transition:all 0.2s}
+nav a:hover{background:#d4af37;color:#1a1f2e}
+footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
+@media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}.timeline li{padding-left:16px;margin-left:8px}.timeline li::before{position:static;display:block;margin-bottom:4px;text-align:left;width:auto}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">WEEK 06 · 2026</div>
+<h1>人物传记：黄仁勋<br>Jensen Huang</h1>
+<div class="years">1963 — · 现年 63 岁</div>
+<div class="role">NVIDIA 创始人 & CEO · CUDA 架构师 · 「皮衣刀客」</div>
+<div class="epigraph">「I wish upon you ample doses of pain and suffering.」——黄仁勋 2024 年在斯坦福商学院演讲。一个把"痛苦"作为送给斯坦福毕业生祝福语的 CEO，过去 32 年三次几乎让 NVIDIA 破产：1996 年的 NV1 灾难、2008 年的金融危机加 GPU 计算被市场嘲笑、2018 年加密寒冬带来的 50% 股价腰斩。他从不庆祝成功（他名言"We are 30 days from going out of business"，30 年来挂在嘴边没换过）。Week 6 我们看一个把「公司随时会死」当作管理常态的华人 CEO，如何在 2023 年成为人类历史上第一家市值破 3 万亿美元的芯片公司。</div>
+</header>
+
+<section class="card">
+<h2><span class="icon">◆</span>【关键决策】2006 年 — 把公司未来全押在 CUDA 上，被分析师骂了十年</h2>
+<p>2006 年 11 月 8 日，NVIDIA 发布 CUDA（Compute Unified Device Architecture）和第一款支持它的 GPU（G80 / GeForce 8800）。表面上这是一次"产品发布"，实际上是一次内部豪赌：黄仁勋决定让 NVIDIA 的每一颗 GPU——包括卖给游戏玩家的——都内置一套完整的通用计算指令集和工具链。这意味着每一颗芯片多出约 20% 的晶体管面积、单价上升、毛利下降，而当时几乎没有客户需要这个能力。</p>
+<p>提出 CUDA 概念的是 Stanford 教授 Ian Buck（他 2004 年的论文《Brook for GPUs》是 CUDA 的学术前身），黄仁勋 2005 年把他挖来 NVIDIA。但要把"研究项目"变成"全公司战略"，必须由 CEO 拍板。Tae Kim 在《The Nvidia Way》(2024) 里记录了董事会上的对话——一位董事问："这个市场什么时候会有 10 亿美元？"黄仁勋回答："我不知道。可能五年，可能十年。但如果我们不做，AMD、Intel 都会做。"</p>
+<p>接下来十年是漫长的痛苦。2008 年金融危机时，NVIDIA 股价从 $37 跌到 $6，分析师反复质问 CUDA 烧掉的研发费用（每年约 5 亿美元，相当于公司年收入的 15–20%）。2009 年 Intel 推出 Larrabee 试图取代 NVIDIA，AMD 推出 OpenCL 试图绕开 CUDA。Jen-Hsun 没有让步。2012 年 9 月，多伦多大学 Geoffrey Hinton 的学生 Alex Krizhevsky 用两块 GeForce GTX 580 训练出 AlexNet，在 ImageNet 竞赛上把图像识别错误率从 26% 降到 15%——CUDA 才第一次被外界看见"真正的杀手级应用"。但即使如此，到 2016 年 NVIDIA 数据中心业务也只占公司收入约 12%。</p>
+<p>学习点：CUDA 不是"押对了 AI"，因为 2006 年根本没人能预见深度学习革命。黄仁勋押的是<strong>"加速计算必将取代通用计算"</strong>这一更底层的趋势——他相信摩尔定律放缓后，并行架构会赢。Tae Kim 写：他在 2006 年董事会上用的论据是"晶体管不会再每两年翻倍，但应用对算力的需求会"。这不是"看到了未来"，这是<strong>"看到了物理学"</strong>。从 2006 到 2022，CUDA 用 16 年把自己变成了 AI 时代不可绕开的护城河——所有 PyTorch、TensorFlow、CUDA-cuDNN、TensorRT 库都依赖它。2023 年 ChatGPT 爆发，全世界突然发现：买不到没有 CUDA 的 AI 芯片。</p>
+<span class="source">出处：Tae Kim《The Nvidia Way: Jensen Huang and the Making of a Tech Giant》(W.W. Norton, 2024), Ch. 6–8; Stephen Witt《The Thinking Machine: Jensen Huang, Nvidia, and the World's Most Coveted Microchip》(Viking, 2025), Part II; Krizhevsky, Sutskever, Hinton, "ImageNet Classification with Deep Convolutional Neural Networks", NIPS 2012。</span>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>【生涯转折】1996 年 — NV1 灾难后的"30 天破产"会议</h2>
+<p>1993 年 4 月 5 日，黄仁勋 30 岁生日那天，他和两位伙伴 Chris Malachowsky、Curtis Priem 在加州东帕罗奥图的 Denny's 餐馆里创立了 NVIDIA（他至今仍偶尔回去那家 Denny's——2023 年那家店在外墙挂上了"Birthplace of NVIDIA"的牌子）。他们带着 4 万美元创业，没有产品、没有客户，只有一个赌注："3D 图形会成为主流"。</p>
+<p>1995 年 NVIDIA 推出第一款产品 NV1。这是一次几乎致命的失败——NV1 用的是"二次曲面"（quadratic texture mapping）渲染法，而微软同期发布的 Direct3D 选择的是"三角形多边形"（triangle polygons）渲染法。NV1 与即将成为行业标准的 API 完全不兼容。1996 年 NV1 几乎所有合作伙伴都退货，公司账上只剩 9 个月现金。</p>
+<p>1996 年的一次全员会议上，黄仁勋说了那句后来被全公司当作图腾的话："We are 30 days from going out of business." 他做了三件事：第一，裁员近一半（从 100 人裁到 50 多人）；第二，砍掉所有自主研发的"二次曲面"路线，承认错误，全面转向三角形多边形 + DirectX；第三，押注一个尚未上市的"模拟器"（Emulator）工具——他们没钱做真正的硅片流片测试，于是用软件模拟整颗芯片，先在模拟器里跑完所有 bug，再"一次流片就成功"。这是当时业界几乎没人敢尝试的做法。Tae Kim 记录：1997 年第二款产品 RIVA 128 出厂时，NVIDIA 银行账户里只剩一个月现金。</p>
+<p>RIVA 128 上市第一年卖了 100 万片。然后 1999 年 GeForce 256 发明了"GPU"这个词（NVIDIA 自己造的）。1999 年 1 月 NVIDIA 上市，股价当年涨了 6 倍。从此"我们 30 天后就要倒闭"成了黄仁勋每次开高管会的开场白——不是营销话术，是真实的内部纪律。他在 2023 年接受 Acquired 播客采访时说："我每天醒来第一个想法都是'今天可能就是公司死的那天'，这让我永远不敢放松。如果你不害怕，你会做出傲慢的决定。"</p>
+<span class="source">出处：Tae Kim《The Nvidia Way》Ch. 3–4; Stephen Witt《The Thinking Machine》Part I; Jensen Huang on Acquired Podcast, October 15, 2023（与 Ben Gilbert 和 David Rosenthal 三小时长访谈）; Don Clark, "Nvidia's Founder on His Company's Wild Ride", WSJ, March 18, 2024。</span>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>【性格与习惯】60 个直接下属、不写一对一、皮衣是 1990 年代妻子买的</h2>
+<p>黄仁勋的管理方式在硅谷被认为是"反 Google 模板"：他有 <strong>60 个直接下属（direct reports）</strong>，比任何 Fortune 500 CEO 都多（多数 CEO 是 8–15 个）。他不开"1:1"——他认为一对一是"信息隔离"，CEO 应该让所有信息在所有人面前流转。他要求所有高管每周给他发一封"Top 5 things"邮件——只写五条最重要的事。Tae Kim 说："他读完上千封 Top 5 邮件，再用其中的模式发现整个公司在哪里走向出错。"</p>
+<p>他另一个习惯是"圆桌会议"。NVIDIA 高管会议常有 30–50 人参加，全部围着同一张桌子。任何人都可以质问任何决策，包括他本人。他坚信"被公开质问"是高管成长的核心——他自己经常在会议中被中层质问决策，他从不打断。他在 2024 年斯坦福商学院演讲时说："I learn in public. I make mistakes in public. If you protect your ego from being challenged, you stop learning."</p>
+<p>那件标志性的黑色皮衣是 1990 年代他太太 Lori Mills 在 Neiman Marcus 给他买的，他从此几乎在所有公开场合都穿同款（家里有十几件几乎一样的黑色皮夹克）。Lori 是他在俄勒冈州立大学的同学——黄仁勋 1980 年代刚到俄勒冈州立时，全校只有 200 名亚裔学生，他和 Lori 在大一就成了实验搭档。他在 2024 年 OSU 校友演讲时说："I was the worst student in my electrical engineering class. The best student was sitting next to me." 两人 1985 年结婚。</p>
+<p>关于工作强度——黄仁勋每天工作约 14 小时，周末几乎不休。但他在 2023 年访谈里承认："I don't reply to email at 2 AM as a flex. I reply to email at 2 AM because I'm awake at 2 AM thinking about whether we're going to die." 他对失败的恐惧从年轻时就刻在骨子里：1972 年（9 岁）他和哥哥被父母从台湾送到美国肯塔基州，进了 Oneida Baptist Institute——这是一所"问题少年寄宿学校"，他每天的任务包括清洁宿舍厕所、被高年级学生打。他在 60 Minutes 2024 年访谈里说："那两年教会我'人可以承受比你以为的多得多的痛苦'。所以现在我从来不抱怨。"</p>
+<span class="source">出处：Tae Kim《The Nvidia Way》Ch. 2 & 12; Jensen Huang at Stanford Graduate School of Business, March 6, 2024（"View From The Top" series）; Jensen Huang on 60 Minutes, November 12, 2023 (interview by Bill Whitaker); Patrick McGee, "Nvidia's Jensen Huang: 'When you're famous, things you say carry too much weight'", Financial Times, April 5, 2024。</span>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>【争议与阴面】CUDA 锁定、对台积电的依赖、垄断指控、与中国的微妙位置</h2>
+<p>NVIDIA 2024 年市值首次突破 3 万亿美元，成为人类历史上最值钱的芯片公司。但黄仁勋面对的争议正在以同样速度增长。</p>
+<p><strong>第一，CUDA 的"事实垄断"指控。</strong>CUDA 不是开源的，PyTorch、TensorFlow 等深度学习框架虽然理论上可以用 AMD ROCm 或 Intel oneAPI，但实际工业部署中 90% 以上仍依赖 CUDA。法国竞争管理局 (Autorité de la concurrence) 2024 年 7 月发布报告，明确点名 NVIDIA 在 AI 加速器市场"存在滥用行为风险"。美国司法部 2024 年 8 月开始反垄断调查，调查重点是 NVIDIA 是否在销售 H100 / B200 GPU 时强制客户购买整套 NVIDIA 生态（DGX 系统、NVLink、InfiniBand 网络）。和 1998 年的微软何其相似——一个用户基础大到没人能不用它的平台，在被定义为"基础设施"的同时被要求"中立"。</p>
+<p><strong>第二，对台积电的全面依赖。</strong>NVIDIA 是无晶圆厂公司（fabless），所有先进 GPU 都在台积电南京和台南的厂里生产。2024 年 H100 / H200 / B200 全部使用台积电 4N、5N 工艺。如果台海局势恶化，NVIDIA 没有 Plan B——三星和 Intel 的代工产能在 3nm/5nm 节点上至少落后台积电 2 年。Stephen Witt 在《The Thinking Machine》里花了整章写：黄仁勋每年至少 4 次飞台北，与张忠谋、魏哲家保持极密切个人关系。这是 NVIDIA 最大的地缘风险。</p>
+<p><strong>第三，对中国市场的"双面"位置。</strong>2022 年 10 月美国商务部对中国实施 AI 芯片出口管制后，NVIDIA 推出 H800（H100 的"出口合规版"，降低 NVLink 带宽），2023 年又被禁，再推出 H20。这种"为了合规而砍性能再卖"的做法在美国国会被批评是"找漏洞"，在中国则被批评是"二等芯片"。2024 年华为昇腾 910B 在中国市占率显著上升，这是黄仁勋必须面对的现实：他的中国客户（字节跳动、阿里、腾讯）一边继续买他的芯片，一边在加速做自己的替代。2024 年 11 月美国进一步收紧出口管制，黄仁勋公开警告"如果美国不让 NVIDIA 卖给中国，中国会自己造出来"。这话在 D.C. 不受欢迎。</p>
+<p><strong>第四，"皮衣销售"与产品发布会的剧场化。</strong>每年 GTC 主旨演讲已经成为 AI 行业的"宗教大会"，黄仁勋在台上的承诺常被指控"过度承诺"。例如他 2022 年 GTC 宣布的 Hopper GPU 性能提升数字，许多 benchmark 公司后来发现是"特定 cherry-picked workload"。2023 年他宣布的"AI 工厂"概念被《Information》调查发现：NVIDIA 把同一颗 GPU 的"计算 + 网络 + 软件 + 服务" bundle 销售，让客户难以拆开比价。黄仁勋本人否认这是垄断行为，他说："We earn our market every day."</p>
+<p>把这四件事放一起：黄仁勋面对的是<strong>"一个 1996 年差点死掉的公司，在 2024 年掌握了人类未来 30 年最重要技术堆栈"</strong>的伦理责任。他自己反复强调"NVIDIA 30 天后就会死"，但市场和监管机构看到的是"NVIDIA 已经太大了"。这种内部叙事与外部叙事的剪刀差，是他下一个十年最大的管理挑战。</p>
+<span class="source">出处：Autorité de la concurrence (法国竞争管理局), "Avis sur le fonctionnement concurrentiel du secteur de l'IA générative", July 2024; Stephen Witt《The Thinking Machine》Part IV; David McLaughlin & Leah Nylen, "Nvidia Hit by Antitrust Probe From US Justice Department", Bloomberg, August 1, 2024; The Information, "Inside Nvidia's Bundle Strategy", December 2023; Jensen Huang interview at DealBook Summit, December 4, 2024。</span>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>【NVIDIA 32 年关键节点】</h2>
+<div class="timeline">
+<ol>
+<li data-year="1993"><strong>4 月 5 日 Denny's 餐厅创立</strong>。黄仁勋 30 岁，与 Chris Malachowsky、Curtis Priem 凑 4 万美元起步。</li>
+<li data-year="1996"><strong>NV1 失败、裁员一半</strong>。"30 天破产"成为公司图腾。</li>
+<li data-year="1999"><strong>1 月上市；10 月发布 GeForce 256 并造出 "GPU" 一词</strong>。</li>
+<li data-year="2006"><strong>11 月发布 CUDA</strong>。开始 16 年战略孤独期。</li>
+<li data-year="2012"><strong>9 月 AlexNet 用两块 GTX 580 训练完成</strong>。深度学习革命点火。</li>
+<li data-year="2016"><strong>4 月发布 P100（Pascal 架构）+ DGX-1</strong>。OpenAI 收到 Musk 与 Huang 亲送的第一台 DGX-1。</li>
+<li data-year="2020"><strong>9 月宣布 400 亿美元收购 ARM</strong>，2022 年 2 月因监管反对放弃。</li>
+<li data-year="2022"><strong>3 月发布 Hopper H100；11 月 ChatGPT 上线</strong>。H100 一年内一卡难求。</li>
+<li data-year="2023"><strong>5 月市值突破 1 万亿</strong>，成为第一家 1T 市值的芯片公司。</li>
+<li data-year="2024"><strong>6 月市值超越 Microsoft 与 Apple，世界第一</strong>；3 月发布 Blackwell B200。</li>
+</ol>
+</div>
+<p style="margin-top:14px;font-size:0.9rem;color:#a0a4b0">注：这条时间线删除任何一个节点，"NVIDIA 为何成为今天的 NVIDIA" 都会出现解释裂痕。CUDA（2006）与 AlexNet（2012）这两个节点之间是六年战略孤独期——这六年决定了 2023 年的爆发。</p>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>【金句与出处】</h2>
+<ul class="quote-list">
+<li>
+<span class="en">"We are 30 days from going out of business."</span>
+<span class="cn">我们距离倒闭只剩 30 天。</span>
+<span class="src">— Jensen Huang，1996 年至今每年内部讲话开场白（Tae Kim《The Nvidia Way》Ch. 4 记录）</span>
+</li>
+<li>
+<span class="en">"I wish upon you ample doses of pain and suffering."</span>
+<span class="cn">我祝愿你们经历充足剂量的痛苦与折磨。</span>
+<span class="src">— Stanford Graduate School of Business 演讲, March 6, 2024</span>
+</li>
+<li>
+<span class="en">"Greatness is not intelligence. Greatness comes from character. And character isn't formed out of smart people — it's formed out of people who suffered."</span>
+<span class="cn">伟大不来自智商。伟大来自品格。品格不是聪明人形成的——它是吃过苦的人形成的。</span>
+<span class="src">— Acquired Podcast, October 2023</span>
+</li>
+<li>
+<span class="en">"I don't have a strategy department. I am the strategy."</span>
+<span class="cn">我们公司没有战略部。我就是战略。</span>
+<span class="src">— Financial Times interview, April 2024</span>
+</li>
+<li>
+<span class="en">"You learn resilience by surviving. There's no other way."</span>
+<span class="cn">韧性只能通过活下来学到，没有别的方法。</span>
+<span class="src">— 60 Minutes interview, November 12, 2023</span>
+</li>
+</ul>
+</section>
+
+<section class="card think">
+<h2><span class="icon">◆</span>【本周思考题】</h2>
+<p>2006 年 11 月那次发布 CUDA 的决定，10 年里没有产生过任何"可被董事会接受的回报"——研发费用每年烧 5 亿美元，市场没人买账，分析师每个季度都问"你们什么时候放弃这个项目"。黄仁勋的回答只有一句："物理学告诉我们 CPU 会撞墙，那时候世界需要 GPU。"换到你自己——如果你看到一个 10 年后才会兑现的趋势，但所有 KPI、所有股东、所有同事都在告诉你"现在没有市场"，你能不能押下去？更难的问题：你怎么区分"看到了未来"和"傻乎乎押错"？黄仁勋自己说他没有答案，他只有一个准则——"如果这件事不做，10 年后我会后悔到想死，那就做"。你的清单上有这样一件事吗？</p>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>【推荐读物】</h2>
+<ul class="read-list">
+<li>
+<span class="book">《The Nvidia Way: Jensen Huang and the Making of a Tech Giant》 — Tae Kim（W.W. Norton, 2024）</span>
+<span class="note">第一本经 Jensen 本人非正式配合（虽未授权）的 NVIDIA 传记。作者是 Barron's 资深科技记者，访谈了 100 多位前任与现任 NVIDIA 高管，对 1996 年 NV1 危机、2006 年 CUDA 决策、2022 年 ARM 收购失败都有细节复盘。读这本是为了搞清楚一个问题：为什么 NVIDIA 在 2006–2016 年间烧掉的 50 亿美元 CUDA 研发费没把它烧死？</span>
+</li>
+<li>
+<span class="book">《The Thinking Machine: Jensen Huang, Nvidia, and the World's Most Coveted Microchip》 — Stephen Witt（Viking, 2025）</span>
+<span class="note">作者曾写过《How Music Got Free》。这本聚焦 2022 年 ChatGPT 后 NVIDIA 如何从"游戏芯片公司"摇身变成"全球最重要 AI 基础设施提供者"。对台积电依赖、与 OpenAI 的关系、对中国市场的两难处理都有第一手报道。比 Tae Kim 的书更"地缘政治化"，相互补充。</span>
+</li>
+<li>
+<span class="book">Acquired Podcast — Nvidia 系列三集 + Jensen Huang 三小时访谈（2022–2023）</span>
+<span class="note">Ben Gilbert 与 David Rosenthal 制作的深度商业播客。NVIDIA 三集（Part I 1993–2006、Part II 2006–2016、Part III 2016–2023）+ Jensen 本人三小时长访谈是研究这家公司最便宜的"MBA 课程"。Jensen 在播客里讲了几件传记里没有的细节，例如 1995 年他如何说服 SEGA 给他们一笔 700 万美元的预付款救了 NV1 之后的公司命。</span>
+</li>
+</ul>
+</section>
+
+<section class="card english">
+<h2><span class="icon">◆</span>【English Insight】</h2>
+<p>Jensen Huang is the only sitting Fortune 100 CEO who casually wishes "pain and suffering" upon graduating students — and means it as a blessing. His 32-year run at Nvidia is built on a single counterintuitive instinct: a company that believes itself to be perpetually 30 days from bankruptcy makes sharper decisions than one that believes itself to be winning. He has lived this instinct three times. In 1996, after the NV1 disaster, he halved his staff and bet the company on software emulation. In 2006, when no customer needed general-purpose GPU compute, he committed roughly 15% of annual revenue to CUDA for sixteen consecutive years. In 2022, when ChatGPT exposed Nvidia as the only viable AI infrastructure vendor, he refused to raise prices proportionally to demand — preserving customer goodwill that competitors are still trying to penetrate.</p>
+<p>The harder lesson, though, is structural. The same CUDA monopoly that makes Nvidia indispensable to the AI economy now invites the same antitrust scrutiny that crippled Microsoft a generation earlier. The same dependence on TSMC that delivers Blackwell-class performance creates the single largest geopolitical exposure in modern technology. Huang's leather jacket has become the closest thing the chip industry has to a papal robe — and the discipline of a CEO who once cleaned dormitory toilets in rural Kentucky is now being tested against the responsibility of running, in effect, the world's most important utility. Watch what he does in the next decade. The 30-day rule has held for thirty years; whether it can survive its own success is the open question.</p>
+</section>
+
+<nav><a href="index.html">← 返回 Biographies Weekly</a></nav>
+<footer>BigCat · Biographies Weekly · Week 06 · 2026</footer>
+
+</div>
+</body>
+</html>
