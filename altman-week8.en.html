@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biography · Sam Altman · Week 8</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#1a1f2e;color:#e8e4d8;line-height:1.85}
+.container{max-width:780px;margin:0 auto;padding:24px 20px 60px}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px solid rgba(212,175,55,0.2)}
+.week-tag{display:inline-block;padding:4px 14px;border:1px solid #d4af37;border-radius:20px;color:#d4af37;font-size:0.78rem;letter-spacing:2px;font-family:Georgia,serif;margin-bottom:18px}
+header h1{font-size:2.2rem;font-weight:800;background:linear-gradient(135deg,#d4af37 0%,#f4e3a1 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:2px;line-height:1.3}
+header .years{margin-top:12px;font-size:0.95rem;color:#a0a4b0;font-family:Georgia,serif;letter-spacing:1px}
+header .role{margin-top:8px;font-size:1rem;color:#f4e3a1;font-style:italic}
+.epigraph{margin:32px auto 0;padding:18px 24px;max-width:640px;border-left:2px solid #d4af37;background:rgba(212,175,55,0.05);font-style:italic;color:#c8c4b8;font-size:0.95rem;text-align:left}
+.card{margin-top:28px;padding:28px 26px;background:rgba(255,255,255,0.04);border:1px solid rgba(212,175,55,0.18);border-radius:10px;border-left:3px solid #d4af37}
+.card h2{font-size:1.1rem;color:#d4af37;margin-bottom:16px;letter-spacing:2px;font-weight:700;padding-bottom:10px;border-bottom:1px dashed rgba(212,175,55,0.25)}
+.card h2 .icon{margin-right:8px}
+.card p{margin-bottom:14px;font-size:1rem;color:#e8e4d8}
+.card p:last-child{margin-bottom:0}
+.card .source{font-size:0.84rem;color:#8a8e98;font-style:italic;margin-top:10px;display:block}
+blockquote{margin:14px 0;padding:12px 18px;border-left:2px solid #d4af37;background:rgba(0,0,0,0.2);font-style:italic;color:#f4e3a1;font-size:0.95rem}
+.quote-list{list-style:none}
+.quote-list li{margin-bottom:18px;padding-left:18px;border-left:2px solid rgba(212,175,55,0.4)}
+.quote-list .en{color:#f4e3a1;font-style:italic;display:block;margin-bottom:4px}
+.quote-list .cn{color:#c8c4b8;font-size:0.92rem;display:block;margin-bottom:4px}
+.quote-list .src{color:#8a8e98;font-size:0.8rem}
+.think{background:linear-gradient(135deg,rgba(212,175,55,0.08) 0%,rgba(212,175,55,0.02) 100%);border-left:3px solid #f4e3a1}
+.think p{font-size:1.05rem;color:#f4e3a1;font-style:italic}
+.read-list{list-style:none}
+.read-list li{padding:10px 0;border-bottom:1px dotted rgba(255,255,255,0.1)}
+.read-list li:last-child{border:none}
+.read-list .book{color:#f4e3a1;font-weight:600}
+.read-list .note{color:#a0a4b0;font-size:0.9rem;display:block;margin-top:4px}
+.timeline{margin:18px 0 6px;padding:18px 20px;background:rgba(0,0,0,0.25);border-radius:8px;border:1px dashed rgba(212,175,55,0.25)}
+.timeline ol{list-style:none;counter-reset:tl}
+.timeline li{position:relative;padding:8px 0 8px 64px;counter-increment:tl;border-left:1px solid rgba(212,175,55,0.3);margin-left:16px;padding-left:24px}
+.timeline li::before{content:attr(data-year);position:absolute;left:-58px;top:8px;font-family:Georgia,serif;color:#d4af37;font-weight:700;font-size:0.85rem;width:54px;text-align:right}
+.timeline li::after{content:"";position:absolute;left:-5px;top:14px;width:9px;height:9px;border-radius:50%;background:#d4af37;border:2px solid #1a1f2e}
+.timeline strong{color:#f4e3a1}
+.hours{margin:18px 0 6px;padding:18px 20px;background:rgba(0,0,0,0.25);border-radius:8px;border:1px dashed rgba(212,175,55,0.25)}
+.hours ol{list-style:none}
+.hours li{position:relative;padding:10px 0 10px 130px;border-left:1px solid rgba(212,175,55,0.3);margin-left:24px;padding-left:28px}
+.hours li::before{content:attr(data-when);position:absolute;left:-110px;top:10px;font-family:Georgia,serif;color:#d4af37;font-weight:700;font-size:0.78rem;width:116px;text-align:right;line-height:1.3}
+.hours li::after{content:"";position:absolute;left:-5px;top:18px;width:9px;height:9px;border-radius:50%;background:#d4af37;border:2px solid #1a1f2e}
+.hours strong{color:#f4e3a1}
+details{margin:12px 0;padding:14px 18px;background:rgba(0,0,0,0.2);border-left:2px solid rgba(212,175,55,0.4);border-radius:4px}
+details summary{cursor:pointer;color:#f4e3a1;font-weight:600;font-size:0.98rem;outline:none}
+details[open] summary{margin-bottom:10px;border-bottom:1px dashed rgba(212,175,55,0.2);padding-bottom:8px}
+details div{font-size:0.93rem;color:#c8c4b8;line-height:1.75}
+nav{margin-top:48px;text-align:center}
+nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-radius:6px;color:#d4af37;text-decoration:none;font-size:0.9rem;letter-spacing:2px;transition:all 0.2s}
+nav a:hover{background:#d4af37;color:#1a1f2e}
+footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
+@media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}.timeline li,.hours li{padding-left:16px;margin-left:8px}.timeline li::before,.hours li::before{position:static;display:block;margin-bottom:4px;text-align:left;width:auto}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">WEEK 08 · 2026</div>
+<h1>Biography: Sam Altman</h1>
+<div class="years">1985 — · 41 years old</div>
+<div class="role">CEO of OpenAI · Former President of Y Combinator · Co-founder of Worldcoin</div>
+<div class="epigraph">Altman is an operator who used "amiable steadiness" to acquire the most consequential seat in the AI era — layering Loopt's failure, YC's judgment training, OpenAI's financial engineering, and 96 hours of being fired and restored into a position of personal control over the planet's computational resources. Week 8 looks at what is genuinely learnable from him (judgment as core asset, equity over salary, decide in 60 seconds and change slowly), and at what mainstream coverage still hasn't fully dismantled: <strong>presenting tailored versions of reality to different audiences</strong> — the four-word reason the board fired him ("not consistently candid"), and the temptation every one of us will face in the AI-collaboration era.</div>
+</header>
+
+<section class="card">
+<h2><span class="icon">◆</span>One-Line Position</h2>
+<p>When tools make "version-tailored communication" a zero-cost default, he is the first person of this era to turn an amiable, multi-version personality into a top asset — and the first to pay the public cost for it.</p>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>Biographical Sketch</h2>
+<p>Born April 22, 1985 in Chicago; raised in St. Louis. His father was a real-estate lawyer, his mother a dermatologist. He had his first Mac at 8 and came out to his parents at 13. He entered Stanford CS in 2003 and dropped out his sophomore year in 2005 to co-found Loopt — a location-based mobile social app, in YC's very first batch. Loopt burned roughly $39M in funding over seven years and sold to Green Dot for $43.4M in March 2012 — an exit that "barely counted as a success." He began advising at YC as a part-time partner in 2011; in February 2014, Paul Graham personally selected him as YC's president at 28. In December 2015 he co-founded the non-profit OpenAI with Elon Musk, Ilya Sutskever, Greg Brockman, and others. In 2019 he officially became OpenAI CEO, restructured it into a "capped-profit" entity, and brought in Microsoft's first $1B. ChatGPT launched November 30, 2022, hitting 1M users in 5 days. On November 17, 2023 he was fired by the board; he was back four days later. Today he is simultaneously CEO of OpenAI, an adviser to Worldcoin, chairman of Helion (nuclear fusion), and an early Reddit shareholder.</p>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>Key Decision I — February 2014: Taking Paul Graham's Seat at 28</h2>
+<p>On February 21, 2014, Paul Graham posted on the YC blog: Sam Altman would be the next president of Y Combinator. Sam was 28. His most visible credential was the <strong>failed</strong> Loopt — never profitable, sold to Green Dot for $43.4M in 2012 after burning roughly $39M, with shareholders close to breakeven. PG's reasoning shocked the Valley: in the post he compared Sam to Stephen Hawking and Steve Jobs, calling him "one of the most successful people I know."</p>
+<p>What PG really saw was not Sam's "product-making" — Loopt had already demonstrated that this was not his strength. PG saw the three years of "judging startups" Sam had accumulated since 2011 as a part-time YC partner. This was a precise career pivot: <strong>from doer to judge-of-doers</strong>. Under Sam, YC roughly quintupled. From 2014 to 2019 it incubated more than 1,900 companies, including later-stage Airbnb, Stripe, Cruise, Brex, and Coinbase.</p>
+<p>The lesson: Sam's career inflection did not come from "doing the right thing" — Loopt was a failure — but from his decision after the failure to swap his core asset from "execution" to "judgment + relationships." <strong>Judgment compounds infinitely from positions where you do not do the work yourself; execution drops to zero the moment you leave the building.</strong> For anyone interested in AI collaboration, this is the path to think through: when AI drives execution cost toward zero, your remaining capital is judgment and relationships.</p>
+<span class="source">Sources: Paul Graham, "Sam Altman for President (of YC)," paulgraham.com, February 21, 2014; Tad Friend, "Sam Altman's Manifest Destiny," The New Yorker, October 10, 2016; Karen Hao, Empire of AI (Penguin Press, 2025), Part I.</span>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>Key Decision II — March 2019: Restructuring OpenAI as "Capped-Profit"</h2>
+<p>On December 11, 2015, Sam co-announced OpenAI with Elon Musk, Ilya Sutskever (formerly Google Brain), Greg Brockman (formerly Stripe CTO), and others, with a pledged $1B in initial commitments (Musk and Altman personally among the primary backers). Form: non-profit. Mission: ensure AGI benefits all of humanity; research to be open.</p>
+<p>In February 2018 Musk proposed taking full control of OpenAI (convinced that Google/DeepMind had pulled too far ahead); Sam and the remaining board declined. Musk left the board and withdrew most of his commitment. OpenAI hit a funding crisis: a single GPT-3 training run cost roughly $4.6M — impossible to fund as a pure non-profit.</p>
+<p>On March 11, 2019, Sam announced the restructuring: a "capped-profit" entity, OpenAI LP, in which outside investors could earn up to 100× returns (anything above flowed back to the non-profit). On July 22 of that year, Microsoft invested $1B. The restructuring accomplished three things: (1) it gave OpenAI the capital to train GPT-3 and beyond; (2) it removed Sam's need to justify himself to Musk; (3) it pushed OpenAI into a <strong>genuinely novel governance experiment</strong> — formally the non-profit still controlled, but the financial incentives of nearly every employee sat on the for-profit side.</p>
+<p>The lesson: this is Sam's most underrated decision. Surface read: a financing maneuver. Substantive read: he cleanly separated "mission oversight" from "individual financial incentives" — oversight stayed with the non-profit board, incentives lived in the for-profit. Before November 2023 the design looked brilliant. After November 17 a fundamental bug surfaced: <strong>once incentives and oversight are pulled apart far enough, oversight dies first</strong>. Karen Hao's Empire of AI (2025) calls this "the largest governance arbitrage of the AI era."</p>
+<span class="source">Sources: OpenAI Charter (April 2018); OpenAI announcement, "OpenAI LP," March 11, 2019; Walter Isaacson, Elon Musk (Simon & Schuster, 2023), Ch. 74–78; Karen Hao, Empire of AI (2025), Part II.</span>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>Career Turning Point — November 17–22, 2023: 96 Hours of Firing and Return</h2>
+<div class="hours">
+<ol>
+<li data-when="Thu 11/16 night"><strong>Sam receives a text from Ilya Sutskever</strong>: "Want to talk on Google Meet tomorrow at noon." Sam assumed it was a routine update.</li>
+<li data-when="Fri 11/17 12:19 PST"><strong>The firing</strong>. Sam joined the Meet alone. Helen Toner (independent director, Georgetown CSET) read the board's decision: terminated, on grounds that "he was not consistently candid in his communications with the board." Greg Brockman was simultaneously removed from the board (kept the President title). Microsoft CEO Satya Nadella was given about a minute's notice before the public announcement.</li>
+<li data-when="Fri 11/17 afternoon"><strong>OpenAI publishes the public statement</strong>. Mira Murati (CTO) is named interim CEO. Greg Brockman resigns immediately and joins Sam in a café making phone calls. That evening Sam posts on X: "i love you all..." (see Quotes).</li>
+<li data-when="Sun 11/19"><strong>Nadella moves</strong>. Microsoft announces Sam and Greg will join Microsoft to lead a new AI team. By evening, Mira Murati and Ilya themselves begin to reverse — realizing employees were about to leave en masse.</li>
+<li data-when="Mon 11/20 dawn"><strong>The employee letter</strong>. 738 of 770 OpenAI employees sign: "We will all resign and follow Sam and Greg to Microsoft unless the board resigns immediately and reinstates Sam." Ilya Sutskever signs his own name and posts on X: "I deeply regret my participation in the board's actions."</li>
+<li data-when="Tue 11/21 night"><strong>All-night negotiation</strong>. Bret Taylor (former co-CEO of Salesforce) steps in as mediator. Board concession: Sam returns, Helen Toner and Tasha McCauley leave, Ilya leaves the board but stays as employee.</li>
+<li data-when="Wed 11/22 dawn"><strong>Sam returns</strong>. The new initial three-person board: Bret Taylor (chair), Larry Summers (former U.S. Treasury Secretary), Adam D'Angelo (Quora, the one remaining holdover). Helen Toner, Tasha McCauley, and Ilya are all out.</li>
+</ol>
+</div>
+<p>These 96 hours taught Sam one thing: in the 2020s Valley, <strong>"being accountable to an independent board" is no longer the actual structure of power — being accountable to employees + Microsoft + the capital markets is</strong>. From there he redesigned OpenAI's governance: a Public Benefit Corporation conversion began September 2024 and completed in mid-2025, with the non-profit parent's effective oversight powers dramatically curtailed. He didn't come back to "patch" the system. He <strong>rewrote</strong> it.</p>
+<span class="source">Sources: Charles Duhigg, "The Inside Story of Microsoft's Partnership with OpenAI," The New Yorker, December 1, 2023; "Removal of Sam Altman from OpenAI" (Wikipedia, consolidating reporting from multiple outlets); Axios timeline, November 22, 2023; Karen Hao, Empire of AI, Part III.</span>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>Character & Habits — Fast Decisions, Tailored Information, Doomsday Prep, Strict Sleep</h2>
+<p><strong>The 60-second decision rule.</strong> In "How To Be Successful," posted on blog.samaltman.com January 24, 2019, Sam writes: "Successful people make decisions quickly (often in 60 seconds or less) and change them slowly." Greg Brockman has described Sam in multiple interviews: "If he trusts the team, he'll sign off on a $1B funding decision in ten minutes." This is the most-copied of Sam's habits — but understand the basis: it sits on top of <strong>thousands of small daily decisions</strong>. At YC he interviewed 30–50 founders a week. Over five years, that compounded to roughly 10,000 reps of "five-minute reads."</p>
+<p><strong>Version-tailored information.</strong> This is the most under-noticed and most lethal side of Sam's character. At YC, he spoke to each founder in the language they could best absorb — this "ability to read people" was widely cited as a key reason he became president. The same capacity, redirected at the OpenAI board, became the core of their charge against him. Charles Duhigg's New Yorker investigation (December 1, 2023) revealed: after Helen Toner published a paper criticizing OpenAI's competitive posture in October 2023, Sam privately asked several board members whether they would support removing Toner — but described the situation differently to each. To Mira Murati he framed it as "the others already agreed"; to Adam D'Angelo it was "still collecting opinions." Mira later compared notes and submitted an internal memo to the board. <strong>"Not consistently candid" is not an abstract charge — it has a documented evidentiary chain.</strong></p>
+<p><strong>Doomsday prep.</strong> Tad Friend's 2016 New Yorker profile documents Sam's home stockpile: guns, gold, potassium iodide (anti-radiation), antibiotics, batteries, water, IDF-grade gas masks. A retreat property in Big Sur. Asked why, Sam said: "Maybe it's that I happen to be smart and prepared. The whole community has it, more or less." Not a colorful detail — it reveals his sensitivity to low-probability catastrophic scenarios, and is the psychological substrate beneath his later "AGI may be the last invention humanity ever makes" rhetoric.</p>
+<p><strong>Strict routine.</strong> On Tim Ferriss Show #319 (January 17, 2018) Sam said: bedroom kept at 67°F, blackout curtains, no electronics in the bedroom, 8 hours of sleep nightly with no variance, tracked with Apollo Neuro plus Oura Ring. No alcohol, no tobacco. Intermittent light-vegan eating. In January 2024 he married Oliver Mulherin, an Australian software engineer; they had their first child in early 2025.</p>
+<span class="source">Sources: Sam Altman, "How To Be Successful," blog.samaltman.com, January 24, 2019; Tad Friend, "Sam Altman's Manifest Destiny," The New Yorker, October 10, 2016; The Tim Ferriss Show #319, January 17, 2018; Charles Duhigg, The New Yorker, December 1, 2023; Karen Hao, Empire of AI (2025), chapters on the November 17 events.</span>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>Controversies & Dark Side — "Version-Tailored Communication," Worldcoin Data, Family Dispute, Conflicts of Interest</h2>
+<p><strong>One: What "not consistently candid" actually meant.</strong> Much post-event coverage framed November 17, 2023 as "the board went rogue." But Charles Duhigg's New Yorker investigation (December 2023) and Karen Hao's Empire of AI (2025), conducted independently, converge on the same set of facts: Sam offered inconsistent versions to different directors on multiple concrete items. Examples: (a) the safety-review status of the GPT Store in September 2023 — to Toner he said "approved," to Sutskever "still under review"; (b) progress on the Middle Eastern sovereign-wealth-fund chip financing — his external disclosures and his board disclosures did not match; (c) his personal stake in Tigris, an AI chip company, was not disclosed to the board. Sam's January 2024 response: "I may not have always communicated as clearly as I should have, but I never intentionally misled the board." A sentence that neither affirms nor denies.</p>
+<p><strong>Two: Worldcoin's data collection in developing economies.</strong> Worldcoin was co-founded by Sam and Alex Blania in 2019, and publicly launched July 24, 2023. Users let the company's proprietary "Orb" scan their irises in exchange for Worldcoin tokens. MIT Technology Review's April 2022 investigation found that early recruiters in Kenya, Indonesia, Chile, and Zimbabwe offered low-education users $5–$30 in "scanning fees," while the actual data-use terms were presented in English and required users to authorize their biometric data to be used "for training." In August 2023, Kenya suspended Worldcoin's operations. In May 2024, the Hong Kong PCPD ruled that Worldcoin's HK operation violated the Personal Data (Privacy) Ordinance. Worldcoin is currently valued at tens of billions; Sam's stake is estimated at 15–25%.</p>
+<p><strong>Three: Annie Altman's public allegations.</strong> Sam's sister Annie Altman (born 1994, nine years his junior) began publicly alleging on X in 2021 that Sam committed "sexual, physical, emotional, verbal, financial, and technological" abuse during her childhood. She filed suit in California in January 2024. Sam and his three brothers responded publicly that the allegations were "factually incorrect" and stated that the family had long funded Annie's mental-health care. The allegations lack third-party evidence; Annie has documented PTSD; mainstream outlets (NYT, WSJ, Bloomberg) have not published deep investigative coverage. We <strong>do not adjudicate</strong> the truth here — but as a biographical fact, the dispute exists, has entered the legal system, and represents the systematic mainstream reluctance to cover private controversies of the successful. That structural reluctance is itself worth thinking about.</p>
+<p><strong>Four: Conflicts of interest and the no-salary financial structure.</strong> Since 2019 Sam has drawn no cash salary from OpenAI. His publicly stated net worth comes from his personal portfolio of "AI-adjacent" early investments: Helion (nuclear fusion, Sam is chairman — both OpenAI and Microsoft signed Helion power-purchase letters of intent starting in 2021), Retro (longevity), Worldcoin, Reddit (pre-IPO), Stripe, Humane (AI Pin), Tigris, and more. When OpenAI signs a power deal with Helion or a data deal with Reddit, Sam has material interest on both sides. OpenAI's governance committee released a WilmerHale-conducted internal review in March 2024 that "found no material conflict" — but the scope of that review was set by OpenAI itself. This is a structure that looks far better than "doesn't take a salary," and <strong>it is becoming the new template for AI-era CEO wealth accumulation</strong>.</p>
+<span class="source">Sources: Charles Duhigg, The New Yorker, December 1, 2023; Eileen Guo & Adi Renaldi, "Deception, exploited workers, and cash handouts: How Worldcoin recruited its first half a million test users," MIT Technology Review, April 6, 2022; "Annie Altman v. Sam Altman," U.S. District Court for the Northern District of California, filing January 2024; Karen Hao, Empire of AI (2025), Parts III–IV; Cade Metz & Mike Isaac, "Inside Sam Altman's Vast Web of Investments," The New York Times, June 8, 2024.</span>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>20 Years of Altman: Key Nodes</h2>
+<div class="timeline">
+<ol>
+<li data-year="1985"><strong>Born April 22 in Chicago</strong>; raised in St. Louis. Father a real-estate lawyer, mother a dermatologist.</li>
+<li data-year="1998"><strong>Comes out to parents at 13</strong>. Later cites this as his "first significant decision."</li>
+<li data-year="2005"><strong>Drops out of Stanford CS</strong> sophomore year. Co-founds Loopt with Nick Sivo; joins YC's first batch.</li>
+<li data-year="2012"><strong>Loopt sells to Green Dot for $43.4M</strong>. After burning ~$39M in funding — "barely a success."</li>
+<li data-year="2014"><strong>Feb 21: Paul Graham anoints him as YC president</strong>. Age 28.</li>
+<li data-year="2015"><strong>Dec 11: co-founds OpenAI as non-profit</strong>. ~$1B pledged.</li>
+<li data-year="2018"><strong>Musk exits OpenAI board</strong>. Sam becomes the de facto decision-maker.</li>
+<li data-year="2019"><strong>March: restructures as capped-profit; July: Microsoft invests $1B</strong>. Sam officially becomes OpenAI CEO.</li>
+<li data-year="2022"><strong>Nov 30: ChatGPT launches</strong>; 1M users in 5 days; 100M in 2 months — the fastest-growing product in history.</li>
+<li data-year="2023"><strong>Jan: Microsoft adds $10B; Nov 17–22: 4-day firing-and-return</strong>. Worldcoin publicly launches in July.</li>
+<li data-year="2024"><strong>Jan: marries Oliver Mulherin; Sep: launches PBC conversion</strong>. Murati, Ilya, and other key researchers depart.</li>
+<li data-year="2025"><strong>May: Karen Hao's Empire of AI is published</strong>. OpenAI completes its main restructuring; Sam personally takes equity in OpenAI for the first time (~7%).</li>
+</ol>
+</div>
+<p style="margin-top:14px;font-size:0.9rem;color:#a0a4b0">Loopt's failure → YC judgment training → OpenAI financial engineering → the 96 hours of Nov 17 → the 2025 restructuring. This line shows how a person who was <em>not</em> the best executor used judgment + relationships + structural design to reach the center of planetary compute allocation in twenty years. Remove any one link and the story collapses.</p>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>Quotes & Sources</h2>
+<ul class="quote-list">
+<li>
+<span class="en">"Successful people make decisions quickly (often in 60 seconds or less) and change them slowly."</span>
+<span class="cn">成功的人快速做决定（通常 60 秒以内），而慢慢改变它。</span>
+<span class="src">— Sam Altman, "How To Be Successful," blog.samaltman.com, January 24, 2019, item #10.</span>
+</li>
+<li>
+<span class="en">"i love you all. today was a weird experience in many ways. but one unexpected thing: it has been sorta like reading your own eulogy while still alive."</span>
+<span class="cn">我爱你们所有人。今天在很多方面都是一次奇怪的体验。但有一件意外的事：它有点像在你还活着的时候读自己的悼词。</span>
+<span class="src">— Sam Altman, X (Twitter), November 17, 2023, ~17:14 PST. His first public statement on the day he was fired.</span>
+</li>
+<li>
+<span class="en">"There is a difference between being smart and being formidable."</span>
+<span class="cn">"聪明"和"难以撼动"之间，是有区别的。</span>
+<span class="src">— Sam Altman, "How To Be Successful," ibid., item #4. The most overlooked and most explanatory line in the essay.</span>
+</li>
+<li>
+<span class="en">"Maybe it's that I happen to be smart and prepared. The whole community has it, more or less."</span>
+<span class="cn">也许只是因为我恰好聪明并且有准备。整个圈子或多或少都这样。</span>
+<span class="src">— Quoted in Tad Friend, "Sam Altman's Manifest Destiny," The New Yorker, October 10, 2016, when asked why he keeps a doomsday stockpile.</span>
+</li>
+<li>
+<span class="en">"The development of superhuman machine intelligence is probably the greatest threat to the continued existence of humanity."</span>
+<span class="cn">超人类智能的发展，可能是对人类持续存在最大的威胁。</span>
+<span class="src">— Sam Altman, "Machine Intelligence, Part 1," blog.samaltman.com, February 25, 2015. Written ten months before OpenAI was founded — long before his current "accelerate AI" stance. The same person across ten years, on both sides, is the key to understanding him.</span>
+</li>
+</ul>
+</section>
+
+<section class="card think">
+<h2><span class="icon">◆</span>Takeaway for BigCat</h2>
+<p>What is genuinely portable from Sam is the <strong>career architecture of "judgment as core asset"</strong> — switch from doer to judge-of-doers, trade salary for long-dated equity, decide in 60 seconds and then protect the decision from drift. In an era where AI drives execution cost toward zero, that's the only asset tools can't consume. But equally important is what to refuse: the version-tailored communication that was exposed on Nov 17 — the practice of showing every audience the most palatable version of you. LLMs are about to give every person that same capacity at zero cost, with no friction. <strong>When tools make "many versions" the default, you have to actively choose "one version" as the algorithm of your life.</strong> This is not a moral choice — it's a systems-design choice: information flows, versions are compared, people cross-check. The system ultimately settles on your worst-case version. Sam paid the first installment on November 17, 2023. The question for anyone using AI today is whether to walk down that same road.</p>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>Further Reading</h2>
+<ul class="read-list">
+<li>
+<span class="book">Empire of AI: Dreams and Nightmares in Sam Altman's OpenAI — Karen Hao (Penguin Press, 2025)</span>
+<span class="note">The most rigorous and fact-dense investigation of OpenAI and Sam Altman to date. Hao, former AI lead at MIT Technology Review and former WSJ U.S.–China tech reporter, conducted 260+ interviews over three years. Her thesis: OpenAI's non-profit skin + for-profit core is a form of governance arbitrage, and November 17 was the system's first internal backlash. Read order: start with the November 17 chapter, then go back to Worldcoin and the early OpenAI material. Winner of the 2025 National Book Critics Circle Award for Nonfiction.</span>
+</li>
+<li>
+<span class="book">"The Inside Story of Microsoft's Partnership with OpenAI" — Charles Duhigg, The New Yorker, December 1, 2023</span>
+<span class="note">The first deep investigation to unpack the concrete evidence behind the board's charge. Duhigg interviewed multiple former board members after they had left. Core finding: "not consistently candid" was not an abstract charge — it was based on an internal memo Mira Murati submitted to the board in October 2023, comparing Sam's inconsistent statements to different directors side by side. This is the factual foundation underneath nearly all later OpenAI coverage.</span>
+</li>
+<li>
+<span class="book">Elon Musk — Walter Isaacson (Simon & Schuster, 2023), Ch. 74–78</span>
+<span class="note">Isaacson shadowed Musk for two years; the OpenAI material is especially detailed. Musk's perspective on the 2015 founding, the 2018 exit, and the 2024 lawsuit against OpenAI (alleging departure from the non-profit mission). Read together with Empire of AI to see both sides of the Sam–Musk power struggle — the books corroborate each other on facts and contradict each other on motives.</span>
+</li>
+<li>
+<span class="book">"Sam Altman's Manifest Destiny" — Tad Friend, The New Yorker, October 10, 2016</span>
+<span class="note">The most important pre-fame profile. Sam was only YC president then; OpenAI was a year old. Friend documents the doomsday stockpile, Sam's early read of Trump, family relationships (Annie appears in a single aside), and the read-people capacity already visible at 28. In retrospect this is an invaluable "before he was famous" archive.</span>
+</li>
+<li>
+<span class="book">"Deception, exploited workers, and cash handouts: How Worldcoin recruited its first half a million test users" — Eileen Guo & Adi Renaldi, MIT Technology Review, April 6, 2022</span>
+<span class="note">First-hand investigation of Worldcoin's recruitment tactics in Kenya, Indonesia, and Chile. Worldcoin has not directly addressed the specific charges to this day. The most direct material for forming a judgment about Sam's ethics on Worldcoin.</span>
+</li>
+<li>
+<span class="book">blog.samaltman.com — the full archive, especially "How To Be Successful" (2019) and "Three Observations" (2025)</span>
+<span class="note">The version of Sam he wants to be read. "How To Be Successful" is the most-cited piece (13 items); the most useful is not #10 (fast decisions) but #4 (formidable vs. smart). "Three Observations" (February 2025) is the most direct statement of his views on AGI's economic structure — once you've read it you understand why he doesn't care about short-term product revenue. These are not PR pieces.</span>
+</li>
+<li>
+<span class="book">Hard Fork podcast — Kevin Roose & Casey Newton, The New York Times</span>
+<span class="note">Weekly podcast covering OpenAI from 2023 onward. The November 17–22 episode is the only real-time tracking of the events while they were unfolding; the same team was later first to interview Mira Murati (on Thinking Machines) and Ilya Sutskever (on SSI) after they left.</span>
+</li>
+</ul>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>Questions for Deeper Thought</h2>
+
+<details>
+<summary>1. When LLMs make "version-tailored communication" zero-cost, how do organizations redesign trust?</summary>
+<div>Sam's firing on Nov 17 was not fundamentally about "lying" — it was about offering different versions of the same fact to different directors. In the LLM era, this capacity gets industrialized: anyone can instantly generate "the most persuasive version for this specific audience." The real problem facing organizations is no longer "how to punish version-tailoring" — it's "how to design verifiable trust when version-tailoring becomes a default capacity." Possible directions: all material commitments automatically logged in auditable form; all judgments come with probability distributions and explicit falsifiers; cross-recipient communications get automatically cross-checked. But these solutions push humans toward becoming "algorithmic" — which in turn drives backlash demanding "non-algorithmic personhood." For anyone serious about human–machine collaboration, this is the central design problem of the next decade.</div>
+</details>
+
+<details>
+<summary>2. Is "capped-profit" financial innovation or governance evasion?</summary>
+<div>Sam's 2019 design, on the surface, lets a non-profit raise enough capital to train frontier models. Substantively, at least three problems: (a) the 100× cap is not a binding constraint in the AI era — returns from GPT-3 to GPT-5 already exceed 100× and the "cap" becomes paper decoration; (b) the non-profit's mission-oversight power effectively disappears once incentives migrate to the for-profit side, since nearly all employees' financial upside lives there; (c) the May 2025 PBC conversion pushed the non-profit into a supporting role. This is a genuinely novel governance experiment — run on what may be the most consequential technology humans have built. Is it correct? The answer is 30 years out, but anyone who cares about AI governance should be clear today about where they stand.</div>
+</details>
+
+<details>
+<summary>3. If the 96-hour reversal had not happened, what would AI look like now?</summary>
+<div>Counterfactuals matter. If 738 employees had not signed the letter: Mira Murati would have continued as CEO (she did serve as interim CEO for three days); Microsoft might have pulled 70% of its investment while preserving a base collaboration; the Helen Toner + Tasha McCauley "AI safety first" line might have dominated OpenAI through 2024; Ilya might have stayed and completed superalignment (he ultimately left in May 2024). The pace of the entire 2024–2025 AI industry might have been halved, with safety on the agenda far earlier. The takeaway: the direction of the AI industry is not determined by "AI research itself" — it is determined by specific individuals making specific decisions in specific moments. Is that level of concentration healthy? The question for thoughtful observers is not "should Sam have come back" — it is "why can decisions about a planet-shaping technology be compressed into four days and seven people."</div>
+</details>
+
+<details>
+<summary>4. Is Sam the next Steve Jobs, or the next Adam Neumann?</summary>
+<div>Comparison: (a) Jobs — genuinely changed humanity's relationship with computing, was ousted, came back, and reshaped the company; (b) Neumann — used storytelling to push valuations to astronomical levels, collapsed when the power structure was exposed. Sam's trajectory currently sits between them: he did ship ChatGPT, an artifact that genuinely changed the human–computing relationship (Jobs dimension); he also runs a Neumann-style "non-standard founder financial structure" (no salary + early stakes in dozens of AI-adjacent companies + Worldcoin + Tigris...). Looking back from 2030, which label fits? One open variable: whether he can turn OpenAI from "super-center" into "open public substrate" once AI becomes a daily tool. If yes, he is Jobs. If no, he is Neumann. The answer is not in his hands — it is in the hands of every person using ChatGPT.</div>
+</details>
+
+<details>
+<summary>5. Is Sam's "doomsday prep" and his "AGI risk" rhetoric genuine, or a frame?</summary>
+<div>In 2015, Sam wrote on his blog that "AGI may be the greatest threat to human existence" — ten months before OpenAI was founded. In 2016 The New Yorker documented his guns, antibiotics, anti-radiation pills, Big Sur retreat. Today, as OpenAI's CEO, his public commitment to AI safety coexists with aggressive product releases, his Helion bet, and his push for Worldcoin — forming a posture of <strong>"because I know the risk best, I must be the one in charge."</strong> Psychologically this is real — people with doomsday prep tend to enter new technology as "the driver" (you can't trust others; you only trust yourself). But it is also useful: it pre-frames every critic as "not understanding the risk enough to deserve a seat." Both readings are true. What is genuinely worth asking: in a technology like AI, is "I understand the risk best, so I must lead" a legitimate stance — or is it the largest rhetorical move in history? Oppenheimer used the same logic in 1942.</div>
+</details>
+
+</section>
+
+<nav><a href="index.en.html">← Back to Biographies Weekly</a></nav>
+<footer>BigCat · Biographies Weekly · Week 08 · 2026</footer>
+
+</div>
+</body>
+</html>
