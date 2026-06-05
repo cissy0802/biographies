@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>人物传记 · Rosalind Franklin · Day 17</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Noto Serif SC","Songti SC",Georgia,serif;background:#1a1f2e;color:#e8e4d8;line-height:1.85}
+.container{max-width:780px;margin:0 auto;padding:24px 20px 60px}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px solid rgba(212,175,55,0.2)}
+.week-tag{display:inline-block;padding:4px 14px;border:1px solid #d4af37;border-radius:20px;color:#d4af37;font-size:0.78rem;letter-spacing:2px;font-family:Georgia,serif;margin-bottom:18px}
+header h1{font-size:2.2rem;font-weight:800;background:linear-gradient(135deg,#d4af37 0%,#f4e3a1 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:2px;line-height:1.3}
+header .years{margin-top:12px;font-size:0.95rem;color:#a0a4b0;font-family:Georgia,serif;letter-spacing:1px}
+header .role{margin-top:8px;font-size:1rem;color:#f4e3a1;font-style:italic}
+.epigraph{margin:32px auto 0;padding:18px 24px;max-width:600px;border-left:2px solid #d4af37;background:rgba(212,175,55,0.05);font-style:italic;color:#c8c4b8;font-size:0.95rem;text-align:left}
+.card{margin-top:28px;padding:28px 26px;background:rgba(255,255,255,0.04);border:1px solid rgba(212,175,55,0.18);border-radius:10px;border-left:3px solid #d4af37}
+.card h2{font-size:1.1rem;color:#d4af37;margin-bottom:16px;letter-spacing:2px;font-weight:700;padding-bottom:10px;border-bottom:1px dashed rgba(212,175,55,0.25)}
+.card h2 .icon{margin-right:8px}
+.card p{margin-bottom:14px;font-size:1rem;color:#e8e4d8}
+.card p:last-child{margin-bottom:0}
+.card .source{font-size:0.84rem;color:#8a8e98;font-style:italic;margin-top:10px;display:block}
+blockquote{margin:14px 0;padding:12px 18px;border-left:2px solid #d4af37;background:rgba(0,0,0,0.2);font-style:italic;color:#f4e3a1;font-size:0.95rem}
+blockquote .cn{display:block;margin-top:6px;color:#c8c4b8;font-style:normal;font-size:0.9rem}
+.quote-list{list-style:none}
+.quote-list li{margin-bottom:18px;padding-left:18px;border-left:2px solid rgba(212,175,55,0.4)}
+.quote-list .en{color:#f4e3a1;font-style:italic;display:block;margin-bottom:4px}
+.quote-list .cn{color:#c8c4b8;font-size:0.92rem;display:block;margin-bottom:4px}
+.quote-list .src{color:#8a8e98;font-size:0.8rem}
+.think{background:linear-gradient(135deg,rgba(212,175,55,0.08) 0%,rgba(212,175,55,0.02) 100%);border-left:3px solid #f4e3a1}
+details{margin-bottom:14px;padding:14px 18px;background:rgba(0,0,0,0.2);border-radius:8px;border-left:2px solid #d4af37}
+details summary{cursor:pointer;color:#f4e3a1;font-weight:600;font-size:1rem}
+details .ans{margin-top:10px;color:#c8c4b8;font-size:0.92rem;line-height:1.8}
+.timeline{list-style:none;margin:8px 0 4px}
+.timeline li{position:relative;padding:8px 0 8px 26px;border-left:2px solid rgba(212,175,55,0.35);margin-left:6px}
+.timeline li:before{content:"";position:absolute;left:-7px;top:14px;width:10px;height:10px;border-radius:50%;background:#d4af37}
+.timeline .yr{color:#d4af37;font-weight:700;font-family:Georgia,serif;margin-right:8px}
+.read-list{list-style:none}
+.read-list li{padding:10px 0;border-bottom:1px dotted rgba(255,255,255,0.1)}
+.read-list li:last-child{border:none}
+.read-list .book{color:#f4e3a1;font-weight:600}
+.read-list .note{color:#a0a4b0;font-size:0.9rem;display:block;margin-top:4px}
+footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
+@media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">DAY 17 · 2026</div>
+<h1>人物传记：罗莎琳德 · 富兰克林<br>Rosalind Franklin</h1>
+<div class="years">1920 — 1958 · 享年 37 岁</div>
+<div class="role">物理化学家 · X 射线晶体学家 · DNA 双螺旋关键证据「照片 51」的拍摄者</div>
+<div class="epigraph">她拍出了人类历史上最重要的一张照片——DNA 的 X 射线衍射图「照片 51」，却没能在诺奖名单上看到自己的名字。世人把她供成「被偷走荣誉的女科学家」，反而抹掉了真实的她：一个严谨到近乎固执、宁可被数据拖住也不肯臆测的实验大师。读富兰克林，是读<strong>严谨的力量与代价</strong>——同一种品质，既让她拍出无人能及的照片，也让她在终点前停了下来。</div>
+</header>
+
+<section class="card">
+<h2><span class="icon">◆</span>【生平梗概】</h2>
+<p>富兰克林 1920 年生于伦敦一个显赫的英国犹太银行家庭。15 岁便决心当科学家，顶着父亲的疑虑进入剑桥纽纳姆学院读物理化学（当时剑桥不向女性授予正式学位）。1945 年以煤的微观结构研究获博士。1947 年赴巴黎，在梅林（Jacques Mering）门下掌握 X 射线衍射技术，度过一生最快乐的几年。1951 年回伦敦进入<strong>国王学院</strong>，与威尔金斯（Maurice Wilkins）就 DNA 展开研究，却陷入一段权责不清的紧张关系，并与学生戈斯林拍出「照片 51」。1953 年她转入伯贝克学院，转攻病毒结构，成果卓著。1958 年因卵巢癌病逝，年仅 37 岁。四年后，沃森、克里克、威尔金斯因 DNA 获诺奖时，她已不在名单上。</p>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>【关键决策】1951 走进国王学院的陷阱，与 1953 主动放手</h2>
+<p><strong>第一个决策：1951 年，离开深爱的巴黎，接受国王学院的职位。</strong>系主任兰德尔（John Randall）的聘书让她相信：自己将独立主持 DNA 的 X 射线研究。但休假归来的威尔金斯却以为她是来给自己「打下手」的助手——一封信埋下的角色误会，把两个本可合作的人变成了冷战对手。她的判断没错——国王学院有英国最好的 DNA 样本；她错估的是<strong>人</strong>：连资深餐厅都不许女性进入的封闭男性环境，容不下她的独立。</p>
+<p><strong>第二个决策：1953 年初，在 DNA 几乎到手时主动转所。</strong>与威尔金斯关系已无法修复，兰德尔出面要她停止 DNA 研究、转投伯贝克学院贝尔纳（J.D. Bernal）门下。她没有纠缠优先权之争，而是干净地向前走——转向烟草花叶病毒等结构研究，五年里发表大量一流成果。这不是认输，而是一种罕见的<strong>沉没成本意识</strong>：把精力投向还能赢的战场。</p>
+<span class="source">出处：Brenda Maddox《Rosalind Franklin: The Dark Lady of DNA》(2002), Ch. 8-12。</span>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>【生涯转折】1953 年 1—2 月：她的数据，在她不知情时离开了房间</h2>
+<p>转折不是一个瞬间，而是几次「未经她同意的传递」。1952 年 5 月，她与戈斯林拍出「照片 51」——一张 B 型 DNA 的 X 形衍射图，清晰得几乎直接喊出「螺旋」。1953 年 1 月，威尔金斯未经她许可把照片拿给来访的沃森看；沃森后来写道，一看到它「脉搏开始狂跳」。</p>
+<p>更关键的是数据。1953 年 2 月，克里克的导师佩鲁茨把一份医学研究委员会（MRC）内部报告交给克里克——里面有她精确测得的晶体学参数（C2 单斜对称性），正是它告诉克里克：两条链必须<strong>反向平行</strong>。4 月 25 日，《自然》同期刊出三篇论文：沃森与克里克的模型在前，她与戈斯林的数据排在后面，看似只是「为他人的模型佐证」。她或许至死都不知道，自己的数据曾在缺席的房间里改写了科学史。</p>
+<span class="source">出处：James Watson《The Double Helix》(1968); Brenda Maddox《Rosalind Franklin》(2002), Ch. 10; Nature 171 (1953年4月25日)。</span>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>【性格与习惯】数据先于一切、给螺旋办「葬礼」、把假期献给高山</h2>
+<p><strong>数据先于解释，绝不臆测。</strong>这是她最核心、也最致命的信条。她拒绝沃森-克里克式的「先搭模型、再凑数据」，坚持让衍射图本身把结论逼出来。她亲手改造 X 射线相机、精密控制湿度，率先区分出 DNA 的 A 型与 B 型两种构象——这是别人没做到的硬功夫。</p>
+<p><strong>给螺旋办了一场「葬礼」。</strong>1952 年 7 月，她和戈斯林散发了一张黑边讣告，半开玩笑地宣布：「我们万分悲痛地宣告，DNA 螺旋（结晶型）于 1952 年 7 月 18 日星期五逝世……希望威尔金斯博士能为已故的螺旋致悼词。」这针对的是数据混乱的 A 型——她坚持，在证据说话前连「螺旋」都不能预设。这份严谨是美德，却也让她在 A 型的迷宫里耗掉了几个月。</p>
+<p><strong>直率，不擅办公室政治。</strong>她在巴黎的咖啡馆式科学氛围里如鱼得水，却在国王学院刻板压抑的男性圈子里格格不入；说话直接、当面争辩，把本可成为盟友的威尔金斯越推越远。业余她是热情的登山者，足迹遍及阿尔卑斯与挪威；即便卵巢癌确诊后，仍工作到生命最后几周，病榻上还在审阅论文。</p>
+<span class="source">出处：Brenda Maddox《Rosalind Franklin》(2002); 「螺旋讣告」原件藏于科学史研究所与威康收藏馆。</span>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>【争议与阴面】谨慎到错过终点、棱角推开盟友、被「圣女叙事」二次抹平</h2>
+<p><strong>第一，她的严谨亲手挡住了自己。</strong>富兰克林几乎拥有破解 DNA 的全部材料：B 型是螺旋、骨架在外、双链。她 1953 年 3 月的手稿已写下「结果提示一种螺旋结构……磷酸基团位于外侧」，离答案只差一步。但她对「模型建构」近乎本能的不信任，让她迟迟不肯把碎片拼成大胆的整体。沃森与克里克赢，不只靠拿到她的数据，也靠敢猜——而她恰恰不猜。这是她的盲区，不该用「被害者」叙事掩盖。</p>
+<p><strong>第二，性格的棱角并非全无责任。</strong>与威尔金斯的僵局，时代的厌女与制度不公是大头，但她自己的固执、好斗、难以共事也确有其份——她把一个可能的合作者亲手谈成了对手。承认这点不是为不公辩护，而是拒绝把她简化成完美受害者。</p>
+<p><strong>第三，「被偷走荣誉的圣女」叙事，是另一种抹平。</strong>沃森在《双螺旋》(1968) 里贬称她「Rosy」、嘲讽其衣着外貌，是第一重不公；后世为纠偏，又把她塑成只会喊冤的悲情符号，反而盖住了真实的她——一个在伯贝克做出顶尖病毒结构、桃李成材的科学家（其同事克鲁格后凭相关工作获诺奖）。她从不自视为受害者；把她钉死在 DNA 的委屈上，是对她后五年丰沛人生的二次遮蔽。</p>
+<span class="source">出处：Brenda Maddox《Rosalind Franklin》(2002); Matthew Cobb & Nathaniel Comfort, Nature (2023) 对「照片 51」史实的重新评估。</span>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>【金句与出处】</h2>
+<ul class="quote-list">
+<li>
+<span class="en">"Science and everyday life cannot and should not be separated. Science, for me, gives a partial explanation of life. In so far as it goes, it is based on fact, experience, and experiment."</span>
+<span class="cn">科学与日常生活不能也不应被割裂。对我而言，科学给出了生命的一部分解释；就其所及，它建立在事实、经验与实验之上。</span>
+<span class="src">— 致父亲 Ellis 的信，1940 年</span>
+</li>
+<li>
+<span class="en">"All that is necessary for faith is the belief that by doing our best we shall come nearer to success, and that success in our aims — the improvement of the lot of mankind — is worth attaining."</span>
+<span class="cn">信念所需的全部，就是相信：尽力而为便会更接近成功，而我们所求的目标——改善人类的境遇——值得去争取。</span>
+<span class="src">— 致父亲 Ellis 的信，1940 年</span>
+</li>
+<li>
+<span class="en">"The results suggest a helical structure … containing two, three or four co-axial nucleic acid chains … and having the phosphate groups near the outside."</span>
+<span class="cn">结果提示一种螺旋结构……包含两条、三条或四条同轴核酸链……磷酸基团位于外侧。</span>
+<span class="src">— Rosalind Franklin 研究手稿，1953 年 3 月（离答案仅一步之遥）</span>
+</li>
+</ul>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>【生涯关键节点】</h2>
+<ul class="timeline">
+<li><span class="yr">1938</span>顶着父亲疑虑进剑桥纽纳姆学院读物理化学</li>
+<li><span class="yr">1945</span>以煤的微观结构研究获剑桥博士</li>
+<li><span class="yr">1947</span>赴巴黎学 X 射线衍射，最快乐的几年</li>
+<li><span class="yr">1951</span>进国王学院研究 DNA，与威尔金斯交恶</li>
+<li><span class="yr">1952</span>与戈斯林拍出「照片 51」</li>
+<li><span class="yr">1953</span>数据被转交沃森-克里克；转所伯贝克攻病毒</li>
+<li><span class="yr">1958</span>因卵巢癌病逝，年仅 37 岁</li>
+<li><span class="yr">1962</span>沃森、克里克、威尔金斯获诺奖，她已离世</li>
+</ul>
+</section>
+
+<section class="card think">
+<h2><span class="icon">◆</span>【对 BigCat 的启示】</h2>
+<p>富兰克林最值得技术人深思的，是<strong>严谨的双刃</strong>。她对数据的洁癖让她拍出无人能及的照片，也让她在该大胆一跃时停了下来。对追求「AI 超级个体」的人，这是一记提醒：深度与速度常常互为代价，最强的实验者未必最先到达终点；高手要在「数据未足不下结论」与「证据已够就果断成型」之间校准自己的扳机。另一层更冷峻：再硬的成果，若关在不承认你的体系里也会被无声拿走——能力之外，还要争取被看见的位置。</p>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>【深入思考】</h2>
+<details>
+<summary>1. 如果富兰克林生在今天，结局会不同吗？</summary>
+<div class="ans">很可能不同，但未必因为偏见消失。今天科研更重数据共享与署名规范，像「照片 51」那样的私下传递更难被无声抹去。但她真正的瓶颈未必是性别，而是方法论的保守：在推崇快速建模、预印本抢发的时代，她「数据未足不发声」的洁癖，可能让她依然慢人一步。性别不公会减轻，但「严谨者吃速度亏」的张力仍困住她。</div>
+</details>
+<details>
+<summary>2. 她的「不肯臆测」，是科学美德还是性格缺陷？</summary>
+<div class="ans">两者是同一枚硬币。拒绝臆测让她的数据无比可靠，至今是晶体学典范；但突破常需在证据不全时先搭一个可证伪的框架，再回头检验——沃森与克里克正是用了这种「先猜后验」。问题不在哪种对，而在配比：纯数据派与纯模型派都会输，赢家往往能在两种模式间切换。富兰克林的悲剧，是把一种美德绝对化。</div>
+</details>
+<details>
+<summary>3. 「被偷走荣誉的女科学家」这个标签，是在纪念她还是在限制她？</summary>
+<div class="ans">两者都有。这个标签让公众记住了她，推动了对科研性别不公的反思，功不可没；但它也把一个立体的人压成口号，遮蔽了她在伯贝克五年关于病毒结构的卓越工作。最好的纪念不是替她喊冤，而是完整地看见她：既看见她遭受的不公，也看见她的固执、盲区，和她离开 DNA 后依然滚烫的好奇心。</div>
+</details>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>【推荐读物】</h2>
+<ul class="read-list">
+<li>
+<span class="book">《Rosalind Franklin: The Dark Lady of DNA》 — Brenda Maddox（2002）</span>
+<span class="note">公认最权威的传记，基于大量一手信件与档案，既还原她遭受的不公，也不回避她的棱角与方法论盲区。</span>
+</li>
+<li>
+<span class="book">《Rosalind Franklin and DNA》 — Anne Sayre（1975）</span>
+<span class="note">最早为她正名的著作，强力反驳沃森《双螺旋》中的贬损形象，是「正名运动」起点的关键文本，宜与 Maddox 对照读。</span>
+</li>
+<li>
+<span class="book">《The Double Helix》 — James Watson（1968）</span>
+<span class="note">沃森本人的发现自述，坦率到刻薄。书中对「Rosy」的描写点燃了争议——作为反面史料读，能看清傲慢叙事如何制造不公。</span>
+</li>
+</ul>
+</section>
+
+<footer>BigCat · Biographies Daily · Day 17 · 2026</footer>
+
+</div>
+</body>
+</html>
