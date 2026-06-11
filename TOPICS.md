@@ -34,3 +34,33 @@
 - Day 28: Linus Torvalds — Linux 创始, Git 创造, 开源社区领导风格, 直率沟通争议
 - Day 29: Naval Ravikant — AngelList, Wealth/Happiness 哲学, 推特格言, 早期 Crypto 立场
 - Day 30: Grace Hopper — 早期计算机科学, COBOL 设计, 海军生涯, 女性 STEM 先驱
+- Day 31: Richard Feynman — 曼哈顿计划, 挑战者号调查, 费曼学习法, 玩与好奇的人生
+- Day 32: Charles Darwin — 小猎犬号航行, 二十年的犹豫, 进化论的诞生, 与信仰的挣扎
+- Day 33: Barbara McClintock — 跳跃基因的发现, 被忽视三十年, 1983 诺奖, 孤独的坚持
+- Day 34: Alan Turing — 计算理论, 破解 Enigma, 被迫害的天才, 图灵测试遗产
+- Day 35: 屠呦呦 — 青蒿素的发现, 中医典籍的现代转化, 523 项目, 2015 诺奖
+- Day 36: Leonardo da Vinci — 跨界天才, 笔记本的秘密, 未完成的执念, 艺术与科学
+- Day 37: Frida Kahlo — 病痛与艺术, 自画像的力量, 政治与身份, 墨西哥文化符号
+- Day 38: Ludwig van Beethoven — 失聪与创作, 从古典到浪漫, 第九交响曲, 苦难与超越
+- Day 39: 苏东坡 — 三次贬谪, 诗书画词全才, 旷达的人生哲学, 美食与生活
+- Day 40: Hannah Arendt — 极权主义的起源, 平庸之恶, 公共领域, 流亡知识分子
+- Day 41: James Baldwin — 种族与身份, 文学与行动主义, 流亡巴黎, 道德的声音
+- Day 42: Rachel Carson — 寂静的春天, 环境运动的诞生, 对抗化工业, 科学写作
+- Day 43: Jane Goodall — 黑猩猩研究, 打破学界成见, 从科学到行动, 保育倡导
+- Day 44: Ludwig Wittgenstein — 两种哲学, 战壕中的思考, 放弃财产, 语言的边界
+- Day 45: 黑泽明 — 电影语言的革新, 七武士与罗生门, 东西方影响, 失意与重生
+- Day 46: Florence Nightingale — 现代护理奠基, 数据可视化先驱, 克里米亚战争, 统计救人
+- Day 47: Nikola Tesla — 交流电之争, 超前的发明, 商业的失败, 天才的孤独
+- Day 48: 草间弥生 — 圆点与无限, 精神疾病与创作, 前卫艺术, 自我疗愈
+- Day 49: Simone Weil — 哲学与劳动, 神秘主义, 政治行动, 极端的同情
+- Day 50: Ernest Shackleton — 坚忍号远征, 绝境领导力, 全员生还, 失败中的成功
+- Day 51: Katherine Johnson — NASA 计算员, 隐藏人物, 种族与性别双壁垒, 登月轨道
+- Day 52: 徐霞客 — 三十年游历, 地理考察, 独立精神, 山水与科学
+- Day 53: John Coltrane — 爵士的灵性追寻, 至上之爱, 技术与超越, 短暂而深邃
+- Day 54: 葛饰北斋 — 浮世绘大师, 神奈川冲浪里, 终生学习, 七十才始悟
+- Day 55: Wangari Maathai — 绿带运动, 非洲女性与环境, 诺贝尔和平奖, 植树与赋权
+- Day 56: Srinivasa Ramanujan — 自学的天才, 与 Hardy 的合作, 直觉与证明, 短暂的传奇
+- Day 57: 张爱玲 — 乱世中的写作, 苍凉的美学, 上海与香港, 晚年的孤独
+- Day 58: Václav Havel — 剧作家到总统, 天鹅绒革命, 活在真实中, 异见者的力量
+- Day 59: Maria Montessori — 教育革命, 科学的儿童观, 全球影响, 女性医生先驱
+- Day 60: Ibn Battuta — 中世纪大旅行家, 跨越伊斯兰世界, 游记与见闻, 全球化前的世界
