@@ -64,3 +64,15 @@
 - Day 58: Václav Havel — 剧作家到总统, 天鹅绒革命, 活在真实中, 异见者的力量
 - Day 59: Maria Montessori — 教育革命, 科学的儿童观, 全球影响, 女性医生先驱
 - Day 60: Ibn Battuta — 中世纪大旅行家, 跨越伊斯兰世界, 游记与见闻, 全球化前的世界
+- Day 61: Nelson Mandela — 27 年牢狱, 和解 vs 复仇, 从囚徒到总统, 主动放下权力
+- Day 62: Abraham Lincoln — 分裂的国家, 葛底斯堡演说, 解放宣言的权衡, 内战中的领导
+- Day 63: Mahatma Gandhi — 非暴力(satyagraha), 食盐进军, 印度独立之路, 内在矛盾与争议
+- Day 64: Winston Churchill — 至暗时刻, 演说的力量, 战时领导与殖民争议, 政治起落
+- Day 65: Martin Luther King Jr. — 蒙哥马利抵制, 我有一个梦, 非暴力抗争, 晚年的激进化
+- Day 66: John Maynard Keynes — 凡尔赛的预言, 《通论》的革命, 布雷顿森林体系, 艺术与投机
+- Day 67: Adam Smith — 《道德情操论》与《国富论》, 看不见的手的误读, 同情与市场, 苏格兰启蒙
+- Day 68: Amartya Sen — 饥荒与自由, 能力进路, 福利经济学, 跨文化的正义观
+- Day 69: Johann Sebastian Bach — 巴洛克的巅峰, 信仰与结构之美, 生前的平凡, 身后的复兴
+- Day 70: William Shakespeare — 身份之谜, 人性的全景, 对语言的创造, 永恒的现代性
+- Day 71: Lev Tolstoy — 《战争与和平》, 贵族的良心危机, 晚年的出走, 非暴力思想之源
+- Day 72: Muhammad Ali — 拳台内外, 拒服兵役, 信仰与抗争, 帕金森的晚年
