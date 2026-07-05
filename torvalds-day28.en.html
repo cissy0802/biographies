@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biography · Linus Torvalds · Day 28</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#1a1f2e;color:#e8e4d8;line-height:1.85}
+.container{max-width:780px;margin:0 auto;padding:24px 20px 60px}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px solid rgba(212,175,55,0.2)}
+.week-tag{display:inline-block;padding:4px 14px;border:1px solid #d4af37;border-radius:20px;color:#d4af37;font-size:0.78rem;letter-spacing:2px;font-family:Georgia,serif;margin-bottom:18px}
+header h1{font-size:2.2rem;font-weight:800;background:linear-gradient(135deg,#d4af37 0%,#f4e3a1 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:2px;line-height:1.3}
+header .years{margin-top:12px;font-size:0.95rem;color:#a0a4b0;font-family:Georgia,serif;letter-spacing:1px}
+header .role{margin-top:8px;font-size:1rem;color:#f4e3a1;font-style:italic}
+.epigraph{margin:32px auto 0;padding:18px 24px;max-width:600px;border-left:2px solid #d4af37;background:rgba(212,175,55,0.05);font-style:italic;color:#c8c4b8;font-size:0.95rem;text-align:left}
+.card{margin-top:28px;padding:28px 26px;background:rgba(255,255,255,0.04);border:1px solid rgba(212,175,55,0.18);border-radius:10px;border-left:3px solid #d4af37}
+.card h2{font-size:1.1rem;color:#d4af37;margin-bottom:16px;letter-spacing:1px;font-weight:700;padding-bottom:10px;border-bottom:1px dashed rgba(212,175,55,0.25)}
+.card h2 .icon{margin-right:8px}
+.card p{margin-bottom:14px;font-size:1rem;color:#e8e4d8}
+.card p:last-child{margin-bottom:0}
+.card .source{font-size:0.84rem;color:#8a8e98;font-style:italic;margin-top:10px;display:block}
+blockquote{margin:14px 0;padding:12px 18px;border-left:2px solid #d4af37;background:rgba(0,0,0,0.2);font-style:italic;color:#f4e3a1;font-size:0.95rem}
+blockquote .cn{display:block;margin-top:6px;color:#c8c4b8;font-style:normal;font-size:0.9rem}
+.quote-list{list-style:none}
+.quote-list li{margin-bottom:18px;padding-left:18px;border-left:2px solid rgba(212,175,55,0.4)}
+.quote-list .en{color:#f4e3a1;font-style:italic;display:block;margin-bottom:4px}
+.quote-list .cn{color:#c8c4b8;font-size:0.92rem;display:block;margin-bottom:4px}
+.quote-list .src{color:#8a8e98;font-size:0.8rem}
+.think{background:linear-gradient(135deg,rgba(212,175,55,0.08) 0%,rgba(212,175,55,0.02) 100%);border-left:3px solid #f4e3a1}
+.think p{font-size:1.05rem;color:#f4e3a1;font-style:italic}
+details{margin-bottom:14px;padding:14px 18px;background:rgba(0,0,0,0.2);border-left:2px solid rgba(212,175,55,0.4);border-radius:6px}
+details summary{color:#f4e3a1;font-weight:600;cursor:pointer;font-size:0.98rem}
+details div{margin-top:10px;color:#c8c4b8;font-size:0.92rem;line-height:1.75}
+nav{margin-top:48px;text-align:center}
+nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-radius:6px;color:#d4af37;text-decoration:none;font-size:0.9rem;letter-spacing:2px;transition:all 0.2s}
+nav a:hover{background:#d4af37;color:#1a1f2e}
+footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
+@media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<div class="week-tag">DAY 28 · 2026</div>
+<h1>Biography: Linus Torvalds</h1>
+<div class="years">1969 — · Helsinki, Finland</div>
+<div class="role">Author of the Linux kernel · Creator of Git · The "benevolent dictator" of open-source governance</div>
+<div class="epigraph">The two things he built — Linux and Git — now run on nearly every server, every Android phone, every cloud. Yet he insists the motive was never to change the world; it was "just for fun." To read Torvalds is to read an introverted, abrasive engineer who built humanity's largest collaborative engineering project by <strong>giving control away</strong> — and who eventually admitted, in an apology letter, that technical power does not excuse the harm he did to people.</div>
+</header>
+
+<section class="card">
+<h2><span class="icon">◆</span>Key Decision — 1992, Switching to the GPL: giving his work away completely was what let it live</h2>
+<p>In the autumn of 1991, when the 21-year-old University of Helsinki student put kernel version 0.01 online, he attached a license he had <strong>written himself</strong>: free to copy, but <strong>no charging money</strong>. It looked purer, but it strangled commercial distribution — nobody could build a business on it, so nobody had reason to package, maintain, or promote it.</p>
+<p>With version 0.12 in January 1992 he made what he later called "the best decision I ever made": he adopted Richard Stallman's <strong>GPL</strong>. Its core is "contagion" — you may sell it, but your changes must be given back as open source. That single change let Red Hat, SUSE and Debian commercialize; enterprises dared to invest; contributors knew their code could never be privatized by any one company. As Torvalds put it, the GPL "turned Linux from my personal toy into everyone's project."</p>
+<p>The lesson: what he gave up was control and potential exclusive profit; what he got was the <strong>network effect</strong>. Most people instinctively want to "hoard" their best work. He did the opposite — precisely because no one could take it away, everyone was willing to join in.</p>
+<span class="source">Sources: Linus Torvalds & David Diamond, <em>Just for Fun</em> (2001), Part II; Linux 0.12 release notes, 1992.</span>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>Key Decision — April 2005: after BitKeeper was cut off, he hand-wrote Git in ten days</h2>
+<p>From 2002 he managed the kernel with a <strong>proprietary</strong> version-control tool called BitKeeper — deeply controversial in the free-software world (using closed-source tooling to develop the most famous open-source project). His reasoning was pragmatic: no open tool at the time could handle thousands of patches a day.</p>
+<p>In April 2005, BitKeeper's parent company revoked the free license after developer Andrew Tridgell tried to reverse-engineer its protocol. Kernel development lost its lifeline tool overnight. Torvalds did not beg or compromise — he <strong>built his own</strong>: he began coding on April 3; by April 7 Git could manage its own source; within two months the whole kernel had migrated. He named it Git (British slang for an unpleasant person), joking: "I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'Git'."</p>
+<p>Git's design came straight from his pain points: <strong>distributed</strong> (everyone holds the full history, no dependence on a central server) and content-hashed for integrity. Nearly every developer on earth now uses it. The lesson: when backed into a corner, cast the judgment you've accumulated into a new tool — what he wrote in ten days was really the crystallization of fifteen years of thinking.</p>
+<span class="source">Sources: early Git mailing-list archives, April 2005; Linus Torvalds, Google Tech Talk on Git, 2007.</span>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>Turning Point — 1991: a post saying "just a hobby," and a name someone else changed</h2>
+<p>Turning points often disguise themselves as trivialities. On August 25, 1991, Torvalds posted to the Usenet group comp.os.minix: "<strong>I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu).</strong>" The endlessly-quoted post is humble to the point of apology — he had no idea what he was starting.</p>
+<p>The origin was even more accidental: he only wanted to write a terminal emulator for his new 386 PC to dial back into the university mainframe. As it grew, to read and write disk and files directly, it turned into a kernel. Even the name "Linux" wasn't his — he had wanted "Freax" (free + freak + x), thinking using his own name too vain. It was Ari Lemmke, the admin of the FTP server, who unilaterally named the upload directory "linux," and the name stuck.</p>
+<p>The lesson: many world-changing things are launched by founders who had no idea what they would become. Torvalds's turning point wasn't a grand vision — it was that <strong>he scratched a private itch seriously to the end</strong>, and when others began to join, chose to open up rather than guard.</p>
+<span class="source">Sources: Linus Torvalds's original Usenet post, comp.os.minix, August 25, 1991; <em>Just for Fun</em>, Part I.</span>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>Character & Habits — working in a bathrobe at home, reading patches not code, doing it "for fun"</h2>
+<p><strong>Extreme home-based introversion.</strong> For decades he has barely gone to an office, working from his home study — often, by his own and interviewers' accounts, in a bathrobe. He loathes meetings, talks and social settings, defining himself as someone who "just wants to write code quietly," and admits he is neither good at nor fond of leading.</p>
+<p><strong>He manages code by "reading the diff."</strong> As the kernel's final gatekeeper he handles a torrent of merge requests daily, not by recompiling and running but by <strong>reading the patch differences directly</strong> — years of training let him see at a glance whether a change will cause trouble. He built a "maintainer tree": trusted lieutenants own their subsystems; he only makes the top-level calls.</p>
+<p><strong>"Never break userspace" is his near-religious iron rule.</strong> Refactor the kernel internals however you like, but you must never break existing user programs — "we do not sacrifice users for elegant code." He would berate rule-breakers in public over it.</p>
+<p><strong>Not money-driven.</strong> When Red Hat and VA Linux went public in 1999 they gifted him stock, briefly making him modestly rich, but he never tried to commercialize Linux and keep it for himself. His autobiography is literally titled <em>Just for Fun</em> — he repeats that the real motive is solving interesting problems: "money and fame are byproducts, not goals."</p>
+<span class="source">Sources: <em>Just for Fun</em> (2001); Linus Torvalds, TED interview, 2016; the long public record of the Linux Kernel Mailing List.</span>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>Controversy & Shadow — cruel emails, a late apology, and the peril of the "dictator"</h2>
+<p>Torvalds's technical authority has long come paired with a culture of <strong>public humiliation</strong> — his most honest dark side.</p>
+<p><strong>First, verbal violence on LKML.</strong> The mailing-list archives are full of his tirades. In 2012 he raised his middle finger to a camera and said "NVIDIA, fuck you." In 2013 he roared at senior maintainer Mauro Carvalho Chehab over a change that broke userspace: "<strong>Mauro, SHUT THE FUCK UP!</strong>" He has called others' code "brain-damaged" and "garbage." He defended it as "about the code, not the person," but many contributors — especially newcomers and members of minority groups — were driven away. The style was also copied around Silicon Valley as a badge of "technical excellence," breeding imitators with his sharpness and none of his judgment.</p>
+<p><strong>Second, the 2018 public reckoning.</strong> On September 16 he wrote to the mailing list, rarely admitting: "My flippant attacks in emails have been both unprofessional and uncalled for… I need to change." He temporarily stepped away from kernel development to "learn empathy," and the community adopted a Code of Conduct. Some praised it as overdue maturity; others attacked it as "surrender to political correctness." The dispute is unresolved to this day. He returned after about a month.</p>
+<p><strong>Third, the structural risk of the "benevolent dictator."</strong> Linux governance depends heavily on his personal final verdict — extremely efficient, but also a single point of dependence (the bus-factor problem). His temperament, preferences and blind spots directly shape a system running on critical global infrastructure. Open code, topped by a not-so-open decision apex.</p>
+<p>The lesson: the person who can build a system for millions to collaborate on is not necessarily good with actual people. Being technically "right" cannot buy back harm done to people — a point even he finally admitted.</p>
+<span class="source">Sources: Linus Torvalds's public letter to LKML, September 16, 2018; public LKML archives (2012 NVIDIA and 2013 Mauro incidents).</span>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>Quotations & Sources</h2>
+<ul class="quote-list">
+<li>
+<span class="en">"I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu)."</span>
+<span class="src">— Usenet, comp.os.minix, August 25, 1991</span>
+</li>
+<li>
+<span class="en">"Talk is cheap. Show me the code."</span>
+<span class="src">— Linux Kernel Mailing List, 2000</span>
+</li>
+<li>
+<span class="en">"I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'Git'."</span>
+<span class="src">— on naming Git, 2005</span>
+</li>
+<li>
+<span class="en">"Intelligence is the ability to avoid doing work, yet getting the work done."</span>
+<span class="src">— widely circulated Torvalds line</span>
+</li>
+<li>
+<span class="en">"My flippant attacks in emails have been both unprofessional and uncalled for. … I need to change."</span>
+<span class="src">— public letter to LKML, September 2018</span>
+</li>
+</ul>
+</section>
+
+<section class="card think">
+<h2><span class="icon">◆</span>Takeaways for BigCat</h2>
+<p>Torvalds's most counterintuitive lesson for the "AI super-individual" is this: <strong>the greatest leverage comes from giving control away, not gripping it tighter</strong>. He never made Linux a company or monopolized the source; instead, through the GPL and the "maintainer tree," he made himself a coordinating node — one person's judgment, amplified through an open mechanism into the collaborative output of millions. In the AI era, an individual's boundary is no longer "how much can I do with my own hands," but "what mechanism/tool can I design so that others' (and agents') contributions aggregate automatically and are never privatized by any single party." Keep his shadow as a warning bell too: a tool can infinitely amplify your ability, but it will also infinitely amplify your attitude toward people — being technically right does not exempt you from the harm of how you communicate.</p>
+</section>
+
+<section class="card">
+<h2><span class="icon">◆</span>Questions to Sit With</h2>
+<details>
+<summary>1. If Torvalds had been thinking "startup" back in 1991, would Linux still be the Linux of today?</summary>
+<div>Almost certainly not. It was precisely because he did <strong>not</strong> want to commercialize and did not guard the source that he removed the wariness of every potential contributor and rival — the GPL guarantees "nobody can take it away," so "everybody is willing to join in." A Linux aimed at exclusive profit would have decayed into just another company-controlled Unix variant. A counterintuitive rule: certain network-type value can only be triggered by giving up exclusivity. Openness is not a moral pose but a cool-headed growth strategy.</div>
+</details>
+<details>
+<summary>2. Can his "about the code, not the person" cruelty really be cut apart from his character?</summary>
+<div>His own 2018 apology answers: no. When humiliation becomes a community's default communication protocol, it systematically filters out those unwilling to be humiliated — newcomers, women, minorities, and many capable people who could have contributed but chose silence. "Bad code deserves criticism" and "people deserve respect" do not conflict; conflating them is issuing a permit for lost temper in the name of technical correctness.</div>
+</details>
+<details>
+<summary>3. Does the "benevolent dictator" model still hold in the age of AI collaboration?</summary>
+<div>Linux governance relies on one person reading the key diffs and making the final call — already near the limit of human bandwidth, and carrying single-point-dependence risk. When contributors expand from humans to swarms of AI agents and patch volume grows by orders of magnitude, any single "gatekeeper" gets drowned. Future open-source governance may need to <strong>formalize and delegate</strong> Torvalds's judgment itself: with explicit rules, automated verification and layered trust, so that "benevolence" no longer hinges on one person's mood and presence. He built the infrastructure of collaboration; the next generation must build its governance.</div>
+</details>
+</section>
+
+<nav><a href="index.en.html">← Back to Biographies</a></nav>
+<footer>BigCat · Biographies · Day 28 · 2026</footer>
+
+</div>
+</body>
+</html>
