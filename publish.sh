@@ -77,9 +77,10 @@ for F in $NEW_FILES; do
     grep -q "$F" index.html || { echo "ERROR: index.html does not reference $F"; exit 1; }
   fi
 
-  # Forbidden hardcoded scripts (auto-injected by GitHub Action)
+  # Shared scripts: per CLAUDE.md, new pages now carry these 4 tags themselves so
+  # the inject-comments Action dedupes and skips its auto-commit. Just warn (no dup).
   for s in comments.js search.js index-button.js i18n-tts.js; do
-    grep -q "$s" "$F" && { echo "ERROR: $F hardcodes $s (auto-injected, will duplicate)"; exit 1; }
+    grep -q "$s" "$F" && echo "WARN: $F hardcodes $s (expected per CLAUDE.md; Action dedupes)"
   done
   grep -q "← Hub" "$F" && echo "WARN: $F hardcodes ← Hub button (will be deduped, consider removing)"
 
