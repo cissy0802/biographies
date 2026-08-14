@@ -78,3 +78,4 @@
 - Day 70: William Shakespeare — 身份之谜, 人性的全景, 对语言的创造, 永恒的现代性
 - Day 71: Lev Tolstoy — 《战争与和平》, 贵族的良心危机, 晚年的出走, 非暴力思想之源
 - Day 72: Muhammad Ali — 拳台内外, 拒服兵役, 信仰与抗争, 帕金森的晚年
+- Day 73: Larry Page & Sergey Brin — 斯坦福相遇与 PageRank, 「不作恶」的兴废, Alphabet 重组与退居幕后, AI 时代的回归
