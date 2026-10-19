@@ -42,6 +42,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -135,6 +147,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <p>Walton had no original idea, yet won outright — which is itself a counterintuitive lesson for the "AI super-individual." Three things to take directly: <strong>One, find your "small town"</strong> — the niche the giants drop as too small; arrive first and you build a natural moat. Novelty was never the decider; being first and being focused were. <strong>Two, institutionalize copying</strong> — he openly admitted everything was copied, but copied it cheaper and better; in the AI era, recombination and execution speed are worth far more than originality. <strong>Three, make frugality a weapon</strong> — the lower your costs, the longer you can undercut and outlast rivals. But don't forget his shadow: when you rally a team with a "we're family" story, be honest about whether that story is also quietly suppressing the real cost it asks others to bear.</p>
 </section>
 
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Evolutionary biology · The competitive exclusion principle</b>: In 1934 Gause showed with paramecia that two species competing for the same resource cannot share one niche for long. A town that can feed only one discount store is exactly such a narrow niche, and the first arrival keeps it. The difference: paramecia settle it by fighting it out, while Walton won by arriving first, so rivals never bothered to come.</li>
+<li><b>Distributed systems · Data locality and edge nodes</b>: Keeping every store within a day's drive of a distribution center is like placing cache nodes close to users. It puts a latency bound on every restock, so the network can spread outward without losing control. The difference: copying bits is nearly free, while every extra warehouse and truck fleet costs real money.</li>
+<li><b>Cultural evolution · The social learning strategies tournament</b>: In 2010 Rendell and colleagues reported in Science on a computer tournament where over a hundred strategies competed in a changing environment. The winner almost always copied others and rarely explored on its own, because copied behavior had already been filtered by someone else. Walton taking notes in rivals' aisles ran the same algorithm. The difference: a population where everyone copies loses touch with its environment (Rogers' paradox), while Walton copied and then cut costs himself, adding something new to the pool.</li>
+<li><b>Neuroscience · One-trial aversion learning</b>: In Garcia's experiments, a rat that falls ill once after tasting a flavor avoids it for a long time, with no repeated training. Losing the Newport store was the same kind of single, sickening lesson, and it bought a 99-year lease. The difference: taste aversion often spreads to innocent cues, while Walton's lesson was precise down to one renewal clause.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Walton invented no product; he built the world's largest company by seizing markets giants ignored, learning from rivals, and cutting costs.</li>
+<li>In 1962 Kmart and Target aimed at big cities, but the first Walmart opened in a town of five to twenty-five thousand people.</li>
+<li>A town too small for a second discount store hands a natural monopoly to whoever arrives first, the same shape as competitive exclusion in ecology.</li>
+<li>Distribution centers came first and stores went within a day's drive of them; the 1970 IPO largely paid for that logistics backbone.</li>
+<li>The Newport franchise store became the top seller in a six-state region in five years, then was lost in 1950 because its lease had no renewal clause.</li>
+<li>After losing the store, Walton started over in Bentonville and this time locked in a 99-year lease.</li>
+<li>Even as America's richest man he drove an old pickup and stayed in cheap motels, turning every saved cent into lower prices.</li>
+<li>Carrying a tape recorder and notepad through rivals' stores, he made copying a discipline, then did it cheaper and better.</li>
+<li>The "associates are family" story, the new title, and profit sharing also served to keep unions out, alongside persistently low wages.</li>
+<li>Wherever Walmart opened, Main Street shops closed, and the loud "Buy American" campaign clashed with steady sourcing from overseas.</li>
+</ol>
+</section>
 <section class="card think">
 <h2><span class="icon">◆</span>Questions to Sit With</h2>
 <details>

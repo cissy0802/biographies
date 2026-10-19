@@ -41,6 +41,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -125,6 +137,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2 data-tts="7c295adae319ace9"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>达·芬奇给「AI 超级个体」的启示是一组正反两面。正面：<strong>无用的好奇心是最被低估的复利</strong>——他追问啄木鸟舌头、天为何蓝，这些不为交差的问题，锻炼出跨领域的模式识别，最终反哺了他的艺术与工程；真正的突破常发生在学科的接缝处，而不是某一专精的深井里。反面则是刺眼的警告：他的科学几乎没影响任何人，只因他从不收尾、从不发表。对追求超级个体的人，这条尤其致命——<strong>好奇心决定你能走多远，但只有「交付」才让世界记得你走过</strong>。今天 AI 恰好能补上他最弱的一环：帮你把被完美主义卡住的东西真正做完、发出去。别只学他的好奇，也要躲开他的烂尾。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>东方哲学 · 庄子的「无用之用」</b>：《人间世》里那棵栎社树因为不成材，才躲过斧斤长成参天大树；达·芬奇「描述啄木鸟的舌头」这类不为交差的无用之问，日后也喂养了他的绘画与工程。不像在于：庄子的无用是为了保全自身，达·芬奇的无用最终还是要转成有用。</li>
+<li><b>生物进化 · 扩展适应（Gould 与 Vrba，1982）</b>：羽毛最初可能用于保温，后来才被征用去飞行；他出于好奇解剖的肌肉与骨骼，后来被征用去画人体和嘴角。不像的是，进化的挪用是盲目的，他的挪用发生在同一颗有意图的头脑里。</li>
+<li><b>管理学 · 探索与利用（James March，1991）</b>：March 指出，只探索不利用的系统会承担试验的成本，却收不到多少回报；达·芬奇几乎是一个纯探索者。不像在于：组织得靠自己的利用活下去，他的探索成本由斯福尔扎和法王代付。</li>
+<li><b>分布式系统 · 没有提交的写入</b>：一笔写入只留在单个节点的内存里、从未提交和复制，节点一宕机就等于没发生过；他的解剖与流体发现只存在自己的笔记里，几乎随他入土。不像的是，丢掉的数据就是丢了，他的笔记几百年后被人读到，只是世界早已自己重新发现了一遍。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>达·芬奇是私生子，进不了大学也当不了公证人，只能靠观察而非经院学问自学成才。</li>
+<li>1482 年给米兰公爵的自荐信前九条全讲军事工程，最后才补一句会画画，是押注一个新身份。</li>
+<li>《蒙娜丽莎》约 1503 年受托，他用晕涂反复修改到去世都没交付，选了持续逼近而非完成。</li>
+<li>1500 年米兰陷落让他失去稳定赞助，却逼出最高产的科学十年：解剖、水流与飞行器。</li>
+<li>约 7200 页镜像书写的笔记里，采购清单和天为什么是蓝的并排，无用之问是他心智的发动机。</li>
+<li>为搞懂人体他解剖了约 30 具尸体，对主动脉瓣的理解比医学界早了几个世纪。</li>
+<li>烂尾成癖是天才的阴面：《三博士来朝》、青铜马、《安吉亚里之战》都没完成，赞助人一再落空。</li>
+<li>会当街放生笼中鸟的人，1502 年也替军阀切萨雷·博尔吉亚绘地图、设计武器与防御工事。</li>
+<li>一生不发表，达·芬奇的解剖与流体发现几百年后才被别人重新做出，私藏的天才几乎没有推进世界。</li>
+<li>只探索不利用的人要有别人替他付试验的成本，斯福尔扎和法王供养了那些无用之问。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="464eaf9a76ff27bf"><span class="icon">◆</span>【深入思考】</h2>

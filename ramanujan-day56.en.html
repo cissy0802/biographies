@@ -43,6 +43,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -126,6 +138,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2><span class="icon">◆</span>What BigCat Can Take From This</h2>
 <p>The most direct lesson is <strong>to staff the generator and the verifier separately</strong>: he was a conjecture engine of enormous throughput with almost no self-checking, and Hardy was the slow, fastidious verification layer. The partition asymptotics, the circle method, the mock theta functions all came off that line, not from either end of it. <strong>The structure is identical to doing research with AI today: a high-output intuition source must be wired to a falsification layer that does not share its biases, or brilliant conclusions and systematic errors of the prime-theory kind get delivered with exactly the same confidence.</strong> Second, the arithmetic of distribution: three letters, two unanswered, the third changed the history of mathematics. <strong>One more letter costs almost nothing and the payoff is heavy-tailed — provided each one sends your most startling material, not your safest.</strong> Third, the bill he never settled: body, marriage and rest were all optimized away as residuals, and the machine halted at 32. <strong>A machine with no maintenance window isn't more productive; it is just drawing its lifetime output forward.</strong></p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Psychology · Kahneman and Klein on intuitive expertise</b>: their 2009 paper argues that intuition earns trust only in an environment with stable regularities and timely feedback. Mathematics is as regular as environments get, which is why Ramanujan's intuition was so often uncannily right; but he never took feedback in the form of proof, so when it drifted on the primes he had no way to notice. The match is the environment; the mismatch is the missing feedback loop.</li>
+<li><b>Evolution · Geographic isolation and speciation</b>: a population cut off on an island grows forms the mainland never produces. Ten years alone with Carr's Synopsis, cut off from European mathematics, he grew formulas no one else would have thought of. The difference: island species rarely return to the mainland, while he was brought to Cambridge and merged into the mainstream.</li>
+<li><b>Buddhism · Non-self and the Kalama Sutta</b>: seeing himself as a scribe taking down the goddess's formulas is close to the Buddhist observation that thoughts arise with no author behind them. The difference: in the Kalama Sutta the Buddha warns against accepting a claim because its source is revered, and asks people to test it themselves; he treated "it came from the goddess" as a reason no proof was needed.</li>
+<li><b>Distributed systems · The FLP impossibility result</b>: the 1985 result of Fischer, Lynch and Paterson rests on the fact that in an asynchronous system you cannot tell a crashed node from a slow one. After Hill's discouraging reply and silence from Baker and Hobson, he likewise could not tell whether the work was weak or simply unread. His response resembled a retry, except he did not resend the same message: he rewrote it and tried a different node.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>From age 15 Ramanujan used Carr's Synopsis, a formula digest with almost no proofs, as his entire curriculum, gaining huge output but never a habit of proof.</li>
+<li>He left college twice after failing every subject except mathematics, and by 1912 was a clerk at the Madras Port Trust on 30 rupees a month.</li>
+<li>Of his letters to English mathematicians, one drew a polite refusal and two went unanswered; the rewritten third, to Hardy, led with his most astonishing results.</li>
+<li>Hardy and Littlewood judged the formulas true because no one could have had the imagination to invent them, an inference about a person rather than a mathematical argument.</li>
+<li>For an orthodox Brahmin, crossing the sea meant losing caste, so the voyage to England cost him his social standing; cooking his own vegetarian meals amid wartime shortages then wore down his health.</li>
+<li>After Ramanujan's failed suicide attempt on the Underground, Hardy got him released by calling him a Fellow of the Royal Society, then pushed his 1918 election through, so the honour became a rescue measure.</li>
+<li>He worked on a slate and copied only conclusions into his notebooks, leaving about 3,900 results mostly without proof, which took later mathematicians nearly a century to prove.</li>
+<li>He sincerely believed his formulas came from the goddess Namagiri and that he was only a scribe, so he felt no obligation to prove them.</li>
+<li>His prized theory of the primes failed because he did not know about the non-real zeros of the zeta function: without proof, right and wrong results leave the factory with equal confidence.</li>
+<li>The self-taught genius is a myth: from the Indian Mathematical Society and a Madras University scholarship to Hardy's five years of checking, a whole support network carried Ramanujan.</li>
+</ol>
 </section>
 <section class="card think">
 <h2><span class="icon">◆</span>Going Deeper</h2>

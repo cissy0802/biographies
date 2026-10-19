@@ -42,6 +42,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -120,6 +132,31 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <p>Chouinard's lesson for the "AI super-individual" is not about the environment, but about the nerve to twice kill a cash cow with his own hands — and the design thinking behind "Management by Absence." His real product was never the pitons, the jackets, or the $3 billion, but <strong>a system that keeps spinning by its own values even when he is not in the room</strong>. For anyone trying to amplify themselves with AI, this is the crux: don't be the one indispensable genius bolt — build a machine that runs without you and won't betray your original intent. He is also a cautionary mirror: once idealism becomes a brand, it can mutate into the very thing it set out to oppose. Sincerity and shrewdness can coexist — just don't fool yourself that it's only sincerity.</p>
 </section>
 
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Evolution · Autotomy</b>: A gecko under attack drops its own tail to survive, the same structure as killing pitons, 70% of revenue, in 1972: sacrifice the most valuable part so the whole lives on. The difference: the gecko's reflex is forced by a predator; Chouinard faced no predator, only his own convictions.</li>
+<li><b>Ecology · Logistic growth and carrying capacity</b>: Verhulst's 1838 logistic equation shows that any population's exponential growth eventually hits the environment's carrying capacity. Patagonia hit that wall in 1991; unlike a population, it did not wait for the environment to impose the ceiling but wrote the ceiling into its own creed.</li>
+<li><b>Distributed systems · Single point of failure</b>: Management by Absence removes a single point of failure: if the founder node goes down, the system keeps running. But distributed systems sync state through consensus protocols; Patagonia relied on hiring kindred spirits, as if every node shipped with the same config.</li>
+<li><b>Evolution · The handicap principle</b>: Amotz Zahavi argued in 1975 that a peacock's cumbersome tail proves it is strong enough to afford it. "Don't Buy This Jacket" was a costly signal too: urging people to buy less showed the brand didn't need the sale, and sales jumped.</li>
+<li><b>Buddhism · Letting go</b>: "Owning too much is itself a failure" is close to the Buddhist idea of relinquishment, and giving away the company looks like a great act of giving. The mismatch: true letting go keeps no grip, yet he kept 2% of the voting stock in a family trust. He let go of the wealth, not the steering wheel.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Teaching himself blacksmithing in 1957 and forging reusable pitons in his backyard started Chouinard Equipment, Patagonia's predecessor.</li>
+<li>In 1972 Chouinard phased out pitons, 70% of revenue, to protect rock walls, switching to aluminum chocks that leave no trace.</li>
+<li>Killing pitons and giving away the company in 2022 share one logic: when a core asset clashes with a deeper belief, kill the asset.</li>
+<li>In the 1991 recession, as banks tightened credit, Patagonia laid off about 120 people in a single day, nearly 20% of staff.</li>
+<li>After the 1991 crisis, an executive trek in Patagonia concluded that unchecked growth is itself a disease, and the company began capping its own growth.</li>
+<li>Management by Absence rests on one premise: if an organization collapses without its founder, the founder has failed.</li>
+<li>The "Let My People Go Surfing" flextime policy was a hiring philosophy, not a perk: recruit people who already love the outdoors.</li>
+<li>After the 2011 "Don't Buy This Jacket" ad, sales rose about 30%, making anti-consumption the most effective sales pitch.</li>
+<li>In 2022 Chouinard gave away Patagonia, worth about $3 billion: 98% of shares to Holdfast Collective, 2% voting stock to a family trust.</li>
+<li>The giveaway cost only about $17.5 million in gift tax; idealism, tax avoidance and retained control came from a single design.</li>
+</ol>
+</section>
 <section class="card">
 <h2><span class="icon">◆</span>Questions to Sit With</h2>
 <details>

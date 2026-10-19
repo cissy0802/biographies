@@ -43,6 +43,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -132,6 +144,32 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <h2 data-tts="e5e03313c1ac7933"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>最可迁移的一招是<strong>先处理对方的恐惧，再主张自己的目标</strong>：学南非荷兰语、留用旧政府公务员、穿上跳羚队球衣——这不是宽厚，是把「你会失去一切」这个假设从对手脑子里拆掉，谈判才有解。协作同理：反对你的人往往不是不同意结论，而是在为某个没说出口的损失设防。第二招是 1985 年那次拒绝出狱：<strong>看清一份好处附带什么身份定义，比看清好处本身更重要。</strong>还有刺人的那条——他对政治时机判断近乎完美，对家人和艾滋病却迟钝十年。<strong>高强度的专注自带盲区，而盲区通常不在工作里，在工作之外；它不会报警，只会安静地累积利息。</strong></p>
 </section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>心理学 · 损失厌恶（卡尼曼与特沃斯基，1979）</b>：同样大小的损失，主观上约比收益重一倍，所以对手最顽固的地方往往是怕失去，而不是想赢。学南非荷兰语、留用旧政府公务员，就是先把白人对「失去一切」的估计压下来。不像的是，实验里的损失多半是措辞框架造出来的，他面对的损失是真的，只能拿真实的保留去抵。</li>
+<li><b>生物进化 · 昂贵信号（扎哈维，1975）</b>：孔雀的大尾巴可信，恰恰因为它代价高、装不出来。66 岁、坐了 22 年牢仍拒绝有条件释放，让他「代表一个组织而非个人」的身份再无人怀疑。不像的是，尾巴由基因一次定下，他的代价要每天重新选一遍。</li>
+<li><b>分布式系统 · 握手协议</b>：TLS 连接在传数据之前，双方先协商版本和加密方式；1985 年起的「关于谈判的谈判」也是先谈怎么谈，再谈谈什么。不像的是，握手双方本来就想连上，他却要在互不信任、组织不知情的情况下独自承担握手失败的后果。</li>
+<li><b>复杂性科学 · 群体智慧（索罗维基，2004）</b>：群体判断胜过个人，前提之一是意见彼此独立；领导先开口，其余人的看法就被锚定了。最后一个发言，保护的正是这份独立性。不像的是，群体智慧靠统计平均，他要的是一个所有人都在其中的综合表述。</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>1961 年合法抗议渠道被全部关闭后，曼德拉创建「民族之矛」，转向只炸设施、避开人命的武装斗争。</li>
+<li>当合法抗议本身被定为非法，坚持非暴力等于把决定权全交给对方：放弃非暴力是形势判断，不是道德判断。</li>
+<li>1985 年拒绝博塔的有条件释放，因为接受就等于承认自己是犯错的个人，而非被镇压组织的代表。</li>
+<li>单独关押期间，他未经组织授权与政府秘密会谈四年，只谈「关于谈判的谈判」，风险由一人承担。</li>
+<li>里沃尼亚审判中放弃出庭作证、改作被告席声明，用法律上的次优解换来一次不被打断的完整陈述。</li>
+<li>哈尼遇刺后的全国电视讲话，用白人凶手与白人女证人的对照，阻止这件事被读成种族对种族。</li>
+<li>在狱中学南非荷兰语、读阿非利卡人的诗与历史，是为了用对手的语言直接说进对方心里。</li>
+<li>开会最后发言源自部落议事传统：先让分歧充分暴露，再给出一个所有人都在其中的表述。</li>
+<li>曼德拉在政治时机上判断极准，在家庭和艾滋病上却迟钝了十年，而这十年南非死了上百万人。</li>
+<li>先拆掉对手对失去一切的恐惧，再主张自己的目标，这与损失厌恶同构，是整项和解工程的核心手法。</li>
+</ol>
+</section>
+
 <section class="card think">
 <h2 data-tts="84722c12a42aad77"><span class="icon">◆</span>【深入思考】</h2>
 <details>

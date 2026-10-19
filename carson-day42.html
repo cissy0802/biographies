@@ -38,6 +38,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -113,6 +125,31 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2 data-tts="cb493ed34c2ab3b2"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>卡森留给「AI 超级个体」最实用的一课，是<strong>「用严谨换取影响力」</strong>——一个人要撬动远大于自己的系统，靠的不是嗓门，而是让对手无从下嘴的扎实。她面对数十亿美元的产业和「进步等于化学」的时代共识，手里只有事实、耐心和文字，却把每个论断都钉死在可追溯的证据上，用 55 页文献做盾牌。这对今天在信息洪流里发声的人尤其贴切：<strong>结论越逆主流、越易招围攻，就越要把功夫下在源头的可靠上——观点廉价，可验证的观点昂贵。</strong>她的第二课是分寸：把「我这个人」和「我说的事」彻底切开，绝不让私人处境成为议题的软肋。但她也是一面镜子——真正的成熟，是既敢用文字撼动世界，又始终对自己那份必然的选择性保持警觉。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>分布式系统 · 分布式追踪</b>：一次请求的故障散落在几十个服务的日志里，每个服务单看都正常，要靠一条 trace ID 把它们串起来才看得见因果（Google 2010 年的 Dapper 论文）。卡森做的正是人工追踪：把毒理学、生态学、癌症研究里各自「正常」的数据串成一条链。不像的是，系统里的 trace ID 是事先埋好的，她得在事后从文献里一条条找回连接点。</li>
+<li><b>生物进化 · 抗药性与选择压力</b>：杀虫剂是一股强大的选择压力，喷得越猛，少数天生抗药的昆虫越快占满种群，和细菌对抗生素产生抗药性同一个机制。滥用于是亲手削弱了药效；不同在于细菌一代以分钟计，昆虫以周计。</li>
+<li><b>心理学 · 可识别受害者效应</b>：Thomas Schelling 1968 年指出，一个有名有姓的受害者比一串统计数字更能打动人。「明天的寓言」用一个鸟儿噤声的小镇代替死亡率表格，正是这个效应。不像的是，她没有拿故事替换数据，55 页文献仍压在故事后面。</li>
+<li><b>佛学 · 四依「依法不依人」</b>：《大般涅槃经》教人判断道理时看法本身，不看说法的是谁。卡森隐瞒病情，是替听众先做了这一步，免得议题被「将死的病人」这个身份带偏。差别在于，四依要求听者自修，她却不敢指望听者做到。</li>
+<li><b>投资 · 安全边际</b>：Benjamin Graham 主张只在价格远低于价值时下注，留出犯错的余地。《我们周围的海洋》的稿酬就是她的安全边际，让她押上声誉对抗化工业也不至于断粮。不同的是，她押的这一注从一开始就知道几乎稳赔。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>卡森在美国渔业局白天写了十五年政府报告，夜里才写自己的书。</li>
+<li>1958 年朋友来信说，后院的鸟在市政喷洒 DDT 后成片死去，她由此转向杀虫剂问题。</li>
+<li>证据散落在毒理学、生态学和癌症研究里，没人愿意也没人有能力把它们串成一条链。</li>
+<li>《寂静的春天》正文后附 55 页逐条注明来源的文献：挑战远强于自己的对手，证据就是护身符。</li>
+<li>写书期间确诊乳腺癌，卡森刻意向公众隐瞒病情，不让作者的私人处境成为攻击议题的把柄。</li>
+<li>1951 年《我们周围的海洋》大卖，稿酬带来的财务独立，是十年后敢与化工业开战的本钱。</li>
+<li>她写得极慢，句子要读出声听节奏，《寂静的春天》写了整整四年。</li>
+<li>指控卡森「害死几百万疟疾病人」把因果过度简化：她反对的是滥用 DDT，而非全面禁用。</li>
+<li>改变历史的书往往立场鲜明、刻意聚焦，它的推动力和它的偏颇是同一枚硬币的两面。</li>
+<li>杀虫剂喷得越猛，抗药昆虫被筛选得越快，滥用最终会削弱农药自身的药效。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="d003bc1227092aab"><span class="icon">◆</span>【深入思考】</h2>

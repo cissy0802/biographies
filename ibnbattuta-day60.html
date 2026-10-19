@@ -43,6 +43,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -133,6 +145,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2 data-tts="2e913fb70a3e3e56"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>他真正的资产不是勇气，是<strong>一套跨边界可验证的凭证</strong>：教法训练 + 师承链条 + 家世出身。在没有中央机构的世界里，这三样让他在两万公里外仍能被识别、被授职。做「AI 超级个体」同理：稀缺的不是能力本身，而是能被陌生系统快速验证的凭证——公开的作品、可追溯的记录、愿意背书的关系。但他从不出伊斯兰世界，因为出了那道边界凭证一文不值：<strong>这既是明智的路径选择，也是他见识的天花板。</strong>还有更刺人的一条：他不做笔记，最丰富的一手经验只能靠三十年后的记忆重构。<strong>没有被记录的经验，会在你自己脑子里被悄悄改写。</strong></p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>分布式系统 · 公钥基础设施（PKI）的信任链</b>：法学训练、苏非师承、法官家世，像一条证书链——陌生城市的法官不必认识他，只要顺着签发者一路追溯到共同的信任根（马利基法学与伊斯兰学术网络）就能授职。像在哪：信任可以在互不相识的节点之间传递。不像在哪：PKI 能吊销、能机器校验，他的凭证靠口述与人情；而信任根一旦不被承认，整条链同时归零——这正是他从不出伊斯兰世界的原因。</li>
+<li><b>神经科学 · 记忆再巩固</b>：2000 年 Nader、Schafe 与 LeDoux 在大鼠实验中发现，记忆每被提取一次，就会暂时变得不稳定并被重新写入。五十岁口述三十年前的旅程，每讲一遍都在改写。不像在哪：《游记》还叠加了笔录者的润色和对前人游记的借用，是脑内改写加纸面改写。</li>
+<li><b>心理学 · 皮亚杰的同化与顺应</b>：新经验要么被已有图式「同化」，要么迫使图式「顺应」改形。他二十九年几乎只做同化，马里的面纱、马尔代夫的衣着都被塞进马利基教法的格子。皮亚杰认为顺应常由失衡驱动，而他的框架一路带来地位与收入，从未失衡。</li>
+<li><b>生物进化 · 专性共生</b>：有些共生生物离开特定宿主就无法存活，效率极高、迁移范围却被宿主分布锁死。他在伊斯兰制度网络里如鱼得水，出了这张网便无处落脚。不像在哪：他不只索取，也以法官身份回馈宿主，更接近互利共生。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>伊本·白图泰 1325 年 21 岁独自出门朝觐，此后二十九年没有回家，足迹从北非延伸到印度洋。</li>
+<li>不等商队就出发，是因为沿途清真寺、经学院和苏非道堂会接待懂教法的年轻人，制度接待替代了结伴的安全。</li>
+<li>1326 年在亚历山大港听过苏非长老的预言后，闭环的朝觐任务变成了接受每一次顺路的开放行程。</li>
+<li>借钱置办进见礼进入德里是一次杠杆下注：赌赢了法官职位，也背上了约五万五千第纳尔的债务。</li>
+<li>1342 年出使元朝的船在卡利卡特港外被风暴卷走，他拒绝空手回德里交代，转去马尔代夫重新开局。</li>
+<li>随身真正的资产是可验证的凭证——马利基法学训练、法官家世、苏非师承；进城先找法官、道堂和同乡。</li>
+<li>《游记》是五十岁时凭记忆口述、由伊本·术札伊笔录润色的，部分段落照抄伊本·朱拜尔，中国之行存疑。</li>
+<li>一路买卖和赠送奴隶、在马尔代夫强推断手刑与遮体令，说明他的世界主义始终以马利基教法为边界。</li>
+<li>凭证只在伊斯兰世界内部互认，出了这道边界便一文不值，这既是伊本·白图泰的路径选择，也是他见识的天花板。</li>
+<li>曝光量不自动带来开放性：框架一路管用、从未让人付出代价时，新经验只会被旧框架同化。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="3a4dd843e5853990"><span class="icon">◆</span>【深入思考】</h2>

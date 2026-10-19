@@ -43,6 +43,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -131,6 +143,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2 data-tts="ebd7ce59bcee1b91"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>她的方法论只有一句：<strong>不要优化指令，去改环境的默认值。</strong>孩子不专注，她不加督促，而是锯矮柜子、做轻桌椅、把教具做成能自我校验的形状——柱子放错孔就是放不进去，不需要老师纠错。这是系统设计的语言：把反馈内建进物质，把纠错从人身上卸下来。做 AI 协同同样成立：多数「他们没照做」不是提示词不够严厉，而是正确路径不是最省力的那条。第二条更贵：<strong>她用控制保护纯度，纯度就被保护死了</strong>——不允许分叉，等于选择在自己手里终结。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>心理学 · 心流</b>：女孩把圆柱体嵌板做了四十二遍、被连人带椅搬起都没察觉，几乎就是契克森米哈伊 1990 年《心流》描述的状态：全神贯注、自我消失、活动本身就是回报。像在都把专注看成可被条件触发的常态；不像在契克森米哈伊强调挑战与能力的匹配，蒙台梭利把杠杆放在环境和教具上，几乎不谈难度调节。</li>
+<li><b>心理学 · 过度辩护效应</b>：她废掉奖章与糖果，六十多年后有了实验版本：1973 年 Lepper、Greene 与 Nisbett 让本就爱画画的幼儿园孩子领一张「好玩家」奖状，之后他们自发画画的时间反而下降。外部奖励会改写孩子对「我为什么做」的解释。不同的是，她靠观察孩子把奖章挂到同伴身上当装饰得出结论，没有对照组。</li>
+<li><b>生态心理学 · 可供性</b>：吉布森 1979 年提出「可供性」：环境直接向动物呈现能做什么——够得着的把手就是「可抓」。锯矮的柜子、四岁孩子搬得动的桌椅，正是在设计可供性。像在都把行为放回环境里解释；不像在吉布森描述知觉如何发现可供性，她是反过来动手制造它。</li>
+<li><b>复杂性科学 · 共识主动性</b>：1959 年格拉斯观察白蚁筑巢：个体不听指挥，只对前一只留下的泥块做出反应，协作靠环境里的痕迹完成，这叫 stigmergy。「孩子工作起来像我不存在」同理：秩序存在教具和布置里，而不在老师的指令里。不像的是，白蚁的环境是自己长出来的，她的环境是一个人精心设计的。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>罗马大学医学系起初不收女生，她先读自然科学，1893 年才获准转入，1896 年取得医学学位。</li>
+<li>收容所孩子抓面包屑并非贪食，而是空屋里唯一的感官材料：智力缺陷首先是教育问题，不是医疗问题。</li>
+<li>1907 年蒙台梭利放下大学讲台，接手圣洛伦佐贫民公寓的托儿所，换来一个可以连着失败几年的沙盒。</li>
+<li>一个女孩把圆柱体嵌板做了四十二遍，说明深度专注本是儿童常态，缺的只是允许它发生的环境。</li>
+<li>拆掉教具柜的锁、把柜子锯矮让孩子自己取用，是「改环境默认值，而不是加指令」的典型做法。</li>
+<li>砂纸字母把书写拆成手、眼、耳三条通道分别练习，孩子在没人教写字的情况下自发写出了词。</li>
+<li>撤讲台、废奖章与糖果、做四岁孩子搬得动的桌椅，核心是做减法，并把反馈内建进教具本身。</li>
+<li>儿子马里奥出生后被秘密寄养、长期以「侄子」示人，因为未婚生育足以终结当时一位女医生的职业。</li>
+<li>与墨索里尼政权合作十年换来规模，1934 年因拒绝效忠誓言决裂，全国蒙氏学校关闭、本人流亡。</li>
+<li>蒙台梭利只许本人培训教师、教具只授权特定厂商，加上克伯屈 1914 年的批评，美国蒙氏运动到 1920 年代几乎归零。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="0be986e50c8c0022"><span class="icon">◆</span>【深入思考】</h2>

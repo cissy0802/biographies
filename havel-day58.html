@@ -43,6 +43,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -132,6 +144,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2 data-tts="dae91e9e2fe53946"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>《无权者的权力》里那个菜贩是分布式系统最好的隐喻：他在橱窗贴上「全世界无产者联合起来」，不是因为相信，而是因为大家都贴、不贴会有麻烦。<strong>系统的强度不来自信念，来自每个节点的默认配置。</strong>你无法从中心推翻它，但每个节点都握着一个从未行使的权限：把默认值改掉。真正维持一套坏流程的，从来不是发明它的人，而是一整排「反正大家都这样」的沉默确认。另一半启示在他的失败面：<strong>诊断能力不等于运营能力。</strong>追求「AI 超级个体」时这个陷阱尤其锋利——看清系统的人容易误以为自己也能重建系统，而重建靠的是完全另一套肌肉。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>复杂性科学 · 格兰诺维特的阈值模型（1978）</b>：每个人只在「已加入的人够多」时才行动，结局取决于阈值怎么分布而非平均意愿，挪动一个低阈值者就可能从无事变成雪崩；Kuran 1991 年用「偏好伪装」解释 1989 年东欧为何无人预见，正是这套逻辑。像在宪章十二年不到两千人却最终撬动全国；不像在模型把阈值当成固定的，哈维尔做的恰是用自己的示范去压低别人的阈值。</li>
+<li><b>心理学 · 费斯廷格与卡尔史密斯的诱导服从实验（1959）</b>：只拿 1 美元去对下一位被试说「任务很有趣」的人，事后比拿 20 美元的人更相信任务有趣：理由越小，越要改信念来对齐言行。像菜贩的标语，低成本的小配合久了会长进心里；不像在实验里的人是自欺，哈维尔笔下的菜贩心知肚明，所以才谈得上「停止配合」。</li>
+<li><b>生物进化 · 扎哈维的累赘原理（1975）</b>：只有付得起真实代价的信号才可信，孔雀的大尾巴诚实，正因为它昂贵。拒绝流亡、宁可坐满刑期，就是押上代价换来「可预测」的信用。不像在孔雀的尾巴一直挂着，哈维尔这笔信用一进总统府就开始折旧。</li>
+<li><b>佛学 · 八正道的「正语」</b>：不妄语不是一条信条，而是每次开口时的修习，不问它能换来什么。「活在真实中」同样是日常动作而非纲领，他对希望的定义也近于不执着于果。不像在正语指向放下自我、求个人解脱，哈维尔的真实指向一个公共空间，要承担坐牢这类具体后果。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>哈维尔因「资产阶级出身」被挡在大学门外，从剧院舞台工做起，成为欧洲荒诞派的重要剧作家。</li>
+<li>1976 年为「宇宙塑料人」乐队辩护，是挑对手最难自圆其说的边缘案例当战场，四个月后长出《七七宪章》。</li>
+<li>1979 年拒绝用流亡换自由、坐满四年半刑期，赌的不是体制何时垮台，而是「在场」本身的示范价值。</li>
+<li>1977 年给检察官的一封含糊信被官方宣传成投降：在人人都含糊一点的系统里，含糊就是最有效的合作。</li>
+<li>那次羞耻定下此后二十年的规则：不签可被断章取义的文本，不接受附条件释放，不与当局私下交换。</li>
+<li>狱中通信规则严苛，他顺着规则把家书写成连载四年的哲学书信集《致奥尔嘉》，把限制变成了形式。</li>
+<li>1990 年的仓促大赦和退出军火贸易都是道德正确却没算利益账的决定，后者助燃了斯洛伐克民族主义。</li>
+<li>当年警告人们别信抽象大词的哈维尔，晚年用人权的大词为 1999 年空袭南联盟和伊拉克战争背书。</li>
+<li>系统的强度不来自信念而来自每个节点的默认配置，所以最强的杠杆是停止配合，而不是正面反抗。</li>
+<li>诊断系统的能力不会自动变成运营系统的能力：靠拒绝参与积累的权威，进入系统内部后反而贬值。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="a87ecadec9e2fc2d"><span class="icon">◆</span>【深入思考】</h2>

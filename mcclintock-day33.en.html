@@ -41,6 +41,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -129,6 +141,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <p>McClintock offers the "AI super-individual" a pair of complementary maxims. <strong>First, deep looking is a form of knowing no other route reaches.</strong> In an age where everyone calls on abstract models and secondhand data, her practice of having "a feeling for the organism," of looking "into the system," is exactly what general-purpose tools most easily miss — real insight often comes from long, hands-on, un-outsourced attention to concrete material. <strong>Second, inner conviction must be paired with the duty to be understood.</strong> Her tragedy wasn't holding her ground; it was treating "persuading others" as a chore she could drop. For the independent worker, only ideas that can be retold, tested, and built upon truly create leverage; a genius insight sealed in a drawer is worth half. And beware the romance of the "lone genius" — it both glamorizes needless isolation and obscures the fact that she was, in truth, recognized all along. Look deep, then say clearly what you saw.</p>
 </section>
 
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Philosophy · Polanyi's tacit knowledge</b>: In <i>The Tacit Dimension</i> (1966), Michael Polanyi wrote that "we can know more than we can tell," and her feeling for the corn was exactly that kind of knowing. The difference: Polanyi held that tacit knowledge passes on through apprenticeship, yet she refused to take students, so her feel for the organism left almost no heirs.</li>
+<li><b>Buddhism · the dissolving of observer and observed</b>: Her sense of going "down there" and becoming "part of the system" resembles the meditative collapse of the line between watcher and watched. The direction differs: meditation dissolves the boundary to loosen attachment, while she dissolved it to discriminate one concrete object more finely. Her absorption served sharper distinctions, not letting go.</li>
+<li><b>Psychology · the curse of knowledge</b>: In a 1990 Stanford study, Elizabeth Newton had people tap out familiar songs with a finger. Tappers predicted half their listeners would name the tune; listeners got 3 of 120, because the tapper hears a melody the listener never does. Her 1951 talk worked the same way: after six years inside the pedigrees, the steps she skipped felt self-evident to her, while the audience heard only scattered taps.</li>
+<li><b>Distributed systems · state replication</b>: A node that holds the correct data but stops broadcasting means the network never converges on its state, which is what her 1953 withdrawal did. Unlike a network, though, science did not need her to speak again: independent nodes in bacterial and molecular genetics reproduced transposition on their own.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>McClintock studied essentially one organism, maize, all her life, and at 81 won the 1983 Nobel Prize in Physiology or Medicine unshared.</li>
+<li>In 1941 she quit her University of Missouri post for Cold Spring Harbor, trading security for research free of teaching, students and interruption.</li>
+<li>A small anomaly in 1944, paired mirror-image spots on maize kernels, became a six-year project of hand-planting and tracking every generation.</li>
+<li>The Ac/Ds system showed that genetic elements can cut out of one chromosome site, insert elsewhere, and switch neighboring genes on or off: "jumping genes."</li>
+<li>Her 1951 Cold Spring Harbor talk met silence, partly because of the fixed-beads-on-a-string dogma and partly because of her dense, hard-to-follow delivery.</li>
+<li>From 1953 she largely stopped publishing and lecturing on transposition, choosing withdrawal over persuasion and delaying recognition by a generation.</li>
+<li>Refusing to outsource observation and logging every plant's pedigree herself let McClintock see patterns where others saw only random spotting.</li>
+<li>Nathaniel Comfort argues the "thirty years of neglect" is a myth: peers respected her, but rejected her overreaching claim that controlling elements were the master key.</li>
+<li>Deep specialization carries blind spots: when molecular biology recast gene regulation in terms of DNA and operons, she held on to her own concepts.</li>
+<li>The curse of knowledge explains much of her obscurity: someone who has already seen something struggles to imagine which steps others are missing.</li>
+</ol>
+</section>
 <section class="card think">
 <h2><span class="icon">◆</span>Questions to Sit With</h2>
 <details>

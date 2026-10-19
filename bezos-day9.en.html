@@ -41,6 +41,18 @@ details[open] summary::before{content:"▾ "}
 details div{padding:4px 18px 16px;color:#c8c4b8;font-size:0.95rem;line-height:1.8}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -120,6 +132,32 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2><span class="icon">◆</span>Takeaways for BigCat</h2>
 <p>What Bezos leaves an AI super-individual is not "selling books" but a decision operating system. First, <strong>regret minimization</strong>: when an opportunity is high-risk yet you'd regret abandoning it at 80, stretch the time horizon from a quarter to a lifetime. Second, <strong>one-way vs. two-way doors</strong>: make reversible experiments fast and dare to delegate them to AI; slow down only for the irreversible—exactly the cadence collaboration with AI demands. Third, the <strong>six-page memo</strong> is an antidote to shallowness: when generated content is cheap, forcing yourself to argue in full sentences is what exposes the holes in the logic. But carry the shadow lesson too: never let "good for the user / for efficiency" become an absolution for ruthlessness—your circle of care cannot contain only the customer.</p>
+</section>
+
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Distributed systems · rollbacks and commit points</b>: A two-way door is a feature-flagged rollout you can roll back with one switch; a one-way door is a transaction commit or a column-dropping schema migration, with no undo past that moment. The difference: in a system, reversibility is engineered in advance, while in life you often learn which kind of door it was only afterward.</li>
+<li><b>Psychology · Gilovich and Medvec on regret</b>: In a 1995 Psychological Review paper they showed that in the short run people regret what they did, but looking back over a life they regret what they failed to do. The regret-minimization framework rides exactly this asymmetry in time: view the choice from age 80 and "never tried" outweighs "failed." The difference: psychology describes this as a bias in how people feel, while Bezos turns it into a decision rule. Using a bias as a compass works only if you can afford the risk it points you toward.</li>
+<li><b>Evolutionary biology · exaptation</b>: Gould and Vrba coined the term in 1982 for traits co-opted to a new use, as feathers may have first evolved for warmth and only later for flight. AWS likewise grew as plumbing for Amazon's own retail and was later repurposed into a business sold to everyone. The difference: evolution has no designer, while spinning out AWS was a deliberate strategic bet.</li>
+<li><b>Complexity science · dissipative structures</b>: Prigogine showed that order far from equilibrium survives only on a steady inflow of energy and decays once it stops. "It is always Day 1" makes the same claim: an organization that stops deliberately shaking itself up drifts naturally into the stasis of Day 2. The difference: a dissipative structure is fed by its environment, while a company's Day 1 energy has to be pumped in by its own institutions.</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>In 1994 Bezos left a senior post at D.E. Shaw using the regret-minimization framework, judging the choice from age 80 rather than by the odds.</li>
+<li>Launching S3 and EC2 in 2006 turned a decade of Amazon's own infrastructure pain into a cloud service sold to the whole world.</li>
+<li>AWS now supplies most of Amazon's operating profit, subsidizing the cash burned by retail and devices.</li>
+<li>A $672 million convertible bond issued in February 2000, weeks before the Nasdaq peak, carried Amazon through a stock collapse of over 90%.</li>
+<li>After the "Amazon.bomb" near-death, Amazon's discipline centered on free cash flow rather than the income statement.</li>
+<li>Amazon's key meetings ban slides in favor of narrative memos of up to six pages, read in silence first, which force arguments into full sentences.</li>
+<li>Irreversible one-way doors call for slow care, reversible two-way doors for fast, delegated calls; big companies slow down by treating two-way doors as one-way.</li>
+<li>Amazon tracks warehouse workers' time off task by algorithm and fought unions; Staten Island's JFK8 became its first unionized warehouse only in 2022.</li>
+<li>ProPublica reported in 2021 that Bezos paid zero federal income tax in 2007 and 2011, since unrealized stock gains legally escape an income-based tax system.</li>
+<li>Customer obsession can coexist for decades with ruthlessness toward workers and suppliers, because its circle of care contains only the customer.</li>
+</ol>
 </section>
 
 <section class="card">

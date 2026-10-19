@@ -43,6 +43,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -129,6 +141,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2><span class="icon">◆</span>What BigCat Can Take Away</h2>
 <p><strong>One: swap expensive semantic judgement for a cheap structural signal.</strong> PageRank never understood a page; it counted links. Before building an AI system, ask whether the problem that seems to need a model's judgement has a structural signal that routes around it. <strong>Two: operations and control can be unbundled.</strong> Handing over execution is not handing over direction — most people negotiate the two as one item, and so either concede nothing or concede everything. <strong>Three: a principle that lives only in one person's conviction leaves when they do.</strong> Leaving China in 2010 rested on Brin alone, and Dragonfly was back by 2018; a principle not written into process and review does not exist. <strong>Four: do not set a standard you do not intend to be measured against.</strong> From the day "don't be evil" entered the IPO letter it became the yardstick others would hold them to — the value and the risk of a public commitment are the same thing.</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Complexity science · Preferential attachment</b>: In 1999 Barab&aacute;si and Albert explained why networks grow a few giant hubs: the rich get richer. PageRank ranks pages by exactly that inequality of inbound links. The likeness is that both hand "what matters" to link structure; the difference is that PageRank does not just measure the inequality. Pages ranked on top attract more new links, so the ranking itself accelerates preferential attachment.</li>
+<li><b>Evolutionary biology · Honest signals</b>: Zahavi's 1975 handicap principle says a signal is credible only if it is hard to fake. Early links were placed by hand at real cost, so they were honest votes; SEO made faking cheap, like mimics slipping into a warningly colored population. Unlike nature, though, here one ranker can rewrite the rules unilaterally.</li>
+<li><b>Distributed systems · Control plane vs. data plane</b>: Software-defined networking splits "setting the rules" from "forwarding the packets," just as dual-class shares split control from operations. The difference: an SDN controller's state is visible to the whole network, whereas Alphabet's control layer is precisely the part that never explains its reasoning.</li>
+<li><b>Evolutionary anthropology · Dunbar's number</b>: In 1992 Robin Dunbar estimated that humans can sustain stable relationships in groups of about 150. Some 130 engineers reporting to one director sat almost on that line. Both describe a ceiling on flat coordination; but Dunbar measured social ties, while engineering coordination costs also multiply with interdependence.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Page and Brin were both born in 1973, met at Stanford in 1995, incorporated Google in 1998 and left management in 2019.</li>
+<li>The 1999 Excite deal at $750,000 collapsed mainly because Page demanded Excite replace its whole search engine with Google's, refusing to become a mere feature.</li>
+<li>Accepting Schmidt as CEO in 2001, then a ten-votes-per-share dual-class IPO in 2004, ceded operations while locking control in the founders' hands.</li>
+<li>The 2015 Alphabet restructuring handed the profitable Google to Pichai and left the founders only the moonshots they wanted to run.</li>
+<li>PageRank carried academic citation counting over to web links: whether a page is worth reading is judged by the links pointing to it, not by its content.</li>
+<li>Leaving China in 2010 rested largely on Brin's personal conviction, and the censored Dragonfly project of 2018 showed the principle was never institutionalized.</li>
+<li>Both founders credit Montessori schooling for their habit of demanding a reason for every default.</li>
+<li>The 2001 experiment of abolishing all engineering managers was reversed within months, falsifying the "management is noise" assumption once.</li>
+<li>"Don't be evil" went into the 2004 IPO letter, yet in 2024 Google was ruled an illegal monopoly for paying to lock in default search placement.</li>
+<li>Keeping about 51% of the votes after leaving management, while no longer explaining themselves, turned power without accountability into a liability under regulation.</li>
+</ol>
 </section>
 <section class="card">
 <h2><span class="icon">◆</span>Questions Worth Sitting With</h2>

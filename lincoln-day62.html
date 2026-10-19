@@ -43,6 +43,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -116,6 +128,31 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <h2 data-tts="e56b7effa92ee58e"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>最可迁移的是三段式工序。<strong>把动作设计成对方的选择题</strong>：萨姆特堡只送面包，对方在「默认你的主权」和「向粮船开火」之间自选，两个结果你都能接受。<strong>把内容和时机拆成两个独立变量</strong>：宣言 7 月就写好，但它的价格由战报决定——正确的东西在错误的时刻发出去，效果和错误的东西一样。<strong>趁清醒给未来的自己立字据</strong>：败选备忘录和那些写完不寄的热信是同一类装置，在冲动之前先建好闸门，而不是指望靠意志硬扛。</p>
 <p>刺人的那条同样重要：他的强项是在既定规则内找到可执行的下一格，这套本领对「规则本身该不该存在」天生迟钝。<strong>渐进主义的成本从不记在决策者账上——它记在等待的人身上，而且不会报警。</strong></p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>博弈论 · 谢林的「最后明确机会」（《冲突的策略》，1960）</b>：Schelling 指出，谁把避免冲突的最后机会留给对方，谁就让对方背上开打的责任；萨姆特堡只送面包正是这一招。不像在于：谢林讨论的多是双方都想避免相撞的局面，林肯却两种结局都能接受，他争的只是这笔账记在谁头上。</li>
+<li><b>神经科学 · 情绪标注（Lieberman 等，2007）</b>：fMRI 实验里，把负面情绪用词说出来，杏仁核的反应随之减弱。写完不寄的热信像加长版的标注，怒气落到纸上就泄了压。不像的是，实验只要一个词，他写满一整封信，还多加了一道抽屉的延迟。</li>
+<li><b>神经科学 · 预测加工</b>：这一派认为大脑不断用内部模型预测外界，靠预测误差来修正模型。电报室的原始电文和每周的「舆论浴」，都是绕开层层过滤，直接收误差信号。不像在于：大脑的更新时刻自动发生，他得专门排进日程。</li>
+<li><b>生物进化 · 扩展适应（Gould 与 Vrba，1982）</b>：为一种功能演化出的结构，后来被借去干另一件事，比如羽毛先用来保温、后来才用于飞行。二十年练出的律师辩论功夫，1854 年被奴隶制议题整个征用。不像的是，进化里的挪用全凭偶然，皮奥里亚那场演讲却是他主动接下议题。</li>
+<li><b>行为经济学 · 「明天存更多」（Thaler 与 Benartzi，2004）</b>：员工现在就承诺把未来加薪的一部分存起来，趁清醒替未来的自己做决定，正像败选备忘录。不像在于：这个方案设计得让未来的自己几乎不觉得疼，林肯锁死的却是交出权力这件最疼的事。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>林肯一生正规教育不足一年，靠借书自学成为律师，又因公开质疑美墨战争丢掉国会连任。</li>
+<li>萨姆特堡补给只送食物不送弹药，把开第一枪的选择和责任一起交给了南方。</li>
+<li>《解放黑奴宣言》7 月写好，听从 Seward 的意见等到安提塔姆之后才发布，内容和时机被当成两个独立变量。</li>
+<li>宣言只解放叛乱州的奴隶，因为法律依据是总司令的战时军事必要，碰边界州就会越权被推翻。</li>
+<li>1864 年预感败选时写下配合继任者的备忘录，让内阁在背面盲签，趁清醒锁死未来自己的选项。</li>
+<li>1854 年《堪萨斯—内布拉斯加法案》把半退隐的律师拉回政治，奴隶制议题找到了准备多年的人。</li>
+<li>1858 年参议员选举中他坚持「分裂之家」的激进开场，把一场赢不了的选举变成全国性的立场登记。</li>
+<li>动怒时把信写完锁进抽屉不寄，战时坐在电报室读原始电文，每周用「舆论浴」校准直觉的基准线。</li>
+<li>中止人身保护令、无视 Taney 的裁定，林肯为战时紧急权力的扩张留下了此后反复被援引的说辞。</li>
+<li>林肯的种族观起点远低于神话但确实在移动；复核达科塔案救下 265 人，也签下美国史上最大规模的处决令。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="3a70c6a526c1aa40"><span class="icon">◆</span>【深入思考】</h2>

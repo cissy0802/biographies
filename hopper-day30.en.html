@@ -37,6 +37,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -130,6 +142,32 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2><span class="icon">◆</span>【Takeaways for BigCat】</h2>
 <p>Hopper's life is a textbook on "<strong>lowering the barrier is the greatest lever</strong>." She was not smarter than her contemporaries at writing machine code; she asked a fiercer question: why should humans do the translation the machine does better? — which is precisely the prototype of today's "natural language × AI": let machines understand human speech, and return the priestly privilege of programming to ordinary people. For anyone chasing the "AI super-individual," her methodology is direct: <strong>package your best judgment into an interface others (and machines) can use without understanding the internals</strong>. But take her shadow side along with it — the price of accessibility is COBOL-style technical debt, "usable by everyone yet hard to maintain"; wrapping complexity as simplicity often merely defers it, shifting it onto those who come after. The real mastery is to lower the barrier and yet not pretend the complexity has vanished. Don't be the endlessly replayed slogan; be the clock on the wall that runs backwards.</p>
+</section>
+
+<section class="card crossx">
+<h2><span class="icon">◆</span>【Crossovers】</h2>
+<ul>
+<li><b>Neuroscience · The automation of habit</b>: A well-practiced action is handed off from step-by-step prefrontal control to the basal ganglia, which run it as a packaged chunk and free attention for other things; a compiler likewise hands the repetitive chore of translating into machine code over to the machine. The difference: once the brain packages a routine, its steps vanish from view, while a compiler still leaves source code you can read and audit.</li>
+<li><b>Evolutionary biology · The frozen accident (Francis Crick, 1968)</b>: Crick suggested the genetic code's mapping may not be optimal; it is simply that once all life was built on it, any change would be lethal, so it froze. The COBOL still running in banks is similar: not the best, just too entangled to touch. Unlike the genetic code, migrating software is merely expensive, not impossible; what freezes it is cost and risk, not life and death.</li>
+<li><b>Distributed systems · Optimistic concurrency control (Kung and Robinson, 1981)</b>: Pessimistic locking asks permission before acting; optimistic concurrency acts first, checks for conflicts at commit, and rolls back if needed, which is "easier to ask forgiveness than permission" in protocol form. The difference: a database rollback is nearly free, while acting first in an organization can leave costs no one can undo.</li>
+<li><b>Psychology · Functional fixedness (Karl Duncker)</b>: In Duncker's candle problem, people see the box holding the tacks only as a container and miss that it could serve as a candle holder; the counterclockwise clock is built to break exactly that "things can only be used one way" reflex. The difference: in the experiment the fixedness comes from how objects are presented, while Hopper was breaking an institution's "we've always done it this way."</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>【Ten takeaways】</h2>
+<ol class="takeaways">
+<li>In 1943, Hopper, a 37-year-old Yale math PhD, got around weight and age limits to join the Navy and was sent to Harvard to run the Mark I.</li>
+<li>The war carried a mathematics professor into an industry that did not yet have a name: programming computers.</li>
+<li>The 1952 A-0 system let a machine translate symbolic instructions into machine code itself and is widely seen as the first compiler.</li>
+<li>The motive behind the compiler was plain: people make mistakes copying machine code, so repetitive translation belongs to the machine.</li>
+<li>FLOW-MATIC wrote programs in English-like statements such as IF and ADD and became the main blueprint for COBOL in 1959.</li>
+<li>Making programs readable by accountants and managers was a bet not on a technology but on who gets to use computers at all.</li>
+<li>The Navy's "temporary" recall of Hopper in 1967 lasted 19 years; she retired as a rear admiral in 1986, at 79.</li>
+<li>The nanosecond wire and the counterclockwise clock turned "how short a nanosecond is" and "it need not be done this way" into things you can see.</li>
+<li>COBOL spread programming widely but left verbose, hard-to-maintain code, drawing fierce criticism from computer scientists such as Dijkstra.</li>
+<li>The popular claims that Hopper built the first compiler, invented COBOL and coined "bug" all need discounting; the legend inflated her role.</li>
+</ol>
 </section>
 
 <section class="card">

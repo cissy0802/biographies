@@ -43,6 +43,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -129,6 +141,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2 data-tts="13cd3097fc148ca4"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>德鲁克是「知识工作者」这个词的发明者，而他本人就是一个一千人顶不上的「超级个体」原型——一台打字机、几个问题、一辈子的自学。三样东西可以直接拿走：<strong>其一，每三年逼自己钻进一个全新领域</strong>，对抗知识的折旧；<strong>其二，做重大决定时把预期写下来，事后对账</strong>，这是把直觉变成可校准能力的最便宜方法；<strong>其三，在 AI 让答案变得廉价的时代，把精力押在「问对问题」上</strong>——因为模型能给你一万个答案，却不会替你决定哪个问题值得问。德鲁克一生没掌过权，却影响了所有掌权者，靠的正是这件最不像「生产力」的事。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>神经科学 · 预测编码</b>：「反馈分析」几乎是大脑的工作方式搬到了纸上——Rao 与 Ballard 1999 年的模型里，皮层先发出预测，再只把「预测误差」往上传、用来修正模型。不像的是：大脑每毫秒自动对账，德鲁克一年一次、手写、刻意；也正因为慢且显式，他能看清自己哪类判断一贯出错，而大脑的误差大多从不进入意识。</li>
+<li><b>生物进化 · 边际价值定理</b>：Charnov 1976 年的觅食模型说，动物该在一片草场的收益掉到环境平均水平以下时离开。每三四年换一个领域，像一只主动换草场的觅食者；不像的是，他按日历走而不等收益见底，旧领域也没被丢下，而是成了下一片的养分。</li>
+<li><b>佛学 · 禅宗公案</b>：只问不答的顾问法，和公案同构——不给结论，把一个问题塞给对方，逼他自己把旧框架撞开。区别在落点：公案要人看穿问题本身，「今天还没进入，你会进入吗」要人带着答案去做取舍。</li>
+<li><b>心理学 · 坎贝尔定律</b>：社会心理学家 Donald Campbell 1976 年指出，量化指标越被用于社会决策，就越容易被扭曲、腐蚀它本要监测的过程。目标管理被异化成考核工具正是这条定律的实例：目标本是对话的起点，一挂上奖惩就成了被博弈的数字。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>彼得 · 德鲁克 1909 年生于维也纳，被称为「现代管理学之父」，一生写了 39 本书。</li>
+<li>1933 年他特意写文赞扬犹太裔法哲学家施塔尔，让论文被纳粹查禁，借此断掉自己的退路离开德国。</li>
+<li>1943 年起在通用汽车内部研究 18 个月，写成《公司的概念》，管理学由此成为一门学科。</li>
+<li>在剑桥旁听凯恩斯的研讨课时，他意识到经济学家关心商品的行为，而自己关心的是人的行为。</li>
+<li>每三到四年系统自学一个全新领域，这份终身学习的决心源自 18 岁时听威尔第晚年的歌剧《福斯塔夫》。</li>
+<li>「反馈分析」：重大决定前写下预期，9 到 12 个月后对照真实结果，看清自己哪类判断一贯准、哪类一贯错。</li>
+<li>做顾问只提问不给答案，「如果今天还没进入这桩业务，你会进入吗」一问催生了韦尔奇「数一数二」战略。</li>
+<li>靠观察、案例和散文而非统计实证，德鲁克长期被主流学界视为高明的通俗作家而非社会科学家。</li>
+<li>回忆录《旁观者》被指部分人物和对话经过合成润色，他以「精神上真实」辩护，成了一处诚信瑕疵。</li>
+<li>目标管理本为让员工参与定目标、激发自主，却被异化为考核工具，印证了指标一挂奖惩就会被扭曲。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="fe2a7e9f18894b7e"><span class="icon">◆</span>【深入思考】</h2>

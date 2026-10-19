@@ -43,6 +43,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -126,6 +138,31 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2 data-tts="f6f17e019c86b58b"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p><strong>一，先买时间，再谈产出。</strong>他最高杠杆的一步不是写书，是用一份体面工作换来不附带交付义务的终身现金流——先解除考核，再开始长周期工作。<strong>二，重写旧作常胜过再开新坑</strong>：他三十年只维护两个系统，靠六次修订把它们改成活的。<strong>三，别把道德结论押在效率论据上</strong>——他反奴隶制却论证「它不划算」；今天谈 AI 与自动化同理，「机器做得更差」撑不住太久。<strong>四，你会被读成你没写的样子</strong>：「看不见的手」在他全部著作里只出现三次，却成了他的全部标签。<strong>五，诊断的力度要匹配处方的力度</strong>，否则等于把问题留给下个世纪。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>复杂性科学 · 蚁群的 stigmergy</b>：Grassé 1959 年用这个词描述白蚁：个体只回应局部信号，整体却搭出精巧的巢，价格协调千万人是同一结构。不像在哪：蚂蚁不会合谋，人会，所以斯密要给商人设防火墙。</li>
+<li><b>分布式系统 · 拜占庭容错</b>：Lamport 等人 1982 年的拜占庭将军问题，前提是有些节点会撒谎，协议不能假设参与者善意；斯密对商人立法提议的「长期怀疑」是同一种防御姿态。不像在哪：协议能证明容错上限（坏节点少于三分之一），他只有一句警告，没有阈值，也没有执行机制。</li>
+<li><b>心理学 · 心智理论的模拟论</b>：模拟论认为人读懂他人，是在自己脑中跑一遍对方的处境，正如《道德情操论》开篇靠设身处地讲关心他人。不像在哪：心理学只描述机制，斯密由此推出整套道德秩序。</li>
+<li><b>生物进化 · 洞穴盲鱼</b>：墨西哥盲鱼世代住在黑暗里，用不上的眼睛退化了；分工让工人变钝是同一逻辑，专门化以通用能力为代价。不像在哪：鱼的退化跨越许多代，工人的损耗在一生之内，办学还来得及。</li>
+<li><b>东方哲学 · 治大国若烹小鲜</b>：《老子》第六十章说治大国像煎小鱼，别乱翻；斯密警告「体制中人」把人当棋子摆，是同一种戒心。不像在哪：老子要统治者退场，斯密仍要国家管国防、司法和办学。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>斯密一生只写了两本书，《道德情操论》与《国富论》是同一个系统，市场那部分由道德那部分承重。</li>
+<li>1764 年辞去格拉斯哥讲席、换来终身年金 300 镑，买下的是十年不必向任何雇主交付产出的时间。</li>
+<li>《国富论》起于图卢兹的无聊，为打发时间开写，在巴黎遇到重农学派后补上「经济是自循环系统」。</li>
+<li>《国富论》把商人写成需要防范的一方：同行聚会易成合谋，商人阶层的立法提议都该先经长期怀疑。</li>
+<li>临终前一周坚持烧毁十六卷未完成手稿，让作品的边界由自己划定，而不是由后人从残稿里拼凑。</li>
+<li>悼念休谟的公开信招来十倍于批判商业体系的辱骂，此后斯密终生不再公开写宗教。</li>
+<li>边踱步边口述来思考，把《道德情操论》修订了六版，靠重写旧作而不是写新书来更新自己的思想。</li>
+<li>写完自由贸易后出任苏格兰海关专员十二年，执行自己批判过的关税，却从未公开处理这个矛盾。</li>
+<li>反对奴隶制却押在「奴隶劳动不划算」上，而种植园利润极高，效率账算反，道德结论就塌了。</li>
+<li>《国富论》第五卷承认分工让工人变得愚钝，处方却只有国家办小学，诊断远重于处方。</li>
+</ol>
 </section>
 <section class="card">
 <h2 data-tts="a5118b23cbf45520"><span class="icon">◆</span>【深入思考】</h2>

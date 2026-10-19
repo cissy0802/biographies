@@ -41,6 +41,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -128,6 +140,32 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2><span class="icon">◆</span>Takeaways for BigCat</h2>
 <p>Turing's lesson for the "AI super-individual" lies in the <strong>level of abstraction</strong> at which he solved problems. While everyone hunted for a "smarter algorithm," he asked one level down — what <strong>is</strong> a "mechanical procedure"? That single act of <strong>taking the problem down to the level of definition</strong> conjured the entire theory of computation from nothing: the real leverage often lies not in solving the existing problem faster, but in redefining the frame the problem sits in. But the same gift has a flip side — <strong>being absorbed in thinking things through is not the same as getting the world to use them</strong>, which is exactly why he failed at the NPL. So what to take from him is a tension: the nerve to drop a problem to its lowest level and reinvent it, paired with the patience to land a brilliant idea and make it usable to others. As for his being crushed by his era, that is another warning bell: a person's worth must never be judged by the sex of the person they love.</p>
+</section>
+
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Philosophy of mind · Searle's Chinese Room</b>: In 1980 John Searle imagined a man who knows no Chinese, locked in a room, shuffling symbols by a rulebook while people outside believe someone inside understands Chinese. It targets exactly the swap the Turing test makes: the right behavior is not understanding. Alike in judging only inputs and outputs; unlike in that Searle insists syntax can never yield semantics, while Turing simply sets the question of "understanding" aside.</li>
+<li><b>Buddhism · the five aggregates and no-self</b>: After losing his friend, Turing concluded that mind is just a way matter is organized; Buddhism likewise says the "self" is a passing bundle of form, feeling, perception, formations and consciousness, with no lasting entity behind it. Alike in dismantling the separate soul; unlike in purpose: Buddhism takes the self apart to let go of clinging, Turing to rebuild the mind in a machine.</li>
+<li><b>Distributed systems · FLP impossibility</b>: In 1985 Fischer, Lynch and Paterson proved that in an asynchronous network where even one node may crash, no deterministic algorithm can guarantee consensus. Like the unsolvable decision problem, it draws a hard line around what can be done. Engineers answer in a very Turing way: add timeouts and randomness, and work around it, like counting bicycle-chain turns.</li>
+<li><b>Quantum computing · Deutsch's universal quantum computer</b>: In 1985 David Deutsch carried the universal Turing machine into quantum mechanics, proposing one machine that can simulate any quantum process. Alike as "one machine that simulates all machines"; unlike in that a quantum computer cannot compute anything a Turing machine cannot, it only changes how fast some problems get solved.</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>The 1936 paper "On Computable Numbers" defined computability with a tape, a read/write head and a rule table, and proved Hilbert's decision problem unsolvable.</li>
+<li>A universal Turing machine reads the description of another machine and then runs it, the blueprint of today's stored-program computer.</li>
+<li>The Bombe that broke Enigma was built around known plaintext fragments (cribs) and used logical contradictions to rule out wrong rotor settings automatically.</li>
+<li>Short of staff in 1941, Turing and three colleagues went over their superiors' heads and wrote to Churchill, and the resources arrived the same day.</li>
+<li>The death of his close friend Christopher Morcom in 1930 moved the young Turing from belief in the soul to materialism: a mind could be re-realized in other matter.</li>
+<li>Chaining a mug to the radiator, cycling in a gas mask and counting chain turns all show one habit of mind: fix the problem at the physical level and ignore convention.</li>
+<li>Polish mathematicians led by Rejewski broke Enigma first, and Bletchley Park ran on nearly ten thousand people, so the lone-genius story is a myth.</li>
+<li>The ACE computer design at the National Physical Laboratory was far ahead of its time, but its designer's impatience with engineering compromise and bureaucracy left it delayed for years and heavily simplified.</li>
+<li>Convicted of gross indecency in 1952, he accepted chemical castration; his 1954 cyanide death was ruled suicide, though Copeland argues it may have been an electroplating accident.</li>
+<li>The Turing test swaps "can machines think" for a workable behavioral criterion; language models that fool people without clearly understanding expose its limits.</li>
+</ol>
 </section>
 
 <section class="card think">

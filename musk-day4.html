@@ -42,6 +42,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -115,6 +127,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <span class="src">— SXSW Conference, 2013</span>
 </li>
 </ul>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>生物进化 · 两头下注（bet-hedging）</b>：沙漠一年生植物每年只让一部分种子发芽，牺牲平均收益，换取「坏年景也不至于全军覆没」。把最后的钱对半分给 SpaceX 和 Tesla 是同一个结构：在随机环境里，先保住不灭绝，再谈回报。不像在哪：自然是在成千上万颗种子之间分散风险，他只有两家公司，而且两家都压在死线边缘，分散得极薄。</li>
+<li><b>神经科学 · 突触修剪</b>：大脑在童年先长出过量突触，再把用得少的剪掉，网络反而更高效。「先删除、删错了再加回 10%」像这个过程的逆序版：大脑按使用频率慢慢剪，他是先大刀砍掉，再靠出错的信号补回来。</li>
+<li><b>心理学 · 结果偏差</b>：Baron 与 Hershey 1988 年的实验显示，人们评价一个决定的好坏，会被它碰巧带来的结果左右。对半分如果输了，同一个决定会被写成赌徒病；思考题问的「该坚持还是该止损」，正是要把决策质量和运气拆开看。</li>
+<li><b>东方哲学 · 听其言而观其行</b>：孔子说自己被宰予白天睡觉的事教训后，改为「听其言而观其行」，和「分开他造的东西和他说的话」是同一种纪律。不像在哪：孔子用行动去检验言语是否可信，这里是两本账分开记，造出的火箭不替说错的话抵账。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>2008 年是马斯克的「死亡之年」：Falcon 1 连续三次发射失败，Tesla 现金见底，婚姻同时破裂。</li>
+<li>2008 年底最后的钱没有全押一家，而是在 SpaceX 和 Tesla 之间对半分，因为全押一家可能两家都死。</li>
+<li>危机中的生存被拆成一道方程：现金到账时间对资金消耗速度，让两家公司都只差 30 天活下来。</li>
+<li>2008 年 9 月 Falcon 1 第四次发射入轨，SpaceX 成为第一家用私人资金把液体燃料火箭送入轨道的公司。</li>
+<li>Falcon 1 入轨约三个月后，NASA 把 16 亿美元的空间站补给合同交给 SpaceX，公司由此被认真看待。</li>
+<li>造火箭的起点是第一性原理：算出原材料成本只占火箭售价约 2%，于是决定自己造。</li>
+<li>「算法五步」依次是质疑要求、删除、简化、加速、自动化，顺序反过来做的人会破产。</li>
+<li>用 440 亿美元收购 Twitter 后裁员约 75%，估值几年内被写减到买价的五分之一，工程算法管不好内容平台。</li>
+<li>完全自动驾驶多年承诺未兑现，「funding secured」推文又招来 SEC 罚款，马斯克在对公众说话时反复透支信用。</li>
+<li>读马斯克的纪律是把「他造的东西」和「他说的话」分开记账，两者都看才是完整的人。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="5c82d0f78acd8cb0"><span class="icon">◆</span>【本周思考题】</h2>

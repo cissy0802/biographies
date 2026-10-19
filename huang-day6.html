@@ -47,6 +47,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}.timeline li{padding-left:16px;margin-left:8px}.timeline li::before{position:static;display:block;margin-bottom:4px;text-align:left;width:auto}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -139,6 +151,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <span class="src">— 60 Minutes interview, November 12, 2023</span>
 </li>
 </ul>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>生物进化 · 扩展适应（Gould &amp; Vrba, 1982）</b>：羽毛先为保暖而生，后来才被征用于飞行；GPU 先为游戏画面而生，后来被深度学习征用。像在功能换轨；不像在羽毛的备用能力是演化偶然留下的，而 CUDA 那约 20% 的晶体管，是明知暂时没人用、每年花钱刻意养着的。</li>
+<li><b>心理学 · 防御性悲观（Norem &amp; Cantor, 1986）</b>：有一类人靠预设最坏结果、反复预演失败来驯服焦虑，表现反而更好。「30 天后就倒闭」正是它的组织版本；不同在于，这里把一种个人的应对策略写成了全公司的开会仪式。</li>
+<li><b>分布式系统 · 广播与单点故障</b>：不开一对一、让信息在几十人的会上同时流转，像把点对点消息换成全员广播，减少节点间的信息不一致。但上千封 Top 5 邮件最终汇到 CEO 一人那里，恰是分布式设计最想避免的中心协调者。</li>
+<li><b>佛学 · 苦谛</b>：佛学和「祝你们多吃苦」都把苦当作看清事物的入口，而非要躲开的东西。分歧在终点：佛学要人看穿执着、从苦中解脱，这里却要人带着「公司会死」的恐惧一直紧握不放。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>2006 年发布的 CUDA 让每颗 GPU 多背约 20% 晶体管做通用计算，当时几乎没人需要。</li>
+<li>CUDA 押的不是 AI，而是摩尔定律放缓后并行架构会赢过通用计算这一更底层的物理趋势。</li>
+<li>CUDA 每年烧约 5 亿美元，直到 2012 年 AlexNet 用两块 GTX 580 训练成功才有了杀手级应用。</li>
+<li>首款产品 NV1 押错二次曲面渲染、与 Direct3D 不兼容，1996 年被迫裁员近半、转向三角形多边形。</li>
+<li>没钱做硅片流片测试，就用软件模拟整颗芯片排查 bug，RIVA 128 出厂时账上只剩一个月现金。</li>
+<li>黄仁勋把「公司 30 天后就会倒闭」当作每次高管会的开场白，让危机感成为常态化的内部纪律。</li>
+<li>约 60 个直接下属、不开一对一、每周读高管的 Top 5 邮件，目的是让信息在所有人面前流转。</li>
+<li>9 岁被送进肯塔基一所问题少年寄宿学校的经历，被黄仁勋视为韧性和不抱怨的来源。</li>
+<li>市值登顶的 NVIDIA 面临 CUDA 垄断调查、全靠台积电代工、在中美出口管制间两面受压三重风险。</li>
+<li>GPU 从画游戏画面转去训练神经网络，像进化中的扩展适应，只是这份冗余是黄仁勋刻意付费保留的。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="35a66b6700d092c4"><span class="icon">◆</span>【本周思考题】</h2>

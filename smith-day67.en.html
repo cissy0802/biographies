@@ -43,6 +43,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -122,6 +134,31 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2><span class="icon">◆</span>What BigCat Can Take From This</h2>
 <p><strong>1. Buy the time first, then worry about the output.</strong> His highest-leverage move was not writing a book but converting a respectable job into lifetime cash flow with no delivery attached — remove the review cycle first, then start long-horizon work. <strong>2. Rewriting old work often beats opening new ground</strong>: for thirty years he maintained only two systems and kept them alive through six revisions. <strong>3. Never rest a moral conclusion on an efficiency argument</strong> — he opposed slavery by arguing it "didn't pay"; the same trap waits in today's arguments about AI and automation, where "the machine does it worse" will not hold for long. <strong>4. You will be read as the thing you did not write</strong>: the invisible hand appears three times in his entire corpus and became his whole label. <strong>5. The force of the prescription has to match the force of the diagnosis</strong>, or you have simply handed the problem to the next century.</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Complexity science · stigmergy in insect colonies</b>: Pierre-Paul Grassé coined the word in 1959 for termites: each insect reacts only to local cues, yet the colony builds an intricate nest. Prices coordinating millions of strangers share that structure. The difference: ants cannot meet and collude, people can, which is why Smith built a separate firewall against merchants.</li>
+<li><b>Distributed systems · Byzantine fault tolerance</b>: The 1982 Byzantine Generals paper by Lamport, Shostak and Pease assumes some nodes will lie, so the protocol cannot rely on goodwill. Smith's call for long suspicion of any law proposed by merchants is the same defensive stance. Where it differs: the protocol proves a tolerance bound (fewer than a third faulty); Smith offered a warning, with no threshold and no enforcement.</li>
+<li><b>Psychology · simulation theory of mind</b>: The Theory of Moral Sentiments opens by saying we care about others through imagining ourselves in their place. Simulation theory in psychology holds that we read other minds by running their situation in our own. Both treat empathy as imagination rather than inference; but Smith built a whole moral order on it, while psychology only describes the mechanism.</li>
+<li><b>Evolutionary biology · the blind cavefish</b>: Mexican cavefish living for generations in darkness have lost their eyes: a capacity that goes unused gets dropped. The dulling of workers by the division of labour follows the same logic, specialisation paid for with general ability. Unlike the fish, whose loss accumulates over many generations, a worker's happens within one lifetime, which is why Smith thought schooling could still help.</li>
+<li><b>Eastern philosophy · Laozi on frying a small fish</b>: Chapter 60 of the Laozi says governing a great state is like frying a small fish: do not keep turning it. Smith's warning about the man of system moving people like chess pieces carries the same distrust of meddling. The difference: Laozi's ideal ruler withdraws, while Smith still wanted the state to handle defence, justice and schooling. He wanted clear limits, not inaction.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Smith wrote only two books in his life, and The Theory of Moral Sentiments and The Wealth of Nations form one system in which the moral part carries the weight of the market part.</li>
+<li>Resigning the Glasgow chair in 1764 for a lifetime annuity of 300 pounds bought ten years with no output owed to any employer.</li>
+<li>The Wealth of Nations began as a book started to pass the time in a dull Toulouse, and meeting the Physiocrats in Paris supplied the idea of the economy as a self-circulating system.</li>
+<li>The Wealth of Nations treats merchants as the party to guard against: traders who meet tend to collude, and any law they propose deserves long suspicion.</li>
+<li>Insisting in his last week that sixteen volumes of unfinished manuscripts be burned let him set the boundary of his own work instead of leaving it to be pieced together from fragments.</li>
+<li>His public letter on the serene death of Hume drew ten times the abuse of his attack on the whole commercial system, and Smith never wrote publicly on religion again.</li>
+<li>Thinking by pacing and dictating, he revised The Theory of Moral Sentiments six times, renewing his ideas by rewriting old work rather than writing new books.</li>
+<li>After making the case for free trade, he spent twelve years as a Scottish customs commissioner enforcing the tariffs he had attacked, and never addressed the contradiction in public.</li>
+<li>Opposing slavery on the claim that slave labour did not pay failed because plantations were highly profitable; once the efficiency sum flips, the moral conclusion loses its support.</li>
+<li>Book V of The Wealth of Nations admits that the division of labour dulls workers, yet its only remedy is state-funded schooling, a prescription far weaker than the diagnosis.</li>
+</ol>
 </section>
 <section class="card">
 <h2><span class="icon">◆</span>Questions Worth Sitting With</h2>

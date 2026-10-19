@@ -44,6 +44,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -128,6 +140,31 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2 data-tts="5429238c1e168707"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>他与同代无数游历者的差别不在走得远，在<strong>记录规格</strong>：每天写、同一套格式写、只写可被后人复核的东西（方位、里程、地貌形态）。私人项目要变成资产，靠的不是经历本身，是让经历可被验证的那层结构。第二条是「不亲至不书」——一条抗幻觉的纪律：把「我验证过的」和「我读到的」在输出里分开标注，是与模型协作时最该守住的线。<strong>反面同样值得记：他没有留下机构、传人或副本，成果死后散佚过半，靠几次偶然的私人接力才活下来。</strong>不留结构，等于把三十年押在运气上。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>心理学 · 艾宾浩斯遗忘曲线</b>：艾宾浩斯 1885 年的自测实验显示，遗忘在学完后的头一天最陡。「当天写完、不隔夜」正是卡在曲线最陡的那一段动笔。不像在：他要留住的是方位和里程，不是无意义音节，而且他靠的是外部记录，不是重复记忆。</li>
+<li><b>佛学因明 · 现量与圣言量</b>：陈那把有效认知收窄到现量（亲见）和比量（推理），经典权威不再单独成立。「未亲至不下断言」推翻《禹贡》，是同一个动作：拿亲见加推理，否决经书的证言。不像在：陈那处理的是认识论本身，他只是给地理定了一条实践纪律，从未追问「亲见」本身是否可靠。</li>
+<li><b>分布式系统 · 陈旧缓存</b>：官修地理志层层转抄，像一份没人失效的缓存，错误随副本一起扩散。他随身带《大明一统志》到实地逐条比对，等于绕过缓存直接读源头。不像在：系统可以自动回写更正，他的更正只活在自己的手稿里。</li>
+<li><b>行为经济学 · 承诺装置</b>：谢林 1960 年讲过主动烧掉退路的策略价值，尤利西斯把自己绑上桅杆是古老版本。背静闻的骨灰去鸡足山，把退出的代价从丢面子抬到背叛。不像在：承诺装置是事先设计的，他的是途中被一场死亡推上去的。</li>
+<li><b>认知心理学 · 注意盲视</b>：西蒙斯与沙布里斯 1999 年的「看不见的大猩猩」实验里，专心数传球的人常看不见走过画面的大猩猩。他对外记到「日」、对家中事几乎零记录，同样是省略不留痕迹。不像在：实验里的盲视只持续几秒，他的持续了几十年。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>徐霞客二十出头退出科举，用终身白衣换了一个当时还不存在的「旅行家」身份。</li>
+<li>1636 年 51 岁启程的「万里遐征」，把断续三十年的业余出游升级成不可逆的项目。</li>
+<li>《溯江纪源》凭「未亲至不下断言」推翻《禹贡》岷山导江之说，判金沙江为长江正源。</li>
+<li>前人以岷江为长江正源，错在用政治疆域和正统观念去推断地理。</li>
+<li>1637 年湘江遇盗、行李尽失后，他借贷补齐装备继续南下，没有借机体面回头。</li>
+<li>替静闻和尚把骨灰送到鸡足山，把一段随时可中止的行程变成了不能中止的承诺。</li>
+<li>当天补记、洞必亲入、随身对照《大明一统志》，让《徐霞客游记》成了可复核的材料。</li>
+<li>「布衣独行」的形象背后，是家产、士绅名帖、马牌和寺院供给搭起的补给网。</li>
+<li>被逐侍妾所生的李寄未获徐霞客承认，却是日后搜辑他散佚手稿出力最多的人之一。</li>
+<li>向外精确到日、向内几乎零记录：注意力的方向本身会制造当事人察觉不到的盲点。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="c31e81c93cfde16d"><span class="icon">◆</span>【深入思考】</h2>

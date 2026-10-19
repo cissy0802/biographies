@@ -42,6 +42,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -119,6 +131,31 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <h2><span class="icon">◆</span>What BigCat Can Take Away</h2>
 <p>The most transferable thing is his algorithm for choosing a target. <strong>Do not pick the "most important" problem; pick an action with the lowest threshold, executable by any individual alone, that makes the opponent look absurd for suppressing it</strong> — salt moved an empire not because the salt tax mattered but because it satisfied all three at once. In distributed-systems terms: find the smallest primitive that everyone can run, that needs no coordination, and whose failure does not damage the body, then let scale grow on its own. Second: <strong>anything a single local failure can destroy should not have been scaled up first.</strong></p>
 <p>The third one stings. His ethic places self-purification at the head of the causal chain, so any external failure can be explained as insufficient purity — <strong>an unfalsifiable framework never stops on its own; it keeps raising its demands, and the cost is paid first by whoever is closest to you.</strong> For anyone chasing the "AI super-individual," the trap has almost the same shape: attribute every outcome to the intensity of your own practice, and it is your family who settles the account for that story.</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Game theory · Commitment devices (Thomas Schelling, 1960)</b>: Schelling showed that burning your line of retreat makes a promise credible; turning the 1906 vote into an oath before God did just that. The difference: Schelling's commitments target the opponent, while this oath bound Gandhi's own side first.</li>
+<li><b>Distributed systems · The circuit breaker</b>: One failing service trips the whole call chain so a local fault cannot cascade; halting the national campaign after Chauri Chaura is the same move. Unlike a breaker, which half-opens on its own to test the line, this reset took eight years.</li>
+<li><b>Evolutionary biology · The handicap principle (Amotz Zahavi, 1975)</b>: A peacock's tail is believable because it is costly and cannot be faked; marchers at Dharasana taking blows without striking back sent the same honest signal. The twist: their cost was imposed by the opponent's lathis, so harsher repression made the signal louder.</li>
+<li><b>Psychology · Implementation intentions (Peter Gollwitzer, 1999)</b>: An if-then plan hands behaviour to a cue and spares willpower; the silent Monday has this structure. The difference: it fires on the calendar rather than a situation, a blunter and less negotiable rule.</li>
+<li><b>Philosophy · Kant's formula of humanity (1785)</b>: Kant demands that we treat persons always as ends, never merely as means. Gandhi's insistence that results cannot launder means looks deontological; but his law of purity pointed only at himself, so Ambedkar during the Poona fast and Manu in the Noakhali experiments became means to his discipline, whereas Kant's constraint points precisely at others.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Gandhi went to South Africa in 1893 on a one-year contract, stayed twenty-one years, and there turned diaspora protest into a reproducible method.</li>
+<li>The 1906 mass oath in Johannesburg turned a vote into an irrevocable personal commitment.</li>
+<li>Renaming passive resistance as satyagraha was a deliberate break from the idea of a weapon for the weak.</li>
+<li>After the Chauri Chaura police-station burning, non-cooperation was halted at its peak, because purity of means is nonviolence's only source of power.</li>
+<li>The Salt March target met three tests: the lowest threshold, executable by anyone alone, and absurd for the opponent to suppress.</li>
+<li>Marchers at the Dharasana salt works took the blows without striking back, converting imperial repression into a loss of imperial legitimacy.</li>
+<li>The Pietermaritzburg awakening first demanded only that Indians not be treated like Black Africans; it did not yet reject racial ranking itself.</li>
+<li>Silent Mondays and daily spinning turned convictions into scheduled constraints, so keeping them no longer required willpower.</li>
+<li>Gandhi's 1932 prison fast forced the Poona Pact: nonviolence aimed at oneself was still coercion for Ambedkar and the Dalits.</li>
+<li>A framework that blames every outward failure on insufficient inner purity is unfalsifiable, and its costs fall first on those closest to Gandhi.</li>
+</ol>
 </section>
 <section class="card think">
 <h2><span class="icon">◆</span>Going Deeper</h2>

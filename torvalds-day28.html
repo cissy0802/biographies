@@ -38,6 +38,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -120,6 +132,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2 data-tts="1f522432df6a3be3"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>托瓦兹给「AI 超级个体」的最反直觉一课是：<strong>最大的杠杆来自把控制权让出去，而非攥紧</strong>。他没把 Linux 做成公司、不独占源码，反而用 GPL 和「维护者树」把自己变成一个协调节点——一个人的判断力，通过一套开放机制，放大成千万人的协作产出。在 AI 时代，个体的边界不再是「我能亲手做多少」，而是「我能设计出什么机制/工具，让别人（和 agent）的贡献自动汇聚、且不被某一方私有化」。同时记住他的阴面作为警钟：工具能无限放大你的能力，也会无限放大你对人的态度——技术上的正确，不豁免沟通上的伤害。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>分布式系统 · 最终一致性</b>：Git 让每个人带着完整历史各自分叉、事后再合并，和分布式数据库放弃中心强一致、换取可用性是同一笔交易。不像的是，数据库靠算法自动收敛，Git 的冲突最后仍要人来裁决。</li>
+<li><b>经济学 · Ostrom 的公地治理</b>：Elinor Ostrom 研究渔场、灌溉渠这类公地，发现社区自定规则、互相监督、逐级惩罚，就能躲开「公地悲剧」，2009 年因此获诺贝尔经济学奖。GPL 加维护者树很像这套自治；不像的是代码复制零成本、用不完，而且 Linux 的顶端还坐着一位最终裁决者。</li>
+<li><b>认知心理学 · Chase 与 Simon 的组块</b>：1973 年 Chase 和 Simon 发现，象棋大师扫一眼就能复原真实棋局，棋子随机摆放时却和新手差不多。托瓦兹一眼看出补丁有没有问题，靠的也是多年攒下的模式库；这份直觉离开熟悉的代码就会失灵。</li>
+<li><b>生物进化 · Hox 基因的保守</b>：从果蝇到人，决定身体前后轴的 Hox 基因跨越五亿多年仍高度相似，因为下游太多结构依赖它，一改就致命。「永不破坏用户空间」是同一个结构；不像的是，进化没有守门人，保守是自然选择淘汰出来的，不是谁定的规矩。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>Linux 0.01 版自带的许可证禁止收费，反而堵死了商业发行，没人有动力去打包和推广。</li>
+<li>1992 年改用 GPL：可以卖钱，但改动必须开源，正因谁都拿不走，企业和贡献者才敢加入。</li>
+<li>2005 年 BitKeeper 撤销免费授权后，Torvalds 几天内就让 Git 管理起自己的源码，两个月完成内核迁移。</li>
+<li>Git 的分布式设计让每人持有完整历史、不依赖中心服务器，并用内容哈希保证完整性。</li>
+<li>Linux 起于给 386 电脑写的终端仿真程序，名字是 FTP 管理员 Ari Lemmke 起的，作者本想叫 Freax。</li>
+<li>内核守门靠直接阅读补丁差异和分层的维护者树：副手各管子系统，最终取舍只在顶层。</li>
+<li>「永不破坏用户空间」是内核铁律：内部怎么重构都行，已有的用户程序绝不能失效。</li>
+<li>公开羞辱式的邮件文化把新人和少数群体挡在门外；2018 年 Torvalds 公开道歉、暂离学共情，社区引入行为准则。</li>
+<li>「仁慈独裁者」治理效率极高，却让全球关键基础设施单点依赖一个人的判断和性情。</li>
+<li>「永不破坏用户空间」和 Hox 基因的高度保守同构：下游依赖越多的接口，越不能改。</li>
+</ol>
 </section>
 <section class="card">
 <h2 data-tts="426039d8ca88ee64"><span class="icon">◆</span>【深入思考】</h2>

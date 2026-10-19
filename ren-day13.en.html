@@ -42,6 +42,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -125,6 +137,32 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2><span class="icon">◆</span>[Takeaway for BigCat]</h2>
 <p>What's most worth taking from Ren is <strong>"manufacturing a sense of crisis at the peak" and "decoupling value from personal ownership"</strong>: he doesn't paint visions, but drives the organization with real fear; holding only 1% and dispersing the value, he buys long-term loyalty. For anyone pursuing the "AI super-individual," this is a form of antifragility: deliberately fielding a "Blue Army" to oppose yourself. But he is also a warning mirror: <strong>when efficiency and "striving" are pushed to the extreme, the first thing sacrificed is usually the hardest to quantify yet most irreversible — the human being itself</strong>. Learn his crisis-sense and self-criticism; skip the mattress that grinds people dry.</p>
+</section>
+
+<section class="card crossx">
+<h2><span class="icon">◆</span>[Crossovers]</h2>
+<ul>
+<li><b>Distributed systems · Chaos engineering</b>: Netflix's Chaos Monkey, made public in 2011, randomly kills servers in production so the system learns to survive failure on an ordinary day. Huawei's "Blue Army" has the same structure: attack yourself while you can still afford to lose. The difference: Chaos Monkey hits infrastructure at random, the Blue Army hits strategy on purpose, and attacker and defender are the same people.</li>
+<li><b>Psychology · Yerkes–Dodson law</b>: In 1908 Yerkes and Dodson found that arousal and performance trace an inverted U: moderate pressure helps, and past the peak performance collapses. Fear as fuel works on the left side of the curve; mattress culture pushed people onto the right.</li>
+<li><b>Neuroscience · Three stages of skill learning</b>: Fitts and Posner (1967) split motor learning into cognitive, associative and autonomous stages: copy step by step, then refine, then stop thinking about it. "Rigidify, then optimize, then solidify" is nearly the same map, with the learner swapped from one brain to an organization of tens of thousands.</li>
+<li><b>Buddhism · The Middle Way</b>: The Buddha took a middle path between asceticism and indulgence, refusing either-or. Ren's "gray" also refuses black and white, but points the other way: the Middle Way is for letting go, while gray is for grabbing a direction faster in the chaos.</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>[Ten takeaways]</h2>
+<ol class="takeaways">
+<li>Ren Zhengfei, born in 1944 to a poor teacher's family in Guizhou, founded Huawei at 43 with 21,000 borrowed yuan after being swindled in Shenzhen.</li>
+<li>Around 1991 Huawei bet all its switch-reselling profit on building the C&amp;C08 in-house; mass production in 1993 gave it its first core technology.</li>
+<li>Walking away from a comfortable middleman business toward near-fatal in-house R&amp;D was where Huawei's long-termism began.</li>
+<li>From 1997 Huawei paid IBM billions to install IPD and ISC: copy first, refine later, then lock it in, turning a scrappy firm into a process-driven one.</li>
+<li>In 2000–2001, at the summit, his protege Li Yinan defected, his mother died in a car crash, and Ren himself fought depression and anxiety.</li>
+<li>"Huawei's Winter" issued its coldest warning at the company's sales peak; the crisis-sense grew from real fear and loss, not posture.</li>
+<li>Huawei keeps a "Blue Army" unit whose only job is to attack its own strategy, making self-criticism an institution rather than a virtue, a corporate chaos engineering.</li>
+<li>Ren disdains grand talk, stays almost invisible, and holds only about 1% of the company he founded, spreading virtual restricted shares across a hundred thousand-plus employees.</li>
+<li>Striver agreements and mattress culture drove efficiency; the 2006 death of engineer Hu Xinyu exposed the cost of treating people as parts.</li>
+<li>Union-held ownership keeps outside suspicion impossible to prove or dispel, while the Cisco lawsuit and the Meng Wanzhou case added IP and sanctions shadows.</li>
+</ol>
 </section>
 
 <section class="card">

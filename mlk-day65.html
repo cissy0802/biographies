@@ -43,6 +43,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -129,6 +141,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2 data-tts="37f1a0abb47838b5"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p><strong>一，产出稳定靠模块，不靠状态。</strong>把洞见沉淀成可复用、可临场重排的成品段落，比每次从空白开始更接近工程化。<strong>二，「白人温和派」那一段值得反复读。</strong>阻力最常见的形态不是反对，而是「方向没错，只是时机不合适」——这种偏好秩序甚于正义的否决，比明确的反对更难对付。<strong>三，声望是资产，不花就只是名声。</strong>该问的不是「我攒了多少影响力」，而是「我打算拿它换什么」。<strong>四，单点领袖是架构缺陷。</strong>这在分布式系统里是常识：围绕单节点建成的系统，上限和寿命都由那个节点决定。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>神经科学 · 情绪标注</b>：Lieberman 等人 2007 年的 fMRI 实验发现，把情绪用词说出来，杏仁核的反应会减弱。厨房那一夜之后他在讲道里反复复述自己的恐惧，像是把「贴标签」放大到上千人一起做；不像在于，实验测的是个人几秒钟的反应，他要的是一群人在炸弹威胁下长期不散。</li>
+<li><b>生物进化 · 外显子重排</b>：Walter Gilbert 1978 年提出，新蛋白常靠把现成的功能片段重新拼接得来，而不是从零进化。他的讲道模块是同一个结构；不同在于进化没有预见，他却按台下的情绪当场挑选拼哪一段。</li>
+<li><b>心理学 · 可得性启发</b>：Tversky 和 Kahneman 1973 年指出，人按「多容易想起画面」判断一件事有多常见、多严重。伯明翰的警犬水枪极易入脑，芝加哥的贷款标准没有画面；他在南方借了这条偏差的力，到北方被同一条偏差挡住。</li>
+<li><b>西方哲学 · 语言游戏</b>：维特根斯坦在《哲学研究》里说，一个动作的意义取决于它所在那局「游戏」的规则。「借用」在口传讲坛里是传承，在博士论文里是抄袭，正是同一动作落进两局游戏；只是维特根斯坦只做描述，学术那一局带着罚则。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>1955 年金被推上蒙哥马利改进协会主席，主要因为他刚到 15 个月、没得罪任何派系。</li>
+<li>有些位子只发给没有历史包袱的人，而这种机会从来不给准备时间。</li>
+<li>1963 年伯明翰运动瘫痪时，他选择受难日入狱，用自己的身体制造新事实，而不是去修资源。</li>
+<li>1967 年 Riverside 反越战演说把声望一次押上，换来 NAACP 划清界限和主流舆论围攻。</li>
+<li>1956 年厨房那一夜之后，他把恐惧变成可以公开谈论的东西，由此成为运动的人。</li>
+<li>南方的敌人能被拍照，北方的歧视藏在贷款标准里不出镜，这是 1966 年芝加哥受挫的根源。</li>
+<li>「我有一个梦」是现成讲道模块的临场重排：稳定产出靠可复用模块，不靠灵感。</li>
+<li>FBI 窃听证实了长期婚外关系，但 2019 年那项最重的指控证据链不足，两句都要讲。</li>
+<li>博士论文抄袭与模块化讲道是同一习惯：口传讲坛里的美德，到学术里就成了造假。</li>
+<li>SCLC 围着金一个人转，Ella Baker 批评的正是这种单点领袖模式；他死时远不如今天受欢迎。</li>
+</ol>
 </section>
 <section class="card">
 <h2 data-tts="b501be86bb83fe01"><span class="icon">◆</span>【深入思考】</h2>

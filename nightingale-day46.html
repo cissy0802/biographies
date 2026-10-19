@@ -38,6 +38,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -107,6 +119,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2 data-tts="1090f103a50193a4"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>南丁格尔几乎是「数据驱动决策」与「信息设计」的守护神。她给追求 AI 超级个体的你最锋利的一课是：<strong>数据本身不改变世界，能被决策者一眼看懂的数据才改变世界</strong>——玫瑰图的本质，是把枯燥的统计报告压缩成一个无法反驳的视觉事实。在信息过载的时代，把复杂真相「翻译」成决策者能瞬间吸收的形式，本身就是权力。第二课是她的杠杆结构：一张病床、一支笔、一套严谨的数据，就遥控了一个帝国的公共卫生——这是工业时代之前的「超级个体」，靠的不是亲力亲为，而是用最省的媒介撬动系统级改变。但也请听见警钟：她的干预奏效靠好方法，病因理论却是错的——<strong>方法对，可能长期掩盖你因果模型的错</strong>；同时，她把盟友当燃料烧尽提醒你：系统性改变若以耗尽身边人为代价，终会反噬。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>认知心理学 · 特征整合理论</b>：Anne Treisman 1980 年提出，颜色、大小这类特征在注意力介入之前就被视觉系统并行抓取。玫瑰图押的正是这一层：那一大片蓝色不用读就「跳出来」。不像的是，人眼估面积会系统性偏小（Stevens 幂律里面积的指数约 0.7），所以那片蓝真实的分量，其实比看上去还要大。</li>
+<li><b>哲学 · 葛梯尔问题</b>：Edmund Gettier 1963 年指出，有理由、又碰巧为真的信念未必算知识。南丁格尔的「通风能救命」正是如此：理由（瘴气）错了，结论却对。不同在于葛梯尔谈的是信念，她押的是行动——行动一奏效就被奖励，错的理由也跟着被强化。</li>
+<li><b>心理学 · 注意力残留</b>：Sophie Leroy 2009 年的研究发现，从一件事切到另一件事时，部分注意力会粘在上一件上。南丁格尔只按预约、一次见一人，等于从制度上消灭了切换。不像实验室的是，她的屏障不是时间管理技巧，而是一个赔上全部社交生活的身份。</li>
+<li><b>分布式系统 · 单 leader 架构</b>：Raft 这类共识协议让所有写操作都经过同一个 leader，决策快、口径一致，代价是一切都压在这一个点上。南丁格尔从病床上统揽一切正是这种结构；不同在于 Raft 的 leader 倒下会重新选举，而她身边被持续高负载压垮的 Herbert，系统里没有备份。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>南丁格尔 1849 年拒绝了追求她九年的 Monckton Milnes，选了在当时近乎社会性自杀的护士之路。</li>
+<li>1854 年克里米亚战争中，她率 38 名护士赴斯库塔里军医院，「提灯女神」的形象由此传遍世界。</li>
+<li>克里米亚战争中死于可预防疾病的士兵是死于战伤者的数倍，这组数字成了她 1856 年说服女王的弹药。</li>
+<li>1858 年发明的玫瑰图用扇形面积呈现每月死因，让不读表格的决策者一眼看懂真相。</li>
+<li>斯库塔里的死亡率在她到任后不降反升，真正扭转局面的是 1855 年 3 月抵达、清理下水道的卫生委员会。</li>
+<li>战后复盘发现自己管的医院死亡率曾居全军前列，这份自责驱动了她后半生的统计与卫生改革。</li>
+<li>37 岁起卧床半个多世纪，她从病床上写下约一万三千封信、约两百份报告，遥控英国陆军与印度的卫生改革。</li>
+<li>只按预约、一次只见一人，把「病人」身份变成挡掉社交义务、抢出专注时间的工具。</li>
+<li>终身信奉瘴气论的南丁格尔靠通风和洁净水救了人，是「用错误的理论做对了事」的典型，像行动版的葛梯尔问题。</li>
+<li>控制欲强、把盟友当燃料烧尽，又对同时代的妇女运动冷漠，是她成就背后的阴面。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="3c52786b24b0b244"><span class="icon">◆</span>【深入思考】</h2>

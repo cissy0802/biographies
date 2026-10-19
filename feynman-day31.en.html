@@ -37,6 +37,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -128,6 +140,32 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2><span class="icon">◆</span>Takeaways for BigCat</h2>
 <p>What is most transferable about Feynman is not talent but an <strong>operating system for "refusing to fool yourself"</strong>: every conclusion must be one you can derive from scratch, or it counts as "not yet truly understood." For anyone chasing the "AI super-individual," this is precisely the moat against information overload and AI hallucination — not memorizing more answers, but keeping the capacity to take apart and rebuild every conclusion by hand. But he also leaves a warning: intellectual honesty does not automatically upgrade into moral honesty. <strong>Being honest with yourself — physics is only the easy domain; the hard part is turning the same ruler on the places that make you uncomfortable.</strong></p>
+</section>
+
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Neuroscience · Gazzaniga's "interpreter"</b>: In split-brain patients, the left hemisphere instantly invents a plausible reason for what the right hemisphere did, and believes it. "You are the easiest person to fool" gets a mechanism here: the brain issues conclusions first and writes the story afterward. The difference: Feynman thought discipline could switch it off; neuroscience says it never stops, and can only be checked after the fact.</li>
+<li><b>Sociology · Diane Vaughan's "normalization of deviance"</b>: Her 1996 book on Challenger argues nobody lied; each "eroded but fine" O-ring made the risk a little more normal. Both see an organization fooling itself, but Feynman blamed PR overriding reality, while Vaughan locates the danger in everyday rule-following.</li>
+<li><b>Psychology · Wallas's "incubation"</b>: In 1926 Graham Wallas split creativity into preparation, incubation, illumination and verification; setting a problem aside lets the answer surface. Feynman's spinning plate looks like incubation, except incubation still circles an open problem, and his play had no problem at all.</li>
+<li><b>Buddhism · seeing things as they are</b>: Buddhism treats seeing reality as it is as the precondition of liberation, and like Feynman it ranks self-deception as the chief obstacle. The split is in the target: Buddhism looks through the self itself; Feynman audited conclusions and never put his performing self on the test bench.</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Work on quantum electrodynamics won the 1965 Nobel Prize in Physics, and Feynman diagrams became the common language of particle physics.</li>
+<li>Joining the Manhattan Project in 1943 came from fear that the Nazis would build the bomb first, not from any enthusiasm for weapons.</li>
+<li>Turning down the teaching-free Institute for Advanced Study made sense because teaching steadies you when research stalls and often sparks new ideas.</li>
+<li>At the Challenger hearing, an O-ring dipped in ice water showed in public that cold robs the seal of its resilience.</li>
+<li>NASA management put the odds of failure at one in 100,000; front-line engineers said about one in 100, a thousandfold gap.</li>
+<li>Two barren years after his wife's death ended with a just-for-fun calculation of a wobbling plate that led all the way to quantum electrodynamics.</li>
+<li>The "Notebook Of Things I Don't Know" stands for a habit: rebuild every conclusion from scratch by hand instead of memorizing it.</li>
+<li>After Germany surrendered and the Manhattan Project turned toward Japan, Feynman later admitted he never stopped to reconsider whether to go on.</li>
+<li>The ice-water demonstration was no solo discovery: Air Force general Kutyna had privately given Feynman the key hint about the O-rings.</li>
+<li>Intellectual honesty does not automatically extend into moral honesty; a man who never fooled himself about physics still had blind spots about women and weapons.</li>
+</ol>
 </section>
 
 <section class="card">

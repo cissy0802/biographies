@@ -43,6 +43,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -122,6 +134,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2><span class="icon">◆</span>Takeaways for BigCat</h2>
 <p>What she offers is not an inspirational story but <strong>an engineering solution for collaborating long-term with something that cannot be fixed</strong>. She does not wait to feel well before working, and does not expect a cure; she redefines her most unstable variables — hallucination, anxiety — from "faults to be eliminated" into "raw material," then builds rigid structure around them: a fixed route, fixed hours, non-core steps outsourced, only the irreplaceable layer kept for herself. <strong>For anyone chasing the "super-individual," the real leverage rarely comes from removing your own instability; it comes from designing a system that can hold it and still ship, day after day.</strong> Second, the compounding of a single motif: seventy years doing one thing — covering every surface with a repeating unit — from canvas to mirror room to handbag. The medium changed seven or eight times; the formal language never did. Third, a warning: her control over her own narrative is so seamless that it doubles as a moat, which is also why the stains in her old writing went unexamined for decades. <strong>People who tell their own story too tightly have usually stopped being corrected.</strong></p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Psychology · Exposure therapy</b>: Sewing the thing she feared most into thousands of objects and covering sofas and boats with them shares the structure of exposure therapy: face the stimulus again and again until habituation dulls the fear response. The difference: clinical exposure is graded and guided by a therapist, while she dosed herself at full strength and turned the treatment into a public exhibition.</li>
+<li><b>Buddhism · Non-self</b>: "Self-obliteration" and the Buddhist doctrine of anatta point to the same place: the boundary of the self can be loosened, and the dots dissolve the body into its surroundings. The difference: Buddhism sees through the self by quiet contemplation, she does it through loud spectacle, and while urging viewers to forget themselves she built "Kusama" into one of the most recognizable personal brands in the world.</li>
+<li><b>Neuroscience · Controlled hallucination</b>: The neuroscientist Anil Seth calls ordinary perception a "controlled hallucination": the brain predicts first, then uses sensory signals to correct the guess. A hallucination can be read as that correction loop going slack, so the prediction is taken for reality. She paints the prediction outward, where others can see and check it, giving a private hallucination a public anchor.</li>
+<li><b>Distributed systems · "Let it crash"</b>: Erlang's design philosophy does not aim for processes that never fail; it accepts that failure will happen and assigns a supervisor to catch it and restart. The hospital-studio pair is a supervision tree: at night the hospital absorbs the crash, by day the studio keeps shipping, one street apart. The difference: a crashed Erlang process restarts clean, while she has no restart option and must keep running with her whole history, so the supervisor has to live next door rather than arrive after the failure.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Yayoi Kusama began having visual and auditory hallucinations around age ten, and they were never cured.</li>
+<li>In 1955 she wrote to a stranger, Georgia O'Keeffe, and the reply pointed her toward New York.</li>
+<li>Before leaving for America in 1957 she burned thousands of early works on a riverbank to cut off any way back.</li>
+<li>Stopped on the Venice lawn in 1966 for the uninvited Narcissus Garden, she returned in 1993 as Japan's solo pavilion artist.</li>
+<li>In 1977 Kusama checked herself into a psychiatric hospital and opened a studio across the street, commuting daily for nearly fifty years.</li>
+<li>Her "self-therapy art" copies a feared object thousands of times until it loses its threat, much like exposure therapy.</li>
+<li>Her claims that Oldenburg and Warhol took her ideas have some priority in the timeline, but the "buried pioneer" image is also self-curated.</li>
+<li>Racist passages in her early writing, surfaced in 2023, show that suffering oppression grants no moral exemption.</li>
+<li>Louis Vuitton collaborations and thirty-second mirror-room visits compress art born of hallucination and self-dissolution into a selfie backdrop.</li>
+<li>Working long-term with something unfixable means treating the unstable variable as raw material and building rigid routines around it.</li>
+</ol>
 </section>
 <section class="card think">
 <h2><span class="icon">◆</span>Going Deeper</h2>

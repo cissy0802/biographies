@@ -41,6 +41,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -120,6 +132,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2 data-tts="9ecfdb688c1359a7"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>库克最可拿走的是<strong>「接棒者的智慧」与「把无聊做到极致」</strong>。其一是不模仿：接手任何强大的前任或旧系统，照搬是最大陷阱，他的解法是放大自己真正的长处。对追求 AI 超级个体的人——你不必是乔布斯式的全能天才，把一件别人觉得「不性感」的事（运营、工程化、供应链）做到世界级，同样是决定性杠杆；在「人机协同」里，定义对的指标、连问十遍「为什么」的运营心智，恰是机器最难替代、人最该补位的部分。其二是他的警镜——<strong>当个人价值观与最大利益相撞时，言行的一致性会被反复检验</strong>。「中国双标」提醒：原则若只在低成本时坚持，就不再是原则。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>运筹学 · Little 定律</b>：1961 年 John Little 证明，系统里的平均存量等于流入速率乘以平均停留时间。库克把库存从一个月压到几天，就是在出货量不变时只砍「停留时间」这一项。不像在于定律只管平均，不管断供的那一天。</li>
+<li><b>心理学 · 直觉何时可信</b>：Kahneman 与 Klein 2009 年合写论文，结论是直觉只在规律稳定、反馈及时的环境里靠得住，比如消防员和棋手。库克「五分钟决定」看着像专家直觉的瞬时判断；不像在于跳槽一生只有几次、没有反馈可练，这份直觉更接近对一个人和一个窗口的押注，而不是熟练的模式识别。</li>
+<li><b>复杂性科学 · 高度优化容忍（HOT）</b>：Carlson 与 Doyle 1999 年提出，为常见扰动高度优化的系统，对罕见扰动反而格外脆弱。按天计的库存对日常波动极高效，一次亚洲供应链出事就得有人当天飞去中国盯着——效率和冗余是同一笔账的两面。</li>
+<li><b>佛学 · 临济「逢佛杀佛」</b>：临济义玄要弟子别把祖师当拐杖，自己见性。乔布斯不让库克问「我会怎么做」，结构相同：传承最好的方式是不复制传承者。不像在于临济破的是一切执着，乔布斯破的只是对他个人的依赖，苹果的价值观仍要接着守。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>库克出身阿拉巴马工人家庭，学工业工程，在 IBM 做了 12 年供应链，是苹果的运营大脑而非产品天才。</li>
+<li>1998 年他放弃 Compaq 副总裁的稳妥前途，加入刚亏损约 10 亿美元、被认为离破产不到一个季度的苹果。</li>
+<li>一个以数据和理性著称的运营专家，在跳槽苹果这个人生关键抉择上，只面谈五分钟就听从了直觉。</li>
+<li>关闭自有工厂和多数仓库、把制造外包给富士康等代工厂，苹果的库存周转从约一个月压到几天。</li>
+<li>把库存当会过期的鲜奶来管，运营就从降本工具变成战略武器，撑起 iPhone 的全球铺货和高利润率。</li>
+<li>乔布斯临终前嘱咐接班人别去揣摩「他会怎么做」，以免苹果重蹈迪士尼在沃尔特死后的覆辙。</li>
+<li>接棒后库克不模仿乔布斯，把产品设计话语权下放给团队，自己专注运营、资本配置与价值观。</li>
+<li>2014 年在《彭博商业周刊》撰文出柜，库克成为《财富》500 强中首位公开出柜的 CEO。</li>
+<li>拒绝为 FBI 给 iPhone 开后门，在中国却下架 VPN、迁移 iCloud 数据，被批评隐私原则只在低成本时坚持。</li>
+<li>苹果市值从约 3500 亿美元涨到 3 万亿美元以上，但新品类少、依赖 iPhone，「守成有余、创新不足」之问一直跟着他。</li>
+</ol>
 </section>
 <section class="card">
 <h2 data-tts="172893456dd9e020"><span class="icon">◆</span>【深入思考】</h2>

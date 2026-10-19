@@ -44,6 +44,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -131,6 +143,31 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2 data-tts="1f858af1b194edb9"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>最可迁移的是<strong>「降维成一个动作」</strong>：面对多因素纠缠、无人负责、指标模糊的大问题，先别写方案，先找出那个「最小的、今天就能做、完成与否可客观验收」的单元。树活着，就是她的验收函数。第二，<strong>激励绑在结果上而不是动作上</strong>——按存活付钱而不是按种植量付钱，一字之差决定三十年后是森林还是数据；任何靠分布式节点执行的系统都适用：验收标准放错位置，规模越大偏差越大。第三，读她的账单：<strong>她把自己做成了组织的单点</strong>，声望、资金、对抗能力集中于一人，代价是自治叙事与真实结构不符。<strong>如果一套方法只有你能执行，你造的不是系统，是依赖。</strong></p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>生物进化 · 自然选择</b>：按「活下来的苗」付钱，和自然选择只按存活与繁殖计分是同一个结构：努力、姿态、种了多少都不算，只有结果被留下。不像的是，自然选择没有设计者，而她是有意把验收函数交给了自然。</li>
+<li><b>复杂性科学 · 蚁群的 stigmergy（Grassé，1959）</b>：法国昆虫学家 Grassé 研究白蚁筑巢时提出「共识主动性」：个体不听指挥，只对环境里前人留下的痕迹作出反应，巨巢就这样长出来。数千个乡村苗圃也没有中央调度，成活的树本身就是下一步该做什么的信号。差别在于，白蚁不需要现金，也不会把苗插进土里就走——人需要她设计的激励来补上这一环。</li>
+<li><b>佛学 · 庞蕴「运水及搬柴」</b>：唐代庞居士说神通妙用不过是运水搬柴，把宏大的觉悟落到当天手上的一件小事，和她把贫困、水土流失压缩成挖一个坑同构。不同在于禅门的搬柴不求结果，她的种树恰恰要三个月后验收。</li>
+<li><b>心理学 · 习得性无助（Maier & Seligman，2016）</b>：Seligman 五十年后修正了自己的理论：面对厄运，被动是默认反应，「我能控制」反而要靠经验学会。乡村妇女亲手养活一棵苗、领到现金，学的正是这份控制感；蜂鸟寓言讲的也是同一件事。</li>
+<li><b>行为生态学 · Zahavi 的累赘原理（1975）</b>：信号之所以可信，是因为发出它要付真实代价，比如孔雀的长尾。挨打流血的照片、母亲们当众裸身，正是代价高到无法伪装的政治信号。不像的是，这一理论在生物学里至今仍有争议，而她的代价是被迫承受的，不是演化出来的。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>1971 年获内罗毕大学博士学位，马塔伊成为东非与中非第一位女博士。</li>
+<li>1977 年世界环境日在内罗毕 Kamukunji 公园种下七棵树，绿带运动由此开始。</li>
+<li>把没柴烧、水浑、地贫、孩子营养不良这一串困境，压缩成不识字的农妇当天能做、三个月后可验的种树。</li>
+<li>按存活满数月的树苗付钱而非按种下棵数付钱，把验收标准交给自然，让数千苗圃无中央监管运转三十年。</li>
+<li>绕开林业专业资质，直接培训乡村妇女建苗圃，项目的所有权留在村里而不在部委。</li>
+<li>1989 年阻止乌呼鲁公园 60 层大楼，外资次年撤出，马塔伊从此被当作反对派人物。</li>
+<li>1992 年「自由角」绝食遭警棍打昏，在场母亲当众裸身诅咒，此后她把身体本身当作政治媒介。</li>
+<li>1979 年离婚后被判不得再用夫姓，她把 Mathai 写成 Maathai，既服从判决又什么也没交出去。</li>
+<li>2004 年称 HIV 为实验室制造的生物武器，是科学训练出身者在致命疾病上散布阴谋论的真实伤害。</li>
+<li>马塔伊最有效的位置是体制外的对抗者，而她本人成为声望和资金的单点，与运动的自治纲领相矛盾。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="5553a0fafd8ce039"><span class="icon">◆</span>【深入思考】</h2>

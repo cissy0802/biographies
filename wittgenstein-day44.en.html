@@ -38,6 +38,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -107,6 +119,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2><span class="icon">◆</span>Takeaways for BigCat</h2>
 <p>Wittgenstein's sharpest lesson for the "AI super-individual" is <strong>the courage to overturn the framework you are proudest of</strong>. The more a methodology has made you succeed, the more quietly it can become your cage; at forty he tore down with his own hands the edifice he had built at thirty, because he was loyal to truth over face. For anyone who works daily with language models, his other insight lies close at hand: <strong>meaning is not in a word's "picture" but in the situation of its use</strong> — almost a philosophical foundation for prompt engineering and human-AI collaboration, and the limits of language really do frame the world you can call upon. But he leaves a counter-warning too: pushing purity and honesty to the extreme can tip into cruelty, toward self and others. <strong>The pursuit of excellence may be exacting, but the moment that exactingness begins to crush the weakest around you, or turns into self-punishment, it is no longer a virtue — it is a sickness that must be seen and reined in.</strong></p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Buddhism · Vimalakirti's silence</b>: In the Vimalakirti Sutra, Manjushri asks how one enters the Dharma gate of non-duality; Vimalakirti stays silent, and Manjushri praises that as the true entry. Like "whereof one cannot speak," it puts silence at the end of language. Unlike it, Vimalakirti's silence is itself an answer, a demonstration; Wittgenstein's is a boundary drawn by logic, with nothing said beyond the line.</li>
+<li><b>Psychology · Prototype theory</b>: In the 1970s Eleanor Rosch showed that people's categories are not defined by necessary and sufficient conditions but by closeness to typical cases: a robin is more of a "bird" than a penguin. Same shape as "meaning is use": concepts live in use, not definitions. The difference is that Rosch measured the gradient experimentally.</li>
+<li><b>Evolution · Fitness landscapes</b>: Sewall Wright argued in 1932 that populations get stuck on local peaks, and reaching a higher one means crossing a lower-fitness valley. Abandoning the Tractatus was walking downhill on purpose. The difference: selection only climbs, so crossing needs the luck of drift, while a person can leave the summit knowing the fall is coming.</li>
+<li><b>Psychology · Decision fatigue</b>: Eating "the same thing every meal" is often filed under ego depletion, the idea that choosing drains willpower. But the 2016 multi-lab replication led by Hagger found almost no such effect, so his monotonous diet more likely protected where his attention went than saved some exhaustible fuel of will.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Wittgenstein twice reached what he took to be philosophy's end, then overturned his own famous Tractatus.</li>
+<li>The Tractatus was written in First World War trenches and an Italian POW camp; believing philosophy finished, its author left academia for nearly ten years.</li>
+<li>Giving away his inheritance in 1919, he handed it to already rich siblings, since more money could no longer corrupt them.</li>
+<li>A lifelong, deliberate poverty rested on one belief: property puts a layer between a person and real thinking.</li>
+<li>Sraffa's Neapolitan gesture showed that meaning need not come from picture-like correspondence but from the setting in which a sign is used.</li>
+<li>The later philosophy of "language games" holds that a word's meaning is its use in life, undoing the early picture theory.</li>
+<li>Eating the same meal every day and rushing to Westerns after lectures served as a pressure valve for an overheated mind.</li>
+<li>Wittgenstein beat pupils as a village teacher, resigned in 1926 after a boy collapsed, and returned a decade later to apologize.</li>
+<li>Carrying an uncompromising standard for propositions over to children and friends turns intellectual sharpness into cruelty toward people.</li>
+<li>Abandoning one's proudest framework resembles leaving a local peak to cross a valley in evolution, except that a person can choose the descent.</li>
+</ol>
 </section>
 <section class="card think">
 <h2><span class="icon">◆</span>Questions to Sit With</h2>

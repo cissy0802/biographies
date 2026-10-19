@@ -44,6 +44,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -133,6 +145,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2 data-tts="13936551addf31f4"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>她给出了人机协同最早的范本，结论有点反直觉：<strong>在机器已经强到必须用、还没强到能被信任的阶段，价值不在算得更快，在能用一条独立路径复现它的结论。</strong>大模型的输出今天正在同一位置——稀缺的不是会用，是能独立验证。第二条是署名之战：做了活不等于被记账，制度只认归属的痕迹（报告、commit、设计文档），留在「组」里等于没留。第三条是「有法律规定吗」——把不成文的规范当成待证伪的假设。反面同样值得记：<strong>靠一项终将被机器化的技能立身，稀缺性会自己消失。</strong></p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>分布式系统 · N 版本编程</b>：Avizienis 1977 年提出，让独立团队按同一规格各写一版程序，靠「错法不同」抓出共模故障。1962 年的格伦要的正是这个：机器一条路，她用解析几何和台式计算器走另一条。像在独立性是价值本身；不像在这里没有多数表决——慢得多的那一版握有一票否决权，系统的可信度押在一个人身上。</li>
+<li><b>生物进化 · 生态位</b>：一个物种最适应的往往是某种过渡生境，生境一变，优势就成了冗余。她的不可替代性就长在「机器必须用、不能信」那段过渡带上，1970 年代窗口一关便沉寂四十年。不像的是，生物不能自己换生境，人可以把同一种验证能力挪到下一个过渡带去。</li>
+<li><b>心理学 · 稀缺带来的「隧道」</b>：Mullainathan 与 Shafir 在《稀缺》(2013) 里说，资源紧张时注意力会收窄成隧道，眼前的事做得更好，隧道外的事看不见。「我没感觉到隔离」很像这种隧道：手上的题算得极准，制度层面的不公落在视野外。不像在于她多少是主动选的，而稀缺隧道通常是被逼出来的。</li>
+<li><b>佛学 · 数息观</b>：禅修入门常教数呼吸，把连续的气息切成一到十的可数单位，用来稳住散乱的心。她从小数台阶、数碗筷，后来把连续轨道拆成可逐点核对的离散步骤，是同一个动作。不像的是方向：数息最终要放下所数之物，她数是为了牢牢抓住对象。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>凯瑟琳·约翰逊 14 岁高中毕业、18 岁大学毕业，前提是父亲为了让孩子上高中举家搬迁。</li>
+<li>1939 年接下西弗吉尼亚大学的整合名额，一学期后退学，终身没有研究生学位。</li>
+<li>没有博士学位，让她在 NASA 33 年始终是「算题的人」，而不是「立项的人」。</li>
+<li>1953 年被临时借调到飞行研究部后再没回去，留在提出问题的房间里改变了她的位置。</li>
+<li>没有规定禁止，就去参加编辑会议：把不成文的规矩当成可以检验的假设。</li>
+<li>1960 年的 TN D-233 让她成为飞行研究部第一位署名女性，署名报告是唯一被制度记账的贡献。</li>
+<li>1962 年格伦点名要她手算复核 IBM 7090 的轨道，她用一天半给出了独立的验证。</li>
+<li>人机交接期最稀缺的不是算得快，而是能用一条独立路径复现机器的结论，这正是分布式系统里 N 版本冗余的思路。</li>
+<li>电影里奔跑找厕所、上司砸牌子的名场面是虚构的，黑人女性自己的越界被改写成白人英雄时刻。</li>
+<li>约翰逊个人穿过了隔离制度，但几百位计算员仍然无名，个人穿过不能证明系统可被穿过。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="27caa6484dc383f8"><span class="icon">◆</span>【深入思考】</h2>

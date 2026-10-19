@@ -43,6 +43,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -123,6 +135,31 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <h2 data-tts="95c09a341003f785"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>最可迁移的是选靶子的算法。<strong>不挑「最重要」的问题，挑一个门槛最低、可被任意个体独立执行、而对手压制它会显得荒谬的动作</strong>——盐能打动帝国不是因为盐税重要，而是它同时满足这三条。换成分布式的语言：先找到那条人人能跑、无需协调、失败也不伤本体的最小原语，再让规模自己长出来。其次，<strong>能被一次局部失控摧毁的东西，本来就不该先扩容。</strong></p>
 <p>第三条最刺人。他的伦理把「自我净化」放在因果链上游，于是任何外部失败都能解释成自己还不够纯——<strong>不可证伪的框架不会自己停下来，只会不断加码索取代价，而代价首先由离你最近的人支付。</strong>对追求「超级个体」的人，这个陷阱形状几乎一样：把一切结果归因于自身修炼强度，最后是家人替这套叙事结账。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>博弈论 · 承诺装置（Thomas Schelling，1960）</b>：Schelling 指出自断退路，承诺才可信；1906 年把表决改成对神起誓正是如此。不像在于：Schelling 的承诺做给对手看，这份誓言先绑住的是自己人。</li>
+<li><b>分布式系统 · 断路器（circuit breaker）</b>：一处出错就熔断整条调用链，防止局部故障级联；Chauri Chaura 后叫停全国运动是同一动作。不像的是，断路器会自动半开试探，这次重新合闸等了八年。</li>
+<li><b>进化生物学 · 累赘原理（Amotz Zahavi，1975）</b>：孔雀尾巴可信，因为昂贵、装不出来；达拉萨纳挨打不还手是同一种诚实信号。不同在于成本由对手的警棍施加，镇压越重，信号越响。</li>
+<li><b>心理学 · 执行意图（Peter Gollwitzer，1999）</b>：「遇到 X 就做 Y」的预案把行为交给线索触发，省掉意志消耗，周一不语日正是这种结构。不像在于它靠日历而非情境触发，更粗也更不容商量。</li>
+<li><b>东西方哲学 · 康德的人性公式（1785）</b>：康德要求把人永远同时当作目的，不仅仅当作手段。甘地坚持手段不能被结果洗白，像个义务论者；但他的纯度律令只对准自己，于是 Poona 绝食里的 Ambedkar、诺阿卡利实验里的 Manu 都成了他修行的手段，而康德的约束恰恰对准他人。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>甘地 1893 年为一年期合同去南非，一留二十一年，在那里把侨民抗争磨成可复制的方法。</li>
+<li>1906 年约翰内斯堡的集体宣誓，把一次表决变成了不可撤回的个人承诺。</li>
+<li>把 passive resistance 改名 satyagraha，是为了和「弱者没办法时的办法」切割。</li>
+<li>Chauri Chaura 烧警案后在高峰叫停全国不合作，因为手段纯度是非暴力唯一的力量来源。</li>
+<li>食盐进军挑靶子的三条标准：门槛最低、人人可独立执行、对手镇压它会显得荒谬。</li>
+<li>达拉萨纳盐场示威者挨打不还手，把帝国的镇压转换成了它自身合法性的损耗。</li>
+<li>彼得马里茨堡车站的觉醒起初只争印度人不该被当作非洲黑人对待，未否定种族排序本身。</li>
+<li>周一不语、每天纺纱这类习惯，把立场写成日程约束，执行起来就不再需要意志。</li>
+<li>甘地 1932 年绝食逼成 Poona Pact：非暴力用在自己身上，对 Ambedkar 和达利特仍是胁迫。</li>
+<li>把外部失败都归因于自身纯度不够的框架不可证伪，代价总先由离甘地最近的人支付。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="a96605f25c7cb1b4"><span class="icon">◆</span>【深入思考】</h2>

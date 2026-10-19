@@ -43,6 +43,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -130,6 +142,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2 data-tts="e7e727a1f96e5837"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>沃尔顿没有任何原创，却赢得彻底——这本身就是给「AI 超级个体」的反直觉一课。三样东西可以直接拿走：<strong>其一，找你的「小镇」</strong>，即巨头嫌太小而放弃的细分地带，抢先占位就能造出天然护城河，新颖度从不是胜负手，先到与专一才是；<strong>其二，把「抄」制度化</strong>——他公开承认一切都是抄来的，但抄完做得更便宜更好，AI 时代里，重组与执行速度远比原创更值钱；<strong>其三，把节俭当武器</strong>，成本越低，你越有底气持续压价、熬死对手。但别忘了他的阴面：当你用「家人」叙事凝聚队伍时，要诚实面对这套叙事是否也在替你压低真实的代价。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>生物进化 · 竞争排斥原理</b>：高斯 1934 年用草履虫实验表明，争夺同一种资源的两个物种无法在同一生态位里长期共存。只养得活一家折扣店的小镇就是这种窄生态位，先到者独占。不像的是，草履虫要靠厮杀分胜负，沃尔顿靠抢先，让对手干脆不来。</li>
+<li><b>分布式系统 · 数据局部性与边缘节点</b>：门店只铺在配送中心一天车程之内，就像把缓存节点放在离用户近的地方，给每次补货设一个延迟上限，网络才能整片扩张而不失控。不像的是，复制比特几乎零成本，每多一个仓库和车队都是真金白银。</li>
+<li><b>文化进化 · 社会学习策略锦标赛</b>：Rendell 等人 2010 年在《科学》发表一场计算机锦标赛，一百多个策略在多变环境里比拼，冠军几乎只模仿别人、极少自己试错，因为被抄的行为已被别人筛过一遍。沃尔顿泡在对手卖场记笔记是同一个算法。不像的是，人人都抄的群体会丢掉对环境的感知（Rogers 悖论），沃尔顿抄完还自己压成本，往池子里添了新东西。</li>
+<li><b>神经科学 · 一次性厌恶学习</b>：Garcia 的实验里，老鼠尝过某种味道后只难受一次，就会长久回避它，不需要反复训练。丢掉纽波特那家店也是一次让人「恶心想吐」的单次学习，换来 99 年租约。不像的是，味觉厌恶常泛化到无辜的东西上，沃尔顿记住的却精确到一行续约条款。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>沃尔顿没有发明任何产品，靠抢占巨头看不上的边缘市场、向对手学习和压低成本，建起世界最大的公司。</li>
+<li>1962 年 Kmart、Target 都瞄准大城市，第一家沃尔玛却开进人口五千到两万五的小镇。</li>
+<li>小到只容得下一家折扣店的小镇，谁先到谁就拥有天然垄断，和生态学的竞争排斥原理同构。</li>
+<li>先建配送中心、再把门店铺在一天车程之内，1970 年上市募资很大程度是为了修这套物流骨架。</li>
+<li>纽波特的加盟店五年做成六州地区第一，却因租约没写续约条款，在 1950 年被房东收回。</li>
+<li>丢店后沃尔顿在本顿维尔从头再来，这一次锁定了长达 99 年的租约。</li>
+<li>当上首富仍开旧皮卡、住廉价旅馆，省下的每一分钱都变成更低的售价。</li>
+<li>带着录音机和记事本泡在对手卖场，把模仿做成纪律，抄过来再做得更便宜更好。</li>
+<li>「员工是家人」、改称合伙人和利润分享，同时也是把工会挡在门外的工具，背面是长期低薪。</li>
+<li>沃尔玛开到哪里，主街小店就倒到哪里；高调的「买美国货」运动也与持续转向海外采购相矛盾。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="39571a69dc2bd090"><span class="icon">◆</span>【深入思考】</h2>

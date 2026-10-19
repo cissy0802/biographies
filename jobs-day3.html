@@ -42,6 +42,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -115,6 +127,31 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <span class="src">— Isaacson《Steve Jobs》, 关于 2003 年延迟手术的自白</span>
 </li>
 </ul>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>生物进化 · 适应度地形</b>：Sewall Wright 1932 年指出，物种会困在局部高峰，去更高的峰得先下坡，自然选择却不肯下坡。iPhone 立项就是 Apple 主动走下 iPod 这座峰；不同的是演化看不见远山，乔布斯押的正是自己对趋势的预判。</li>
+<li><b>分布式系统 · 对冲请求</b>：Dean 与 Barroso 2013 年建议把同一请求同时发给两台副本，谁先回用谁，拿冗余算力换确定性。P1、P2 赛马同理；不像的是副本做同一件事，两队走的是两条路线。</li>
+<li><b>心理学 · 皮格马利翁效应</b>：Rosenthal 1968 年发现，老师相信某些学生「有潜力」，他们成绩真会上升。现实扭曲场同样靠期待改变表现，只是实验里期待暗中传递，乔布斯当面施压，代价是消耗。</li>
+<li><b>神经科学 · 突触修剪</b>：青春期前后大脑剪掉大量少用的突触，留下的通路更快更稳。350 个 SKU 砍到 10 个也是「少即是强」；只是大脑按使用自下而上地剪，乔布斯凭品味自上而下地剪。</li>
+<li><b>心理学 · 不作为偏差</b>：Ritov 与 Baron 1990 年指出，人更怕亲手行动造成的伤害。「不想被切开」正是怕手术这一动作；但他并非不作为，而是拿果汁、针灸这类温和的作为替代了那一刀。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>iPod 撑起近半营收时，乔布斯 2005 年立项 iPhone，主动毁掉自己的现金牛。</li>
+<li>iPhone 起步于 P1（iPod 加电话）与 P2（全触屏）互相保密的 18 个月赛马。</li>
+<li>2007 年 iPhone 发布时原型机仍常死机，演示全靠预先排好的「黄金路径」。</li>
+<li>乔布斯 1985 年被逐出 Apple 后的十一年里，NeXT 几近破产，远比演讲说的艰难。</li>
+<li>1986 年买下 Pixar 并放手给 Lasseter，学到的一课是：保护别人的创造力比展示品味更难。</li>
+<li>Apple 1996 年收购 NeXT，实为买回 NeXTSTEP，它成了 Mac OS X 和 iOS 的内核。</li>
+<li>「现实扭曲场」让人在极短期限内做成不可能的事，代价是身边人被持续消耗。</li>
+<li>「如果今天是最后一天」的每日自问，撑起了 1997 年 350 个 SKU 砍到 10 个的减法。</li>
+<li>伟大的背面有三道阴影：拒认女儿 Lisa、当众羞辱员工、确诊癌症后拖延手术九个月。</li>
+<li>模仿乔布斯的尖锐容易，复制他的品味几乎不可能；读他是为了不被神话误导。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="726dc2617e8e1c2d"><span class="icon">◆</span>【本周思考题】</h2>

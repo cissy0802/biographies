@@ -38,6 +38,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -109,6 +121,31 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2><span class="icon">◆</span>Takeaways for BigCat</h2>
 <p>Carson's most practical lesson for the "AI super-individual" is <strong>trading rigor for influence</strong> — to move a system far larger than yourself, the lever is not volume but a solidity your opponent cannot get a grip on. She faced a billion-dollar industry and an era's consensus that "progress equals chemistry," armed only with facts, patience, and prose — yet she nailed every claim to traceable evidence and used 55 pages of references as a shield. This fits anyone speaking into today's information flood especially well: <strong>the more your conclusion cuts against the mainstream and invites attack, the more the work must go into the reliability of its sources — opinions are cheap; verifiable opinions are expensive.</strong> Her second lesson is proportion: sever "who I am" from "what I say," and never let your private circumstances become the issue's soft spot. But she is also a mirror — true maturity is daring to move the world with your words while staying perpetually alert to the deliberate selectivity your own work inevitably carries.</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Distributed systems · distributed tracing</b>: A failed request leaves its traces across dozens of services, each of which looks healthy on its own; only a shared trace ID stitches them into a causal story (Google's Dapper paper, 2010). Carson did this by hand, chaining "normal-looking" findings from toxicology, ecology and cancer research into one line. The difference: a trace ID is planted in advance, while she had to recover every link from the literature after the fact.</li>
+<li><b>Evolution · resistance and selection pressure</b>: A pesticide is a strong selection pressure. The harder you spray, the faster the few naturally resistant insects take over the population, the same mechanism as bacteria evolving antibiotic resistance. Overuse thus defeats itself; the gap is that bacterial generations run in minutes, insect ones in weeks.</li>
+<li><b>Psychology · the identifiable victim effect</b>: Thomas Schelling observed in 1968 that one named victim moves people more than a column of statistics. "A Fable for Tomorrow" swaps mortality tables for a town where the birds have gone silent, exactly this effect. Unlike a pure appeal, though, the story never replaced the data: 55 pages of references still stood behind it.</li>
+<li><b>Buddhism · "rely on the teaching, not the person"</b>: The Mahaparinirvana Sutra's Four Reliances tell the listener to judge a claim by its content, not by who says it. By hiding her illness, Carson did that work for her audience, so the issue could not be reframed as a dying patient's grievance. The difference: the sutra asks listeners to train themselves; she did not dare count on them to.</li>
+<li><b>Investing · margin of safety</b>: Benjamin Graham's rule is to bet only when price sits well below value, leaving room for error. The royalties from The Sea Around Us were her margin of safety, letting her stake her reputation against the chemical industry without risking her livelihood. Unlike Graham's investor, she knew from the start the bet was nearly certain to lose.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Carson spent fifteen years writing government reports at the US Bureau of Fisheries by day and her own books by night.</li>
+<li>In 1958 a friend wrote that birds in her backyard died in droves after municipal DDT spraying, which turned Carson toward pesticides.</li>
+<li>The evidence was scattered across toxicology, ecology and cancer research, and nobody was willing or able to chain it together.</li>
+<li>Silent Spring carried 55 pages of itemized sources: when you challenge a far stronger opponent, airtight evidence is your only armor.</li>
+<li>Diagnosed with breast cancer while writing, Carson hid it from the public so her private situation could not be used against the issue.</li>
+<li>The 1951 bestseller The Sea Around Us bought financial independence, the stake that later let her take on the chemical industry.</li>
+<li>She was an extremely slow writer who read sentences aloud for rhythm; Silent Spring took four full years.</li>
+<li>The charge that she "killed millions" through malaria oversimplifies the causation: she opposed DDT overuse, not a total ban.</li>
+<li>Books that change history tend to be pointed and selective; their force and their bias are two sides of one coin.</li>
+<li>The harder a pesticide is sprayed, the faster resistant insects are selected, so overuse erodes the pesticide's own power.</li>
+</ol>
 </section>
 <section class="card think">
 <h2><span class="icon">◆</span>Deeper Questions</h2>

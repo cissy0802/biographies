@@ -43,6 +43,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -128,6 +140,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2><span class="icon">◆</span>What BigCat Can Take From This</h2>
 <p>His real asset was not courage but <strong>a set of credentials verifiable across borders</strong>: legal training, a chain of transmission, a family name. In a world with no central authority, those three let him be recognised and appointed twenty thousand kilometres from home. The same holds for the "AI super-individual": what is scarce is not capability itself but capability a stranger's system can verify fast — public work, a traceable record, people willing to vouch for you. Yet he never left the Muslim world, because past that boundary the credentials were worth nothing: <strong>a shrewd choice of route, and also the ceiling on what he could see.</strong> And one sharper point still: he kept no notes, so the richest first-hand experience of his century survives only as a reconstruction made thirty years later. <strong>Experience you do not record gets quietly rewritten inside your own head.</strong></p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Distributed systems · the PKI chain of trust</b>: Legal training, a Sufi lineage and a family of judges work like a certificate chain. A judge in a strange city need not know him; he only has to trace the issuers back to a shared root of trust, Maliki law and the Islamic scholarly network. Where it fits: trust passes between nodes that have never met. Where it breaks: PKI can revoke and verify by machine, while his credentials ran on testimony and goodwill, and once the root stops being recognised the whole chain drops to zero at once, which is exactly why he never left the Muslim world.</li>
+<li><b>Neuroscience · memory reconsolidation</b>: In 2000 Nader, Schafe and LeDoux showed in rats that each time a memory is retrieved it becomes briefly unstable and is written back again. Dictating at fifty a journey made thirty years earlier, every retelling was a rewrite. Where it differs: the Rihla adds a scribe's polish and borrowings from an earlier travel book on top, revision on paper stacked on revision in the head.</li>
+<li><b>Psychology · Piaget's assimilation and accommodation</b>: New experience is either assimilated into an existing schema or forces the schema to accommodate and change shape. For twenty-nine years he almost only assimilated; veils in Mali and dress in the Maldives were filed into Maliki categories. Piaget held that accommodation is usually driven by disequilibrium, and his framework kept paying in status and income, so it never tipped.</li>
+<li><b>Evolutionary biology · obligate symbiosis</b>: Some symbionts cannot survive away from a particular host; they are highly efficient, but their range is locked to the host's. He thrived inside the network of Islamic institutions and had nowhere to land outside it. Where it differs: he did not only take, serving his hosts as a judge, which makes it closer to mutualism.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Ibn Battuta left Tangier alone on pilgrimage in 1325, aged 21, and did not come home for twenty-nine years.</li>
+<li>He could skip the caravan because mosques, madrasas and Sufi lodges along the route hosted young men trained in law, so institutional hospitality replaced safety in numbers.</li>
+<li>After a Sufi elder's prophecy in Alexandria in 1326, a closed pilgrimage became an open itinerary that accepted every detour.</li>
+<li>Borrowing to buy audience gifts for the Delhi sultan was a leveraged bet: it won him a judgeship and left him about 55,000 dinars in debt.</li>
+<li>When a storm carried off his ship for the 1342 embassy to China off Calicut, he refused to face Delhi empty-handed and restarted in the Maldives.</li>
+<li>His real luggage was verifiable credentials: Maliki legal training, a family of judges and a Sufi lineage; in each new city he sought a judge, a lodge and fellow countrymen.</li>
+<li>The Rihla was dictated from memory at fifty and polished by the scribe Ibn Juzayy, borrows passages from Ibn Jubayr, and its China section is doubtful.</li>
+<li>Trading slaves along the way and imposing amputation and dress rules in the Maldives show that his cosmopolitanism always stopped at Maliki law.</li>
+<li>Credentials recognised only inside the Muslim world were worthless beyond it, which made Ibn Battuta's choice of route both shrewd and the ceiling on what he could see.</li>
+<li>Exposure does not automatically produce open-mindedness: when a framework keeps working and never costs anything, new experience simply gets assimilated into it.</li>
+</ol>
 </section>
 <section class="card think">
 <h2><span class="icon">◆</span>Questions Worth Sitting With</h2>

@@ -43,6 +43,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -131,6 +143,31 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2 data-tts="6ab7af865bc6b64d"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p><strong>一，被证伪之后重写模型，而不是打补丁。</strong>错误分两类：参数错了（调），前提错了（推倒）——多数人把第二类当第一类处理。<strong>二，最强的能力用错场景就是负债</strong>：宏观判断力在写理论时是顶级资产，在择时上是纯负债。<strong>三，正确加上你撑不住的时间约束等于错误</strong>——任何带杠杆、带期限、带考核周期的判断，先算「我能撑多久」，再算「我对不对」。<strong>四，让多个角色互相供电，而非并行消耗</strong>：这才是「超级个体」的真结构。<strong>五，领域内的权威不迁移</strong>——一个人可以在一处顶级正确、在另一处彻底错，这对评估任何专家（包括模型）都适用。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>科学哲学 · 库恩的范式转移</b>：库恩在《科学革命的结构》（1962）里说，反常积累到一定程度，科学共同体不再修补旧范式，而是整体换掉——凯恩斯三次推倒自己的模型正是这个结构。不像的是，库恩认为范式更替多半靠老一代退场、新一代接班，很少有人亲手改宗；凯恩斯是在同一个脑子里完成了三次换代。</li>
+<li><b>生物进化 · 选择没有远见</b>：一个突变哪怕长远有利，只要眼下拖累存活，就会在被证明有用之前被淘汰——1920 年做空马克的头寸也是这样，方向对却活不到被证明对的那天。不像的是，生物借不到时间，他还能向 Cassel 借钱续命。</li>
+<li><b>心理学 · 实施意图</b>：Peter Gollwitzer 的研究显示，把行为绑定在「何时、何地」的固定情境上，比靠当下的意志力可靠得多。把交易锁进起床前的半小时是同一个机制；不同在于实施意图多用来促成行动，凯恩斯用它来圈住情绪。</li>
+<li><b>复杂性科学 · 自催化集合</b>：Stuart Kauffman 描述的自催化集合里，每个分子的产物催化另一个反应，整体因此能自我维持。五六份工作互相供电是同一种结构；区别是自催化网络没有中心，而他的网络全靠一个人连着，人一倒就散。</li>
+<li><b>分布式系统 · 中心化调度</b>：中心调度器在目标函数清楚、出错能回滚时最有效，宏观需求管理接近这种情形。优生学的问题在于「该优化什么」本身不是技术参数；而且调度器错了可以重启，作用在人身上的决定无法回滚。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>凯恩斯 1919 年辞出巴黎和会，两个月写成《和约的经济后果》，把发言权的来源从体制内搬到了公众面前。</li>
+<li>1920 年做空马克方向正确，却因货币先反弹遭保证金追缴而爆仓：正确判断加上撑不住的时间约束，等于错误。</li>
+<li>1920 与 1929 两次近乎归零后，凯恩斯承认宏观择时不产生优势，1938 年改为长期持有少数真正懂的企业。</li>
+<li>写《通论》时选择直接攻击马歇尔、庇古一代的核心假设，而不是写修补性论文，代价是全书艰深、各派都能自称正统。</li>
+<li>每天起床前在床上用半小时处理交易，把最容易被情绪污染的活动锁进一天里最短、最固定的时段。</li>
+<li>同时身兼五六份职务并让它们互相供电：财政部的信息喂给投资判断，投资收益再去养艺术。</li>
+<li>担任英国优生学会理事与站在「受过教育的资产阶级」一边同源，都是让受训练的少数人替整体做最优化。</li>
+<li>Mantoux 批评《和约的经济后果》瓦解了英语世界执行和约的意志：一本书可以经济上大体正确，政治后果却是灾难。</li>
+<li>布雷顿森林的 bancor 方案被美方否决，说明谈判桌上的变量是债权国地位，而不是论证质量。</li>
+<li>库恩式的范式更替多半靠新一代取代老一代，凯恩斯却在一生里三次亲手推倒自己的模型。</li>
+</ol>
 </section>
 <section class="card">
 <h2 data-tts="aa919383a2644e0f"><span class="icon">◆</span>【深入思考】</h2>

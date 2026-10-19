@@ -37,6 +37,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -124,6 +136,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <p>Torvalds's most counterintuitive lesson for the "AI super-individual" is this: <strong>the greatest leverage comes from giving control away, not gripping it tighter</strong>. He never made Linux a company or monopolized the source; instead, through the GPL and the "maintainer tree," he made himself a coordinating node — one person's judgment, amplified through an open mechanism into the collaborative output of millions. In the AI era, an individual's boundary is no longer "how much can I do with my own hands," but "what mechanism/tool can I design so that others' (and agents') contributions aggregate automatically and are never privatized by any single party." Keep his shadow as a warning bell too: a tool can infinitely amplify your ability, but it will also infinitely amplify your attitude toward people — being technically right does not exempt you from the harm of how you communicate.</p>
 </section>
 
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Distributed systems · Eventual consistency</b>: Git lets everyone carry the full history, fork freely and merge later — the same trade distributed databases make when they give up central strong consistency for availability. The difference: databases converge automatically by algorithm, while a Git conflict still needs a human to decide.</li>
+<li><b>Economics · Ostrom on the commons</b>: Elinor Ostrom studied fisheries, irrigation canals and other commons, and found that communities which set their own rules, monitor each other and escalate sanctions step by step can escape the "tragedy of the commons"; it won her the 2009 Nobel in economics. The GPL plus the maintainer tree looks a lot like that self-governance. Unlike a fishery, code costs nothing to copy and can't be used up, and Linux has a final arbiter sitting at the top.</li>
+<li><b>Cognitive psychology · Chase and Simon on chunking</b>: In 1973 Chase and Simon found that chess masters could reconstruct a real game position at a glance, yet with randomly placed pieces they did little better than novices. Torvalds spotting a bad patch at a glance draws on the same kind of pattern library built over years, and that intuition fades outside code he knows.</li>
+<li><b>Evolution · Conserved Hox genes</b>: From fruit flies to humans, the Hox genes that lay out the head-to-tail body axis have stayed strikingly similar for more than 500 million years, because so much downstream depends on them that changing them is lethal. "Never break userspace" is the same structure; the difference is that evolution has no gatekeeper — conservation is what natural selection leaves behind, not a rule anyone wrote.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Linux 0.01 shipped with a license that banned charging money, which blocked commercial distribution and left nobody motivated to package or promote it.</li>
+<li>The 1992 switch to the GPL let anyone sell Linux but forced changes back into the open, so companies and contributors dared to join because no one could take it private.</li>
+<li>After BitKeeper pulled its free license in 2005, Torvalds had Git managing its own source within days and the kernel migrated within two months.</li>
+<li>Git's distributed design gives everyone the full history with no central server, and content hashes guarantee integrity.</li>
+<li>Linux grew out of a terminal emulator for a new 386 PC, and its name came from FTP admin Ari Lemmke; the author wanted to call it Freax.</li>
+<li>Kernel gatekeeping runs on reading patch diffs directly and a layered maintainer tree: lieutenants own subsystems, final calls happen only at the top.</li>
+<li>"Never break userspace" is the kernel's iron rule: refactor the internals however you like, but existing user programs must keep working.</li>
+<li>A culture of public humiliation on the mailing list drove away newcomers and minorities; in 2018 Torvalds apologized, stepped back to learn empathy, and a Code of Conduct arrived.</li>
+<li>The "benevolent dictator" model is highly efficient but makes critical global infrastructure depend on one person's judgment and temperament.</li>
+<li>"Never break userspace" mirrors the deep conservation of Hox genes: the more that depends on an interface, the less it can change.</li>
+</ol>
+</section>
 <section class="card">
 <h2><span class="icon">◆</span>Questions to Sit With</h2>
 <details>

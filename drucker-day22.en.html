@@ -40,6 +40,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -130,6 +142,32 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2><span class="icon">◆</span>What BigCat Can Take Away</h2>
 <p>Drucker coined the term "knowledge worker," and he was himself the prototype of the one-person-worth-a-thousand "super-individual" — a single typewriter, a few questions, a lifetime of self-teaching. Three things can be taken directly: <strong>first, force yourself into a wholly new field every three years</strong>, to fight the depreciation of knowledge; <strong>second, write down your expectations before a major decision and settle accounts afterward</strong> — the cheapest way to turn intuition into a calibratable skill; <strong>third, in an age where AI makes answers cheap, bet your energy on asking the right question</strong> — because a model can hand you ten thousand answers but will not decide for you which question is worth asking. Drucker never held power, yet shaped everyone who did, precisely through the one thing that looks least like "productivity."</p>
+</section>
+
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Neuroscience · Predictive coding</b>: Feedback analysis is roughly the brain's own method moved onto paper. In Rao and Ballard's 1999 model, the cortex issues a prediction and passes upward only the prediction error, which then revises the model. The difference: the brain settles accounts every millisecond, automatically; Drucker did it once a year, by hand, on purpose. Because it was slow and explicit, he could see which kinds of judgment he got wrong again and again, while most of the brain's errors never reach awareness.</li>
+<li><b>Evolution · Marginal value theorem</b>: Charnov's 1976 foraging model says an animal should leave a patch once its yield falls below the average of the environment. Switching fields every three or four years looks like a forager changing patches; the difference is that he moved by the calendar rather than waiting for returns to dry up, and the old field was not abandoned but became food for the next.</li>
+<li><b>Buddhism · The Zen koan</b>: Consulting by asking rather than answering has the shape of a koan: no conclusion, just a question handed over that forces the other person to break their own frame. The landing differs: a koan aims to see through the question itself, while "would you enter this business today?" sends you off to make a trade-off.</li>
+<li><b>Psychology · Campbell's law</b>: In 1976 social psychologist Donald Campbell argued that the more a quantitative indicator is used for social decisions, the more it gets distorted and corrupts the process it was meant to monitor. MBO's slide into an appraisal tool is a textbook case: a goal meant to open a conversation becomes, once tied to rewards, a number to be gamed.</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Peter Drucker, born in Vienna in 1909, is called the father of modern management and wrote 39 books.</li>
+<li>In 1933 he deliberately praised the Jewish legal philosopher Stahl so the Nazis would ban the essay, closing off any reason to stay in Germany.</li>
+<li>From 1943 he spent 18 months studying General Motors from the inside, and Concept of the Corporation turned management into a discipline.</li>
+<li>Sitting in on Keynes's Cambridge seminar, he realized the economists cared about the behavior of commodities while he cared about the behavior of people.</li>
+<li>Every three to four years he taught himself a wholly new field, a lifelong resolve sparked at 18 by Verdi's late opera Falstaff.</li>
+<li>Feedback analysis means writing down expected outcomes before a big decision and checking them 9 to 12 months later to see where your judgment is reliably right or wrong.</li>
+<li>As a consultant he asked rather than answered, and "if you weren't already in this business, would you enter it today?" led to Jack Welch's number one or number two strategy at GE.</li>
+<li>Working from observation, cases and essays rather than statistics, Drucker was long dismissed by mainstream academics as a brilliant popular writer, not a social scientist.</li>
+<li>His memoir Adventures of a Bystander was found to contain composite or embellished characters and dialogue, which he defended as true in spirit.</li>
+<li>Management by objectives was meant to give employees a say in their goals but degraded into an appraisal tool, showing how a metric tied to rewards gets distorted.</li>
+</ol>
 </section>
 
 <section class="card think">

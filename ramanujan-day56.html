@@ -44,6 +44,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -130,6 +142,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2 data-tts="627cf51390ba3b04"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>最直接的是<strong>「生成器与验证器要分开配」</strong>：他是产能极高、几乎不自带校验的猜想引擎，哈代是慢而挑剔的验证层；分拆函数渐近公式、圆法、仿 theta 函数都出自这条流水线，不出自任何一端。<strong>这与今天用 AI 做研究同构：高产出的直觉源必须外接一个不共享其偏见的证伪层，否则天才结论与素数论式的系统性错误会以同样的自信交付。</strong>第二是分发的算术：三封信，两封无回音，第三封改变了数学史。<strong>多写一封的成本近乎零，回报却是重尾的——前提是每封都寄出最惊人的东西，不是最安全的。</strong>第三是他没结的账：身体、婚姻、休息全被当成残差项优化掉，32 岁停机。<strong>没有维护窗口的机器，产能再高也只是把总产出提前支取。</strong></p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>心理学 · Kahneman 与 Klein 的直觉专长条件</b>：两人 2009 年指出，直觉可信要靠规律稳定的环境加及时反馈。数学规律极稳，所以拉马努金的直觉常准得惊人；但他从不用证明拿反馈，素数论跑偏也无从察觉。</li>
+<li><b>生物进化 · 地理隔离与物种形成</b>：孤岛种群与大陆隔绝，会长出大陆没有的形态；只守一本《概要》十年，他也长出了别人想不到的公式。不像在：岛屿物种回不了大陆，他却被接进剑桥、汇入主流。</li>
+<li><b>佛学 · 无我与《卡拉玛经》</b>：自认只替女神抄写，近于「念头自生、并无作者」的观照。不像在：佛陀劝人别因来源可敬就信，要亲自检验；他却把「来自女神」当成不必证明的理由。</li>
+<li><b>分布式系统 · FLP 不可能性</b>：1985 年这一结果的根子是，异步系统里分不清节点是宕机还是只是慢。两轮来信石沉大海，他也分不清作品不行还是没人细读；他的应对像重试，但改写后换了节点。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>拉马努金 15 岁起以几乎不给证明的卡尔《概要》为全部课程，产能惊人，却没养成证明的习惯。</li>
+<li>两次大学都因数学之外门门不及格而肄业，1912 年在马德拉斯港务局做月薪 30 卢比的记账员。</li>
+<li>前几封信一封被婉拒、两封无回音，改写后寄给哈代的第三封专挑最不可思议的结果。</li>
+<li>哈代断定那批公式为真，理由是没人编得出来——这是关于人的推断，不是数学论证。</li>
+<li>婆罗门渡海即失种姓，赴英付出的是社会身份；战时坚持素食自炊，又让他营养持续恶化。</li>
+<li>拉马努金卧轨未遂后，哈代先以会士名义保人、再运作他 1918 年当选，荣誉成了抢救措施。</li>
+<li>石板演算、只誊结论，三本笔记本约 3900 条结果大多无证明，补证花了近一个世纪。</li>
+<li>他真心认为公式是娜玛吉里女神所赐、自己只是抄写者，所以不觉得有义务证明。</li>
+<li>素数理论因不知 ζ 函数的非实零点而出错：不做证明，对错结果带着同样的自信出厂。</li>
+<li>「无师自通」是神话：从印度数学会、大学奖学金到哈代五年把关，是一张支持网托起了拉马努金。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="aa4c47b394b8e334"><span class="icon">◆</span>【深入思考】</h2>

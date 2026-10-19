@@ -38,6 +38,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -108,6 +120,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 </ul>
 </section>
 
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Evolution · punctuated equilibrium</b>: Eldredge and Gould proposed in 1972 that species stay nearly unchanged for long stretches, then change in short bursts. Munger sitting on one newspaper for three decades, then betting heavily in 2009, has the same rhythm; the difference is that nothing in evolution waits for its moment, the environment forces the burst, while Munger chose his.</li>
+<li><b>Eastern philosophy · Laozi's daily subtraction</b>: the Daodejing says learning adds a little each day, while the Way subtracts a little each day. Being consistently not stupid is also subtraction: first cut the paths that lead to error. Alike in winning by removing rather than adding; unlike in that Laozi subtracts desire, while Munger subtracts mistakes to win more.</li>
+<li><b>Distributed systems · single leader</b>: consensus protocols like Raft route all writes through one leader, far faster than everyone negotiating. Berkshire's near-absence of committees and Munger's taste for centralized efficiency make the same trade; but a Raft leader serves a term and is voted out when it fails, a replacement mechanism political centralization often lacks.</li>
+<li><b>Neuroscience · predictive coding</b>: the brain predicts sensory input from priors, and the more confident the prior, the more it turns down conflicting error signals. Munger's Alibaba blind spot sat inside his most confident framework, the same structure; the difference is that the brain does it mostly to save effort, while in investing the cost is real money.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>In 1977 Munger bought the Daily Journal, a Los Angeles legal-notice newspaper, at a bankruptcy auction and ran it for decades as a small cash-flow business.</li>
+<li>At the depth of the 2009 financial crisis, the Daily Journal put almost all its cash, about $15 million, into bank stocks such as Wells Fargo.</li>
+<li>The roughly $15 million bank-stock bet of 2009 had grown to more than $130 million by 2013.</li>
+<li>Sit still for years, strike hard when the chance comes, and concentrate: your best three ideas beat your hundredth by far.</li>
+<li>The Wheeler, Munger partnership returned about 24% a year for its first 11 years, then lost 53% across 1973–74.</li>
+<li>Closing the partnership in 1975 was not an admission of a wrong call; Munger no longer wanted to answer for outside investors' emotions.</li>
+<li>Inversion starts by finding what would cause failure and deliberately avoiding it, rather than chasing success head-on.</li>
+<li>About 100 mental models from psychology, physics, biology and history hang on one latticework and cross-check reality against each other.</li>
+<li>Admiring Lee Kuan Yew's centralized efficiency and loading up on Alibaba became, after China's 2021 regulatory crackdown, one of what Munger called his worst mistakes.</li>
+<li>Even the smartest people have blind spots, and they usually hide inside the framework they feel most certain about.</li>
+</ol>
+</section>
 <section class="card think">
 <h2><span class="icon">◆</span>This week's question</h2>
 <p>Imagine yourself as Munger in 1974: past fifty, your fund down more than half, and yet you know your judgment is sound — it is the market that is wrong. Do you liquidate the business you spent thirteen years building, or grit your teeth and ride it out? The real decision is not "cut losses or not." It is "whose emotions am I willing to answer for?" Today, whose scorecard are you secretly working for?</p>

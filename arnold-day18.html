@@ -43,6 +43,18 @@ details .ans{margin-top:10px;color:#c8c4b8;font-size:0.92rem;line-height:1.8}
 .read-list .note{color:#a0a4b0;font-size:0.9rem;display:block;margin-top:4px}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -127,6 +139,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2 data-tts="5cfde07b94c87721"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>阿诺德最值得 AI 时代深思的，是<strong>把智识谦卑变成一种工程策略</strong>。当问题超出你的理解力，她的答案不是「先学懂再动手」，而是搭一个「变异—筛选—迭代」的循环，让搜索过程替你找到你设计不出的解——这恰恰是机器学习与进化算法的内核。对追求「AI 超级个体」的人，杠杆不在「全懂再行动」，而在建一个让它替你试错的高速回路。最后，她在顶峰公开撤稿，示范了速度文化的代价与认错的纪律：跑得快的人，更要为自己的产出兜底。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>经济学 · 哈耶克的「知识问题」</b>：哈耶克 1945 年指出，没有计划者能掌握分散的全部知识，市场靠价格去试错筛选。理性设计像计划经济，定向进化像市场；不像的是，市场没有统一目标，筛酶的标准却由人定死。</li>
+<li><b>神经科学 · Edelman 的神经达尔文主义</b>：Edelman 1987 年提出，大脑先过量长出连接，再由经验筛选保留，没人预先画线路图。同是先变异后筛选；不同在于大脑的筛选标准来自环境，试管里的标准由人挑。</li>
+<li><b>计算机安全 · 覆盖率引导的模糊测试</b>：AFL 这类工具随机改写输入，只留下触发新代码路径的那批接着改，无需读懂程序。结构与定向进化相同，方向相反：它找让系统崩溃的输入，定向进化找让酶变好的突变。</li>
+<li><b>西方哲学 · 斯多葛的「控制二分」</b>：爱比克泰德把事情分成「取决于我们的」和「不取决于我们的」，阿诺德在接连丧亲时抓住实验和学生，正是这一结构。不像的是，斯多葛要改的是对不可控之事的判断，她靠的是工作本身的惯性。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>阿诺德从机械与航空航天工程、化学工程起步，以外行身份闯进分子生物学，开创了酶的定向进化。</li>
+<li>定向进化放弃「先看懂结构再设计」的理性设计，用大量随机突变加筛选，一轮轮逼近目标。</li>
+<li>1993 年让枯草杆菌蛋白酶在有机溶剂 DMF 中保持活性，是定向进化第一个干净的胜利。</li>
+<li>定向进化走出实验室：Gevo 用工程微生物造可再生燃料，Provivi 用酶法造信息素替代杀虫剂。</li>
+<li>2001 到 2016 年接连失去丈夫、伴侣和儿子，又患乳腺癌，阿诺德把实验和学生当成可控的锚。</li>
+<li>少年时离家、搭便车抗议越战的叛逆，后来变成拒绝「必须先理解才能设计」这条教条的科学方法。</li>
+<li>「我不够聪明」是方法的地基而非自谦：先承认认知的边界，再把设计交给搜索过程去绕过它。</li>
+<li>2020 年阿诺德公开撤回一篇无法重复的《科学》论文，诚实值得学，实验室监督失灵值得警醒。</li>
+<li>定向进化并非一人之功：Eigen 的实验室进化理论和 Stemmer 的 DNA 洗牌同样关键。</li>
+<li>「不必懂」的代价是只知其然：定向进化能优化已有功能，却难解释为何有效，也难造出全新机理。</li>
+</ol>
 </section>
 <section class="card">
 <h2 data-tts="e24dd10af2fbb111"><span class="icon">◆</span>【深入思考】</h2>

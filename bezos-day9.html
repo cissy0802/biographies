@@ -42,6 +42,18 @@ details[open] summary::before{content:"▾ "}
 details div{padding:4px 18px 16px;color:#c8c4b8;font-size:0.95rem;line-height:1.8}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -119,6 +131,32 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <h2 data-tts="486e455a5e53df46"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>贝佐斯留给 AI 超级个体的不是「卖书」，而是一套决策操作系统。其一，<strong>后悔最小化</strong>：当机会风险高、但晚年会后悔放弃，就把决策尺度从季度拉到一生。其二，<strong>单向门 / 双向门</strong>：可逆的实验快做、敢授权给 AI 代办，不可逆的才慢下来——这正是和 AI 协作该有的节奏。其三，<strong>六页备忘录</strong>是防浅薄的解药：当生成内容唾手可得，逼自己写完整成句的论证，才暴露逻辑漏洞。但也带走那条阴面教训：别让「为用户好 / 为效率」变成对人无情的免罪符——关怀半径里不能只有客户。</p>
 </section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>分布式系统 · 可回滚部署与提交点</b>：双向门像带开关的灰度发布，出了问题一键回滚；单向门像事务的 commit 或删列的 schema 迁移，过了那一刻就无法撤销。不像的是：系统的可逆性是工程师事先设计出来的，人生决策是哪种门，往往事后才知道。</li>
+<li><b>心理学 · Gilovich 与 Medvec 的后悔研究</b>：两人 1995 年在《Psychological Review》上总结，短期内人们更后悔「做了」的事，回望一生时却更后悔「没做」的事。后悔最小化框架恰好借用了这种时间上的不对称：把视角拉到 80 岁，「没试过」的分量就压过了「失败」。不像的是：心理学把它当成一种描述人的偏差，贝佐斯把它当成决策准则——拿一种偏差当指南针，前提是你承受得起它指向的风险。</li>
+<li><b>生物进化 · 扩展适应（exaptation）</b>：Gould 与 Vrba 1982 年提出，羽毛可能先为保温而长、后来才被挪去飞行。AWS 同样是为自家零售长出来的基础设施，后来被挪成了卖给所有人的主业。不像的是：进化没有设计者，外化 AWS 是一次有意识的战略押注。</li>
+<li><b>复杂性科学 · 耗散结构</b>：Prigogine 说远离平衡的有序结构要靠持续输入能量维持，一停就滑回无序。「永远是第一天」像同一个判断：组织不刻意折腾就会自然滑向停滞的「第二天」。不像的是：耗散结构的输入来自外部环境，组织的「第一天」得靠内部制度自己泵进去。</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>贝佐斯 1994 年用「后悔最小化框架」辞去 D.E. Shaw 的高职：想象 80 岁回望，把决策尺度从季度拉到一生。</li>
+<li>2006 年推出的 S3 与 EC2，把 Amazon 被基础设施折磨十年的痛点，外化成卖给全世界的云服务。</li>
+<li>AWS 今天贡献了 Amazon 集团绝大部分营业利润，补贴着零售与设备业务的烧钱。</li>
+<li>2000 年 2 月、纳斯达克见顶前几周发行的 6.72 亿美元可转债，让 Amazon 熬过了股价跌逾 90% 的寒冬。</li>
+<li>「Amazon.bomb」濒死之后，Amazon 的纪律转向盯紧自由现金流，而不是利润表。</li>
+<li>Amazon 重要会议禁用 PPT，改用最多六页的叙事备忘录，会前全体静默阅读，逼人把逻辑写透。</li>
+<li>不可逆的「单向门」要慢而审慎，可逆的「双向门」可快决、可授权；大公司变慢，常因把双向门当单向门开。</li>
+<li>Amazon 仓储用算法追踪员工脱产时间并投入资源反工会，2022 年 JFK8 才成为它第一个组建工会的仓库。</li>
+<li>ProPublica 2021 年披露贝佐斯 2007 与 2011 年联邦所得税为零：未实现的股票增值合法绕开了以收入为基础的税制。</li>
+<li>「客户至上」能与对员工、供应商的无情长期共存，因为这套伦理的关怀半径里只放了客户。</li>
+</ol>
+</section>
+
 <section class="card">
 <h2 data-tts="f9cf1180bb18ed2e"><span class="icon">◆</span>【深入资源】</h2>
 <ul class="read-list">

@@ -38,6 +38,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -123,6 +135,32 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <h2 data-tts="4eb9a4b676c71590"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>霍珀的一生，是一部「<strong>降低门槛就是最大杠杆</strong>」的教科书。她没有更聪明地写机器码，而是问了更狠的一问：为什么要人去做机器更擅长的翻译？——这正是今天「自然语言 × AI」的原型：让机器听懂人话，把编程的祭司特权还给普通人。对追求「AI 超级个体」的你，方法论极其直接：<strong>把你最擅长的判断，封装成别人（和机器）不必懂内部细节也能用的接口</strong>。但请连她的阴面一起收下——普及的代价是 COBOL 那样「人人能用、却难以维护」的技术债；把复杂包装成简单，往往只是把复杂推迟、转移给了后来者。真正的功力，是既降低门槛，又不假装复杂性已消失。别做被反复播放的口号，做那面墙上逆时针走的钟。</p>
 </section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>神经科学 · 习惯的自动化</b>：练熟的动作从前额叶逐步控制交给基底神经节打包执行；编译器也把逐行翻译机器码的重复活交给机器。不像在于，大脑打包后步骤就看不见了，编译器还留着源码可查。</li>
+<li><b>生物进化 · 冻结的偶然（Francis Crick，1968）</b>：Crick 猜测遗传密码未必最优，只是所有生命都建在它上面，任何改动都致命，于是冻住了。银行里还在跑的 COBOL 也是这样：不是最好，而是牵一发动全身。不像的是，代码迁移只是贵，冻住它的是成本和风险，不是生死。</li>
+<li><b>分布式系统 · 乐观并发控制（Kung 与 Robinson，1981）</b>：悲观锁先申请再动手，乐观并发先做、提交时校验、冲突就回滚，正是「请求原谅比请求许可容易」。不像在于，数据库回滚几乎免费，组织里先斩后奏的代价未必撤得回。</li>
+<li><b>心理学 · 功能固着（Karl Duncker）</b>：蜡烛实验里，人只把装图钉的盒子当容器，想不到它能当烛台；逆时针的钟就是打断这种惯性。不像的是，实验里的固着来自物件摆法，霍珀要打断的是组织里「一向如此」的规矩。</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>1943 年，37 岁的耶鲁数学博士霍珀绕过体重限制加入海军，被派去哈佛操作 Mark I。</li>
+<li>战争把一位数学教授送进了一个还没有名字的行业：给计算机编程。</li>
+<li>1952 年的 A-0 系统让机器自己把符号指令翻译成机器码，被普遍视为第一个编译器。</li>
+<li>造编译器的动机很朴素：人抄机器码容易出错，重复的翻译就该交给更不容易错的机器。</li>
+<li>FLOW-MATIC 用类英语语句写程序，成为 1959 年 COBOL 的主要蓝本。</li>
+<li>让会计和经理也能读懂程序，赌的不是某项技术，而是「谁有资格使用计算机」的边界。</li>
+<li>1967 年海军「临时」召回霍珀，一干就是 19 年，79 岁才以少将身份退役。</li>
+<li>纳秒电线和逆时针的钟，把抽象的时间和「不必一向如此」变成看得见的东西。</li>
+<li>COBOL 让编程普及，也留下冗长难维护的代码，被 Dijkstra 等计算机科学家猛烈批评。</li>
+<li>「第一个编译器」「发明 COBOL」「发明 bug 一词」都要打折，传奇放大了霍珀的贡献。</li>
+</ol>
+</section>
+
 <section class="card">
 <h2 data-tts="66f8d621ff336b24"><span class="icon">◆</span>【深入思考】</h2>
 <details>

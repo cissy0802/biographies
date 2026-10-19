@@ -40,6 +40,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -121,6 +133,32 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2><span class="icon">◆</span>Takeaways for BigCat</h2>
 <p>What you can most take from Jack Ma is <strong>"translating an unseen future into language anyone can believe"</strong>: he never wrote a line of code, yet a six-minute story mobilized capital and the faith of 100,000 people. For anyone chasing the AI super-individual, this is a reminder: beyond technical depth, the narrative power to "make others bet on your judgment" is equally a lever. But he is also a cautionary mirror — <strong>once a narrative loses its sense of boundaries, it turns from an asset into a liability</strong>: both the 996 "blessing" and the Bund speech prove that the same mouth that ignites hearts can, at the wrong moment and before the wrong audience, devour an entire empire. Learn to articulate vision as he did — and learn the lesson he never did: knowing when to shut up.</p>
+</section>
+
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Evolution · Gause's competitive exclusion principle</b>: In his 1934 paramecium experiments, Gause showed that two species living on the same resource cannot coexist for long; one gets pushed out. Taobao versus eBay looks like that contest, but Taobao did not flee the niche. It changed <i>when</i> it fed: free first, profit later, starving the rival through a shift in timing.</li>
+<li><b>Psychology · Narrative transportation</b>: Green and Brock (2000) found that readers who get carried into a story counter-argue less and adopt its beliefs more readily. The six minutes that won over Masayoshi Son fit that mechanism; the difference is that a lab story never has to come true, while a founder's story is later audited by cash flow.</li>
+<li><b>Distributed systems · Consensus protocols</b>: The martial-arts nicknames and shared jianghu lore work like a protocol that keeps tens of thousands of nodes aligned without central scheduling. Unlike Paxos, which tolerates failed nodes through majority votes, narrative consensus hangs on one evangelist; when he falls silent, the protocol loses its master clock.</li>
+<li><b>Complexity science · Self-organized criticality</b>: In the 1987 sandpile model of Bak, Tang and Wiesenfeld, a single grain can trigger an avalanche of any size because the pile already sits at a critical point. The Bund speech followed by the halted Ant IPO resembles that grain; but a sandpile has no intent and a regulator does, so where the avalanche lands is not random.</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Jack Ma got into Hangzhou Teachers College only on his third try at the gaokao, became an English teacher, and decided to build a website for China after first going online in Seattle in 1995.</li>
+<li>Selling China Pages door to door, often taken for a con man, taught him to describe an invisible future until others believed it.</li>
+<li>In 2000 a six-minute pitch won over Masayoshi Son and brought in $20 million from SoftBank.</li>
+<li>During the 2003 SARS lockdown Alibaba secretly built Taobao and fought fee-charging eBay EachNet with three free years; by 2006 eBay had all but left China.</li>
+<li>Taobao won on the timing of profit: grow users and trust first, monetize through payments and ads later, while eBay imposed its home-market fees on China.</li>
+<li>To protect its partnership structure, Alibaba passed on Hong Kong, which rejected dual-class control, and raised about $25 billion on the NYSE in 2014, then the largest IPO ever.</li>
+<li>Martial-arts nicknames, a deliberate distance from technology, and onstage performances were all tools for binding a 100,000-person organization through shared story and emotion.</li>
+<li>The 2011 Alipay carve-out, reportedly done without clear consent from Yahoo and SoftBank, became a classic business-ethics case on compliance versus good faith.</li>
+<li>Nine days after the 2020 Bund speech criticizing regulators, the Ant Group IPO was halted, and Jack Ma withdrew from public life for years.</li>
+<li>Narrative power can raise money before there is a product and rally people before there is profit, but without a sense of limits it turns from an asset into a liability.</li>
+</ol>
 </section>
 
 <section class="card">

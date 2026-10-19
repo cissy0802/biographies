@@ -38,6 +38,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -103,6 +115,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2><span class="icon">◆</span>[Takeaways for BigCat]</h2>
 <p>Nightingale is almost the patron saint of "data-driven decision-making" and "information design." The sharpest lesson she offers you, as someone pursuing the AI super-individual, is this: <strong>data itself does not change the world; only data a decision-maker can grasp at a glance changes the world</strong> — the essence of the rose diagram was to compress a dry statistical report into a visual fact that could not be refuted. In an age of information overload, "translating" a complex truth into a form a decision-maker can absorb in an instant is itself a form of power. The second lesson is her leverage structure: a bed, a pen and a rigorous body of data let her run an empire's public health — a "super-individual" from before the industrial age, moving systems not by doing everything herself but by using the leanest medium to pry open change at scale. But hear the alarm too: her intervention worked because of good method, while her theory of the cause was wrong — <strong>a right method can long conceal a wrong causal model</strong>; and by burning out allies as fuel she reminds you that systemic change bought at the cost of exhausting the people around you will, in the end, rebound.</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>[Crossovers]</h2>
+<ul>
+<li><b>Cognitive psychology · feature integration theory</b>: Anne Treisman proposed in 1980 that features like color and size are picked up in parallel before attention arrives. The rose diagram bets on exactly that layer: the great blue mass "pops out" without being read. Where it differs: people systematically underestimate area (the exponent for area in Stevens' power law is about 0.7), so the blue actually carried even more weight than it seemed to.</li>
+<li><b>Philosophy · the Gettier problem</b>: In 1963 Edmund Gettier showed that a justified belief that happens to be true need not count as knowledge. "Ventilation saves lives" was just that for Nightingale: the reason (miasma) was wrong, the conclusion right. The difference is that Gettier was about belief and she was betting on action — when an action works it gets rewarded, and the wrong reason gets reinforced along with it.</li>
+<li><b>Psychology · attention residue</b>: Sophie Leroy's 2009 research found that when people switch tasks, part of their attention stays stuck on the previous one. By seeing visitors only by appointment and one at a time, Nightingale designed switching out of her day. Unlike in the lab, her barrier was not a time-management trick but an identity that cost her an entire social life.</li>
+<li><b>Distributed systems · single-leader design</b>: Consensus protocols like Raft route every write through one leader — fast decisions, one consistent view, at the price of loading everything onto a single node. Nightingale running everything from her bed had that shape. The difference: when a Raft leader fails a new one is elected, but when Herbert collapsed under sustained load, her system had no replica.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>[Ten takeaways]</h2>
+<ol class="takeaways">
+<li>In 1849 Nightingale turned down Monckton Milnes, who had courted her for nine years, choosing nursing, then close to social suicide.</li>
+<li>In 1854, during the Crimean War, she led 38 nurses to the military hospital at Scutari, and the "Lady with the Lamp" image spread worldwide.</li>
+<li>Crimean soldiers dying of preventable disease outnumbered those killed by wounds several times over; those figures were her ammunition with the Queen in 1856.</li>
+<li>The rose diagram of 1858 showed monthly causes of death as wedge areas, so decision-makers who never read tables could see the truth at a glance.</li>
+<li>Deaths at Scutari rose after she arrived; what turned things around was the Sanitary Commission of March 1855, which flushed out the sewers.</li>
+<li>A post-war review showed her own hospital had among the worst death rates in the army, and that guilt drove her later statistical and sanitary reforms.</li>
+<li>Bedridden from age 37 for over half a century, she wrote some 13,000 letters and about 200 reports, steering army and Indian sanitary reform from bed.</li>
+<li>Seeing people only by appointment, one at a time, turned the identity of "invalid" into a tool for blocking social duties and buying focus.</li>
+<li>A lifelong believer in miasma theory, Nightingale saved lives through ventilation and clean water: right action from a wrong theory, a Gettier problem in practice.</li>
+<li>A controlling streak that burned allies out as fuel, and coldness toward the women's movement of her day, are the shadow side of her achievement.</li>
+</ol>
 </section>
 <section class="card think">
 <h2><span class="icon">◆</span>[Questions to Sit With]</h2>

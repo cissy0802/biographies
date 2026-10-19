@@ -41,6 +41,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -127,6 +139,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2 data-tts="0646c56633eb6fd3"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>贝多芬对「AI 超级个体」的启示，是一堂关于约束与自主的课。正面：当他失去听觉——那本是作曲家最不可替代的感官——他没有退场，而是彻底重构了创作方法：靠草稿本、靠咬棒感受振动、靠脑中的声音写完《第九》。<strong>真正的护城河，不是某一种感官或工具，而是当工具被夺走后，你重新组织自己去完成使命的能力</strong>。当 AI 让「通用能力」变得廉价，这种在剥夺中重建方法的韧性反而稀缺。他还早一步活出了「独立创作者」的范式：拒绝当宫廷仆役，用一份年金换取只对自己作品负责的自由。反面同样刺目：<strong>同一股把他推向不朽的意志，一旦转向亲人便成了控制与占有</strong>，几乎逼死侄子卡尔。强大的自驱力是一把双刃剑——它能让你在绝境里写出《第九》，也能让你在最该松手处越攥越紧。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>神经科学 · 跨模态可塑性</b>：2001 年 Finney 等人发现，先天聋人看移动光点时听觉皮层也会亮起：闲置脑区会被别的感官接管。咬木棒借骨传导「听」钢琴，是同一种改道。不像在于，《第九》主要靠的是失聪前练成的内心听觉，旧地图在无声中继续运转。</li>
+<li><b>心理学 · 创伤后成长</b>：Tedeschi 与 Calhoun 在 1990 年代提出，重大打击后有人会重排优先级、使命感更强，写完遗嘱后的转身正是如此。不像在于，这种成长通常也让人更亲近他人，他在亲情上却越攥越紧。</li>
+<li><b>佛学 · 执取</b>：佛学说苦源于「取」，抓得越紧越痛。卡尔的监护之争正是这个结构：对家与爱的全部渴望押在一个男孩身上，抓得越紧，对方越想逃。不像在于，同一股不肯放手的力，在作曲上恰是他的护城河。</li>
+<li><b>分布式系统 · 单边日志</b>：「谈话本」像只记请求、不记响应的日志：访客写的话留下了，他的口头回答随声音消散，后人只能从问题反推答案。不像系统日志，这份残缺不是设计出来的，而是失聪强加的。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>贝多芬约 28 岁起听力衰退，此后二十余年在失聪中写出《英雄》《命运》和《第九交响曲》。</li>
+<li>1802 年的《海利根施塔特遗嘱》坦白耳聋与轻生念头，写完锁进抽屉，作者回维也纳继续创作。</li>
+<li>1804 年拿破仑称帝，《第三交响曲》的题献扉页被撕毁，作品改名《英雄交响曲》，不替权力背书。</li>
+<li>1809 年三位贵族联合给出终身年金换他留在维也纳自由创作，作曲家由此不再是贵族仆役。</li>
+<li>约 1814 年后几近全聋，晚年靠「谈话本」与人笔谈，咬住木棒抵着钢琴感受振动来继续工作。</li>
+<li>每杯咖啡数足 60 颗豆子、每天午后揣着记谱本在郊野疾走，许多主题动机诞生于走路途中。</li>
+<li>贝多芬为争夺侄子卡尔的监护权打了数年官司，过度控制最终让卡尔在 1826 年开枪自杀未遂。</li>
+<li>终身未婚的贝多芬在 1812 年写下《致永恒的爱人》，信从未寄出，收信人至今成谜。</li>
+<li>失去赖以为生的感官之后，真正的护城河是重新组织自己去完成使命的能力，而不是感官或工具本身。</li>
+<li>同一股把人推向不朽的意志，一旦转向亲人就成了控制与占有，正是佛学所说「执取」的结构。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="41e251bc1a368a25"><span class="icon">◆</span>【深入思考】</h2>

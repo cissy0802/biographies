@@ -41,6 +41,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -121,6 +133,32 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <h2 data-tts="b67802a405a644c6"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>马云最可拿走的是<strong>「把看不见的未来翻译成人人能信的语言」</strong>：他不写一行代码，却靠一段六分钟的故事调动了资本与十万人的信仰。对追求 AI 超级个体的人，这提醒：技术深度之外，「让别人为你的判断下注」的叙事力同样是杠杆。但他也是一面警镜——<strong>叙事一旦脱离边界感，就会从资产变成负债</strong>：996「福气论」和外滩演讲都证明，同一张点燃人心的嘴，在错误的时刻和对象面前，足以反噬整个帝国。学他把愿景讲清楚，也学他没学会的那课：知道何时该闭嘴。</p>
 </section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>生物进化 · 高斯竞争排斥原理</b>：Gause 1934 年用草履虫实验表明，吃同一种资源的两个物种无法长期共存，总有一方被排挤出局。淘宝对 eBay 像这场竞争，但淘宝没有躲开生态位，而是改了「何时取食」：先免费养用户，盈利后置，用时间错位把对手饿退。</li>
+<li><b>心理学 · 叙事运输</b>：Green 与 Brock 2000 年的研究发现，被故事「带进去」的读者更少挑错、更易接受故事里的观点。六分钟打动孙正义像这种机制；不像的是，实验里的故事不必兑现，创业故事讲完要被现金流检验。</li>
+<li><b>分布式系统 · 共识协议</b>：武侠花名与江湖叙事像一套让上万个节点不经中心调度也能对齐行为的协议。不像 Paxos 靠多数派投票容忍个别节点失效，叙事共识系于一位布道者，他一沉默，整套协议就失去了主时钟。</li>
+<li><b>复杂性科学 · 自组织临界</b>：Bak、Tang、Wiesenfeld 1987 年的沙堆模型里，一粒沙可能引发任意规模的雪崩，因为系统早已逼近临界。外滩演讲后蚂蚁上市被叫停，有点像那粒沙；但沙堆没有意图，监管有，雪崩落在哪里并不随机。</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>马云三次高考才进杭州师范学院，当了英语教师，1995 年在西雅图第一次上网后决定为中国做网站。</li>
+<li>创办「中国黄页」时挨家挨户推销互联网、常被当成骗子，由此练出把看不见的未来讲到别人相信的本事。</li>
+<li>2000 年一场六分钟的面谈打动孙正义，换来软银 2000 万美元投资。</li>
+<li>2003 年「非典」隔离期间秘密开发淘宝，用三年免费对抗收费的 eBay 易趣，到 2006 年 eBay 几乎退出中国。</li>
+<li>淘宝胜在盈利时序：先做大用户和信任，再靠支付与广告赚钱，而 eBay 把本国收费打法硬套中国。</li>
+<li>为保住合伙人制度，阿里放弃不接受同股不同权的香港，2014 年在纽交所募资约 250 亿美元，创当时最大 IPO。</li>
+<li>武侠花名、刻意不碰技术、年会登台表演，都是用共享叙事和情绪凝聚十万人组织的手段。</li>
+<li>2011 年支付宝剥离据称未获雅虎、软银明确同意，成了「合规与诚信谁优先」的商业伦理经典案例。</li>
+<li>2020 年外滩演讲公开批评监管九天后，蚂蚁集团上市被叫停，马云从此长期淡出公众视野。</li>
+<li>叙事力能在没有产品时融资、没有盈利时聚人，但一旦脱离边界感，就会从资产变成反噬自己的负债。</li>
+</ol>
+</section>
+
 <section class="card">
 <h2 data-tts="8624339960a6db3f"><span class="icon">◆</span>【深入思考】</h2>
 <details>

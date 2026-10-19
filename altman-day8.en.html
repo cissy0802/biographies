@@ -54,6 +54,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}.timeline li,.hours li{padding-left:16px;margin-left:8px}.timeline li::before,.hours li::before{position:static;display:block;margin-bottom:4px;text-align:left;width:auto}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -174,6 +186,33 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2><span class="icon">◆</span>Takeaway for BigCat</h2>
 <p>What is genuinely portable from Sam is the <strong>career architecture of "judgment as core asset"</strong> — switch from doer to judge-of-doers, trade salary for long-dated equity, decide in 60 seconds and then protect the decision from drift. In an era where AI drives execution cost toward zero, that's the only asset tools can't consume. But equally important is what to refuse: the version-tailored communication that was exposed on Nov 17 — the practice of showing every audience the most palatable version of you. LLMs are about to give every person that same capacity at zero cost, with no friction. <strong>When tools make "many versions" the default, you have to actively choose "one version" as the algorithm of your life.</strong> This is not a moral choice — it's a systems-design choice: information flows, versions are compared, people cross-check. The system ultimately settles on your worst-case version. Sam paid the first installment on November 17, 2023. The question for anyone using AI today is whether to walk down that same road.</p>
+</section>
+
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Distributed systems · The Byzantine Generals Problem</b>: The Byzantine fault Lamport and colleagues described in 1982 is a node sending different messages to different peers, and it is caught the way Mira caught it: nodes compare the versions they received. Unlike a protocol traitor, which is a fault or an attacker, Altman's versions read as a side effect of reading people, yet consensus failed all the same.</li>
+<li><b>Psychology · Self-monitoring</b>: In 1974 Mark Snyder described high self-monitors, who adjust how they present themselves to whoever is in the room. Pitching each YC founder differently fits the type; but the scale measures performance style, while the board charged inconsistent facts.</li>
+<li><b>Decision science · When intuition can be trusted</b>: Kahneman and Klein argued in 2009 that intuition is reliable only where regularities are stable and feedback is prompt. Thousands of interviews built the 60-second habit, but startups take years to succeed or fail, so the feedback is slow.</li>
+<li><b>Evolutionary biology · Cooperation and cancer</b>: Bodies reserve reproduction for the germline; a somatic cell that only multiplies itself becomes cancer. Capped-profit split oversight from incentives, and in November the "somatic cells" overpowered the overseers; unlike cancer, the winners did not kill the host.</li>
+<li><b>Buddhism · Divisive speech</b>: The ten wholesome actions name divisive speech as a fault of the tongue: telling different people different things so they drift apart. Tailored versions need not intend division, yet carry the same risk: once compared, trust splits.</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Loopt burned about $39 million in seven years and sold to Green Dot in 2012 for $43.4 million, a barely successful exit.</li>
+<li>In 2014 Paul Graham made the 28-year-old Altman YC president on the strength of his judgment record.</li>
+<li>Moving from doer to judge-of-doers pays because judgment compounds, while execution drops to zero once you leave.</li>
+<li>OpenAI's 2019 capped-profit structure kept oversight with the nonprofit board and put incentives in a for-profit arm.</li>
+<li>When incentives and oversight drift too far apart, oversight dies first; the November 2023 firing exposed that bug.</li>
+<li>Fired in November 2023 for not being candid, Altman returned four days later after 738 employees signed a protest letter.</li>
+<li>After returning he rewrote governance rather than patching it, pushing a public benefit corporation conversion that weakened nonprofit oversight.</li>
+<li>Deciding in 60 seconds and changing slowly rests on practice: roughly ten thousand quick founder assessments over five years at YC.</li>
+<li>Telling different people different versions was a people-reading gift at YC and became documented distrust before the board.</li>
+<li>Altman takes no OpenAI cash salary but holds AI-adjacent stakes like Helion and Reddit, putting him on both sides of some deals.</li>
+</ol>
 </section>
 
 <section class="card">

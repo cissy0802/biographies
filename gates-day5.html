@@ -41,6 +41,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -115,6 +127,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <span class="src">— 《Business @ the Speed of Thought》, 1999</span>
 </li>
 </ul>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>复杂性科学 · 报酬递增与锁定（W. Brian Arthur，1989）</b>：早期一点偶然优势经正反馈放大，最后锁定整个市场，胜者未必是最好的技术。MS-DOS 随兼容机铺开、软件越写越多，正是这条曲线。不像在于：Arthur 模型里起点是随机的，Gates 却事先用一条版权条款，把正反馈的收益接到了自己手里。</li>
+<li><b>佛学 · 结夏安居</b>：僧团雨季三个月止步一处、集中修习，周期性从日常撤出，和一年两次的 Think Week 同构。不像的是：安居减少输入、让心静下来；Think Week 一周塞进上百篇论文，撤出来是为了加大输入。</li>
+<li><b>东西方哲学 · 维特根斯坦「意义即用法」</b>：词义来自它在生活里的用法，抽离语境去追问只会让语言空转。证词里拆解「compete」，正是让词脱离用法而失重。不像的是，维特根斯坦借此消解伪问题，证词借此回避真问题。</li>
+<li><b>分布式系统 · 单点故障</b>：一个中心节点拍板，省掉共识开销、决策快，但它出错时没有别的节点能纠正，「未经选举」的批评指的正是这种结构。不像在于：系统加副本就能补，基金会缺的是外部问责。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>1980 年 IBM 缺操作系统，微软花 5 万美元买下 QDOS，改名 MS-DOS 授权给 IBM。</li>
+<li>Gates 坚持 MS-DOS 版权归微软、可授权别家，兼容机时代每台电脑于是都装上它。</li>
+<li>保留版权并非预见兼容机浪潮，而是出自「软件值得收费」这一早年信念。</li>
+<li>1998 年司法部起诉微软捆绑 IE，拆分令 2001 年被上诉推翻，最终和解收场。</li>
+<li>反垄断录像证词里逐字抠词义，让 Gates 从美国天才变成傲慢垄断者的形象。</li>
+<li>2000 年微软 CEO 交给 Steve Ballmer，2008 年创始人离开日常运营。</li>
+<li>Think Week 一年两次独居读上百篇论文，1995 年那次催生了互联网转向备忘录。</li>
+<li>读完书等 24 小时再凭记忆写笔记，用回忆而非重读来消化。</li>
+<li>早年微软会议以吼叫和辩到对方放弃著称，Paul Allen 因股权稀释之争离开。</li>
+<li>晚年争议归结为一问：未经选举的私人巨富，有没有权利独自重塑世界。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="237534b6fd780390"><span class="icon">◆</span>【本周思考题】</h2>

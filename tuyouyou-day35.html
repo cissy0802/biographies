@@ -42,6 +42,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -124,6 +136,32 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <h2 data-tts="505bd2ff74592a7d"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>屠呦呦给「AI 超级个体」的启示，藏在她<strong>如何缩小搜索空间</strong>。当大部队在数万种化合物里盲目穷举，她转身回到中医古方——那是<strong>人类几千年临床经验沉淀的「先验」</strong>，等于给天文数字的搜索空间加了一层强力剪枝。这正是今天用 AI 解决难题的核心姿势：与其暴力搜索，不如先找到高质量先验约束方向。更精妙的是那次「读古文改工艺」——真正的突破，常来自<strong>把一条被忽略的旧线索，重新放到当下问题里解读</strong>。但她的阴面也是警钟：单打独斗的英雄叙事，会抹平托举你的整个系统。把她拿走的两样东西是——用先验为搜索剪枝的智慧，以及坐穿冷板凳、亲身下场验证的笨功夫。</p>
 </section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>认知心理学 · 功能固着</b>：Duncker 1945 年的蜡烛实验里，人看不到装图钉的盒子也能当烛台，因为它被默认成「容器」。「523」团队把「煎」当成提取草药的默认动作，也是同一种固着；像在都要换个看法才解开，不像在屠呦呦的松动不是灵光一闪，而是重读一句古文时撞上的。</li>
+<li><b>哲学 · 波兰尼「默会知识」</b>：Michael Polanyi 说「我们知道的比能说出的多」。葛洪写「绞取汁」，并没写「因为有效成分怕热」——温度这条约束以操作的形式存着，没以道理的形式存着。屠呦呦做的，是把一条默会的经验翻译成能写进工艺的明言知识；不像在古人连自己「知道」什么都未必意识到。</li>
+<li><b>生物进化 · 红皇后假说</b>：Van Valen 1973 年提出，物种要不停进化才能留在原地。疟原虫对氯喹产生抗药性才逼出「523」；而 2008 年前后柬埔寨西部又报告了青蒿素疗效下降。药和寄生虫的军备竞赛没有终点，青蒿素是这场竞赛中的一个回合，不是终局。</li>
+<li><b>强化学习 · 信用分配问题</b>：Minsky 1961 年点出难题：一长串动作最后成功了，该把功劳记给哪一步。「523」有 60 多个单位、500 多人，乙醚提取、提纯、测结构环环相扣，诺奖却只能落在一个名字上；像在功劳天然难拆，不像在算法可以按贡献摊分，奖项和院士评选却往往只能二选一。</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>屠呦呦是首位获科学类诺贝尔奖的中国本土科学家，没有博士学位、留洋经历和院士头衔。</li>
+<li>「523」项目起于越战期间对氯喹耐药的恶性疟，此前筛过数万种化合物几乎一无所获。</li>
+<li>1969 年她带队回到中医古方，编出收录 640 多个方子的《抗疟单验方集》，把搜索空间大幅收窄。</li>
+<li>葛洪《肘后备急方》写青蒿要「绞取汁」而非煎煮，让她意识到高温可能破坏有效成分。</li>
+<li>改用沸点 35℃ 的乙醚低温提取后，1971 年第 191 号样品对鼠疟、猴疟抑制率首次达到 100%。</li>
+<li>1972 年人体试验受阻，屠呦呦以组长身份第一个试药，安全性过关后海南临床随即见效。</li>
+<li>为投入研究她把两个女儿送走，又在无通风的实验室里因长期吸入溶剂患上中毒性肝炎。</li>
+<li>「523」有 60 多个单位、500 多人参与，诺奖只授一人，「首功归谁」因此争了几十年。</li>
+<li>因保密和文革，1977 年首篇青蒿素论文以协作组集体署名，给日后的优先权认定埋下难题。</li>
+<li>「绞汁」把怕热这条约束藏在操作里，读懂古方就是把默会的经验翻成可写进工艺的知识。</li>
+</ol>
+</section>
+
 <section class="card think">
 <h2 data-tts="81c03f0543774ded"><span class="icon">◆</span>【深入思考】</h2>
 <details>

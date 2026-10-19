@@ -42,6 +42,18 @@ details .ans{margin-top:10px;color:#c8c4b8;font-size:0.92rem;line-height:1.8}
 .read-list .note{color:#a0a4b0;font-size:0.9rem;display:block;margin-top:4px}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -131,6 +143,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2><span class="icon">◆</span>Takeaways for BigCat</h2>
 <p>What makes Arnold worth pondering in the age of AI is how she <strong>turned intellectual humility into an engineering strategy</strong>. When a problem outruns your understanding, her answer is not "learn it fully first," but build a loop of "variation–selection–iteration" and let the search process find a solution you could never design—which is precisely the engine of machine learning and evolutionary algorithms. For anyone chasing the "AI super-individual," the leverage is usually not "understand everything, then act," but "build a fast feedback loop and let it run the trials for you." She also offers a cold reminder: directed evolution hands you something that <em>works</em>, not automatically something you <em>understand</em>; the strongest position is to use both—get a result by search, then dissect why it works and forge the black box into new knowledge. Finally, by retracting at her peak, she modeled both the cost of a speed culture and the discipline of owning error: those who move fast must stand behind what they ship.</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Economics · Hayek's knowledge problem</b>: In 1945 Hayek argued that no planner can hold all the dispersed knowledge; markets try things and let prices select. Rational design is the planned economy, directed evolution the market. Unlike a market, though, it has a single goal, fixed by a person.</li>
+<li><b>Neuroscience · Edelman's Neural Darwinism</b>: In 1987 Gerald Edelman proposed that the brain overproduces connections and experience keeps the ones that get used, with no wiring diagram drawn in advance. Same vary-then-select logic; but the brain's criterion comes from the environment, the test tube's from a person.</li>
+<li><b>Computer security · Coverage-guided fuzzing</b>: Tools like AFL randomly mutate inputs, keep those that reach new code paths and mutate again, without understanding the program. Same structure as directed evolution, opposite direction: fuzzing hunts inputs that break a system, directed evolution mutations that improve an enzyme.</li>
+<li><b>Western philosophy · The Stoic dichotomy of control</b>: Epictetus divides things into those up to us and those not; holding on to experiments and students while losing loved ones fits that structure. The difference: the Stoics revise their judgments about what they cannot control, while Arnold leaned on the momentum of the work itself.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Arnold trained in mechanical and aerospace engineering and then chemical engineering, entered molecular biology as an outsider, and pioneered the directed evolution of enzymes.</li>
+<li>Directed evolution abandons rational design, which demands understanding a structure first, and instead closes in on a goal through rounds of random mutation and screening.</li>
+<li>Getting subtilisin E to stay active in the organic solvent DMF in 1993 was directed evolution's first clean victory.</li>
+<li>Directed evolution left the lab: Gevo engineers microbes to make renewable fuels, and Provivi makes enzymatic pheromones to replace insecticides.</li>
+<li>Between 2001 and 2016 Arnold lost her husband, her partner and her son and survived breast cancer, using lab work and students as the anchor she could control.</li>
+<li>The teenage rebel who left home and hitchhiked to protest the Vietnam War turned that defiance into a method: refusing the dogma that you must understand before you design.</li>
+<li>"I'm not smart enough" was not modesty but the foundation of the method: admit the limits of understanding, then hand design to a search process that routes around them.</li>
+<li>Arnold's public retraction of an irreproducible Science paper in 2020 is a model of honesty and a warning about failed supervision in a star lab.</li>
+<li>Directed evolution was not one person's work: Eigen's theory of laboratory evolution and Stemmer's DNA shuffling were just as crucial.</li>
+<li>The price of "no need to understand" is knowing that something works without knowing why: it optimizes existing functions but struggles to explain them or invent new mechanisms.</li>
+</ol>
 </section>
 
 <section class="card">

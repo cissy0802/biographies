@@ -43,6 +43,18 @@ details .ans{margin-top:10px;color:#c8c4b8;font-size:0.92rem;line-height:1.8}
 .read-list .note{color:#a0a4b0;font-size:0.9rem;display:block;margin-top:4px}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -120,6 +132,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2 data-tts="73e8f7085ecdf10e"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>富兰克林最值得技术人深思的，是<strong>严谨的双刃</strong>。她对数据的洁癖让她拍出无人能及的照片，也让她在该大胆一跃时停了下来。对追求「AI 超级个体」的人，这是一记提醒：深度与速度常常互为代价，最强的实验者未必最先到达终点；高手要在「数据未足不下结论」与「证据已够就果断成型」之间校准自己的扳机。另一层更冷峻：再硬的成果，若关在不承认你的体系里也会被无声拿走——能力之外，还要争取被看见的位置。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>心理学 · 信号检测论</b>：Green 与 Swets 1966 年把「有没有信号」的判断拆成两件事：辨别力，和下判断的门槛。富兰克林的辨别力全场最高，门槛也设得最高，宁可漏报，绝不误报。像在：照片 51 和那张螺旋讣告都是高门槛的产物；不像在：实验室里一次漏报的代价不是扣一分，而是整个发现被别人先说出口。</li>
+<li><b>科学哲学 · 波普尔「猜想与反驳」</b>：波普尔主张科学从大胆猜想出发，再拿证据去推翻它；沃森与克里克先搭模型再对数据，几乎是教科书式演示，而她更像培根式归纳，等数据自己长出结论。不像在：波普尔会说，根本没有不带假设的观察。</li>
+<li><b>神经科学 · 预测加工</b>：按 Friston、Andy Clark 一派的看法，知觉是自上而下的预测与自下而上的误差信号来回校正。她几乎只信误差信号，沃森-克里克先押预测；大脑两头都要，靠「精度」加权决定此刻更信哪一头。</li>
+<li><b>佛学 · 中道</b>：佛陀初转法轮，先劝人离开苦行与纵欲两个极端。正文说她的悲剧是「把一种美德绝对化」，和「执」同一个结构：严谨本是好东西，抓得太紧就成了枷锁。不像在：中道不是两种方法各取一半，而是对哪一边都不执着。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>富兰克林拍出 DNA 衍射图「照片 51」，却因 1958 年早逝而不在 1962 年的诺奖名单上。</li>
+<li>1951 年国王学院一封权责不清的聘书，把本可合作的威尔金斯变成了冷战对手。</li>
+<li>1953 年在 DNA 几乎到手时主动转往伯贝克，是把精力投向还能赢的战场的沉没成本意识。</li>
+<li>照片 51 被威尔金斯未经许可拿给沃森看，MRC 报告里的 C2 对称参数则让克里克推出双链反向平行。</li>
+<li>1953 年《自然》同期三篇论文里，沃森-克里克的模型在前，富兰克林与戈斯林的数据在后，看似只为他人佐证。</li>
+<li>「数据先于解释、绝不臆测」让 DNA 的 A 型与 B 型率先被区分开，也让人在 A 型迷宫里耗掉了几个月。</li>
+<li>1953 年 3 月的手稿已写下螺旋结构、磷酸在外，离答案只差一步，差的是敢把碎片拼成整体。</li>
+<li>与威尔金斯的僵局，大头是时代偏见与制度不公，但固执好斗的性格也有一份责任。</li>
+<li>「被偷走荣誉的圣女」叙事反而遮住了富兰克林在伯贝克五年的顶尖病毒结构研究。</li>
+<li>用信号检测论看，严谨就是把下判断的门槛调得极高：误报少了，漏报的代价却是错过终点。</li>
+</ol>
 </section>
 <section class="card">
 <h2 data-tts="3fcc80d27c00b50d"><span class="icon">◆</span>【深入思考】</h2>

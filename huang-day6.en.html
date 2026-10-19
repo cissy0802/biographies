@@ -46,6 +46,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}.timeline li{padding-left:16px;margin-left:8px}.timeline li::before{position:static;display:block;margin-bottom:4px;text-align:left;width:auto}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -140,6 +152,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 </ul>
 </section>
 
+<section class="card crossx">
+<h2><span class="icon">◆</span>[Crossovers]</h2>
+<ul>
+<li><b>Evolution · Exaptation (Gould &amp; Vrba, 1982)</b>: Feathers evolved for warmth and were only later co-opted for flight; the GPU was built for game graphics and later co-opted by deep learning. The resemblance is the change of function. The difference: a feather's spare capacity was an accident of evolution, while CUDA's roughly 20% of extra transistors were paid for, year after year, knowing almost no one would use them yet.</li>
+<li><b>Psychology · Defensive pessimism (Norem &amp; Cantor, 1986)</b>: Some people tame anxiety by assuming the worst and rehearsing failure, and perform better for it. "Thirty days from going out of business" is the organizational version, except that a private coping strategy has been turned into a company-wide meeting ritual.</li>
+<li><b>Distributed systems · Broadcast and the single point of failure</b>: Skipping one-on-ones and airing information in front of dozens of people swaps point-to-point messages for a broadcast, so fewer nodes drift out of sync. Yet thousands of Top 5 emails still converge on one CEO, the very central coordinator distributed design tries to avoid.</li>
+<li><b>Buddhism · The truth of suffering</b>: Buddhist teaching and a commencement wish of "pain and suffering" both treat suffering as a way into seeing clearly rather than something to flee. They part at the end: Buddhism asks you to see through attachment and be released from suffering, whereas here the fear that the company could die is meant to be gripped tightly, forever.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>[Ten takeaways]</h2>
+<ol class="takeaways">
+<li>In 2006 NVIDIA launched CUDA, adding roughly 20% more transistors to every GPU for general-purpose computing that almost no customer needed yet.</li>
+<li>The CUDA bet was not on AI but on a deeper physical trend: as Moore's law slowed, parallel architectures would beat general-purpose CPUs.</li>
+<li>CUDA burned about $500 million a year in R&amp;D until AlexNet, trained on two GTX 580s in 2012, gave it a killer application.</li>
+<li>The first product, NV1, bet on quadratic surfaces incompatible with Direct3D, forcing 1996 layoffs of nearly half the staff and a switch to triangles.</li>
+<li>Too poor for test silicon runs, NVIDIA debugged the whole chip in a software emulator; RIVA 128 shipped with one month of cash left.</li>
+<li>Huang opens executive meetings by saying the company is thirty days from going out of business, making crisis a permanent internal discipline.</li>
+<li>About sixty direct reports, no one-on-ones, and weekly Top 5 emails from executives keep information flowing in front of everyone.</li>
+<li>Huang credits his resilience and refusal to complain to being sent, at nine, to a Kentucky boarding school for troubled boys.</li>
+<li>At the top, NVIDIA faces antitrust scrutiny over CUDA lock-in, total reliance on TSMC, and pressure from both sides of US export controls on China.</li>
+<li>The GPU's jump from game graphics to neural networks resembles exaptation in evolution, except that Huang deliberately paid to keep the spare capacity.</li>
+</ol>
+</section>
 <section class="card think">
 <h2><span class="icon">◆</span>[This Week's Question]</h2>
 <p>The decision to ship CUDA in November 2006 did not produce a single quarter of board-acceptable return for ten years. R&D burned $500 million annually; the market refused to buy; analysts asked, every earnings call, when the project would be killed. Huang's one-sentence answer was always the same: "Physics tells us the CPU will hit a wall, and when that happens the world will need the GPU." Put yourself in his position. If you can see a trend that won't pay off for ten years — but every KPI, every shareholder, every colleague is telling you there is no market for it now — could you place the bet? And the harder question: how do you distinguish "seeing the future" from "betting wrong, stupidly"? Huang himself says he has no answer. He has only one rule: <em>If I don't do this and ten years from now I regret it enough to want to die, then I do it.</em> Is there anything on your list that meets that test?</p>

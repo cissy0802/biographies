@@ -44,6 +44,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -128,6 +140,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2><span class="icon">◆</span>What BigCat Can Take From This</h2>
 <p>She offers the earliest template for human-machine collaboration, and the conclusion is counter-intuitive: <strong>in the phase where a machine is already strong enough to be necessary but not yet strong enough to be trusted, the value is not in computing faster but in being able to reproduce its conclusion along an independent path.</strong> Large-model output sits in exactly that position today — the scarce skill is not using it, it is verifying it independently. Second, the fight over the byline: doing the work is not the same as being credited for it, and institutions only recognise attributable traces (reports, commits, design docs). Anything left with "the group" is left nowhere. Third, that question — <em>is there a law against it?</em> — treats an unwritten norm as a hypothesis to be falsified. The downside is worth recording too: <strong>build a career on a skill that will eventually be mechanised, and the scarcity disappears on its own.</strong></p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Distributed systems · N-version programming</b>: Avizienis proposed it in 1977: independent teams write separate programs from one spec, so that their different ways of failing expose common-mode faults. That is what Glenn asked for in 1962: the machine took one path, she took another, with analytic geometry and a desk calculator. The likeness is that independence is the whole value. The difference is that there was no majority vote: the far slower version held a veto, and the system's credibility rested on one person.</li>
+<li><b>Evolution · Ecological niche</b>: A species is often best fitted to a transitional habitat, and when the habitat shifts its edge turns into dead weight. Her irreplaceability grew in the transition zone where machines had to be used but could not be trusted; when that window closed in the 1970s she went quiet for forty years. The difference: organisms cannot change habitats, but a person can carry the same verifying skill to the next transition.</li>
+<li><b>Psychology · Scarcity tunneling</b>: In Scarcity (2013), Mullainathan and Shafir argue that under pressure attention narrows into a tunnel: the task in front of you gets done better, and everything outside it disappears. "I didn't feel the segregation" looks like that tunnel: the problem in hand solved precisely, the institutional injustice out of view. The difference is that she partly chose the tunnel, while scarcity usually forces it.</li>
+<li><b>Buddhism · Counting the breath</b>: Beginning meditators are often taught to count breaths from one to ten, cutting a continuous flow into countable units to steady a scattered mind. Counting steps and dishes as a girl, then breaking a continuous orbit into discrete, checkable steps, is the same move. The direction differs: breath counting ends by letting go of what is counted; she counted to keep a firm grip on it.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Katherine Johnson finished high school at 14 and college at 18, because her father moved the family so the children could attend high school.</li>
+<li>In 1939 she accepted one of West Virginia University's integration places, left after a semester, and never earned a graduate degree.</li>
+<li>Without a doctorate, she spent 33 years at NASA as someone who computed the problems, never someone who set them.</li>
+<li>Loaned temporarily to the Flight Research Division in 1953, she never went back, and staying in the room where questions were asked changed her standing.</li>
+<li>No rule barred women from editorial meetings, so she went: treat an unwritten norm as a hypothesis to be tested.</li>
+<li>Technical Note D-233 in 1960 made her the Flight Research Division's first credited woman author; a signed report was the only contribution the institution recorded.</li>
+<li>In 1962 Glenn asked for her by name to hand-check the IBM 7090's orbit, and she delivered an independent verification in a day and a half.</li>
+<li>When machines are trusted only partway, the scarce skill is reproducing their result by an independent path, the same idea as N-version redundancy.</li>
+<li>The film's scenes of running to a distant restroom and a boss smashing the sign are invented, recasting Black women's quiet defiance as a white man's heroics.</li>
+<li>Johnson got through segregation personally while hundreds of computers stayed nameless; one person getting through does not prove the system is passable.</li>
+</ol>
 </section>
 <section class="card think">
 <h2><span class="icon">◆</span>Questions Worth Sitting With</h2>

@@ -51,6 +51,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}.tl-yr{width:70px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -138,6 +150,32 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2><span class="icon">◆</span>[Takeaways for BigCat]</h2>
 <p>What is most takeable from Deng is <strong>"pragmatic patience" and "decoupling the self from the post"</strong>: thrown down three times, he wrote no suicide note and staged no grief, but worked as a fitter at the bottom and waited for the window — then, once it opened, levered the largest real-world change with the least ideological friction ("don't argue"). For anyone pursuing the "AI super-individual," this is a kind of antifragility — unbinding your sense of worth from any title, so your judgment still holds after you lose the platform. But he is also a cautionary mirror: "don't argue" can dodge internal friction and speed execution, yet it can also become a shield against legitimate questioning; the hand of 1989 reminds us that when efficiency overrides everything, what gets sacrificed is often the hardest to quantify and the least reversible.</p>
+</section>
+
+<section class="card crossx">
+<h2><span class="icon">◆</span>[Crossovers]</h2>
+<ul>
+<li><b>Buddhism · The unanswered questions and the poisoned arrow</b>: In the Cula-Malunkya Sutta (Majjhima Nikaya 63), a monk demands to know whether the world is eternal and whether the Tathagata exists after death; the Buddha declines, saying a man shot with a poisoned arrow should pull it out before asking who fired it. "Don't argue" has the same shape: shelve metaphysical disputes that cannot be settled now and do what relieves suffering first. The difference: the Buddha's silence served liberation and never forbade others to ask, while "don't argue" also silenced the people asking.</li>
+<li><b>Philosophy · William James's pragmatism</b>: In Pragmatism (1907), James held that an idea's truth lies in what it pays out in experience. "Practice is the sole criterion of truth" has the same structure. The difference: James left the test to each inquirer, while in the 1978 debate the Party still decided which practice counted.</li>
+<li><b>Distributed systems · Single point of failure and leader election</b>: That a retired old man could still reverse national policy in 1992 shows the whole system's direction hung on one node, a textbook single point of failure. Consensus protocols such as Raft make changing leaders routine, so the system keeps running when any node drops out; that mechanism is exactly what was missing here.</li>
+<li><b>Complexity science · Emergence</b>: Many key steps of reform surfaced locally first: in 1978 eighteen households in Xiaogang village secretly divided collective land into family plots, and the center endorsed and spread it afterward. That looks like emergence, order growing from the bottom up. Unlike true emergence, whether to let it grow or cut it off was still decided at the top; the "chief architect" acted more as a selector than a drafter of blueprints.</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>[Ten takeaways]</h2>
+<ol class="takeaways">
+<li>Deng Xiaoping fell and rose three times: purged in 1933, 1966 and 1976, he returned to the center of power each time.</li>
+<li>In 1978 the debate on the criterion of truth beat the "two whatevers," letting him seize the power to define the line before holding the top post.</li>
+<li>The Third Plenum of the 11th Central Committee shifted the Party's focus from class struggle to economic construction, launching reform and opening.</li>
+<li>On the 1992 Southern Tour, Deng held no office at all, yet his prestige alone pushed the socialist market economy into the 14th Party Congress.</li>
+<li>A national U-turn hinging on one retired man showed influence can outlive office, and exposed the system's single point of failure.</li>
+<li>Sent down to a Jiangxi tractor repair plant as a fitter from 1969 to 1973, he waited for a comeback by working, reading, nursing his paralyzed son and writing letters.</li>
+<li>Zhou Enlai said Deng lifted heavy things lightly: he hated long documents, spoke little, decided fast, and ran both body and state on routine and restraint.</li>
+<li>Sending troops to clear Tiananmen in June 1989 is his unavoidable shadow: the hand that freed the economy also pulled the trigger.</li>
+<li>Running the 1957 Anti-Rightist Campaign, jailing Wei Jingsheng and capping reform with the Four Cardinal Principles kept politics tight while economics opened.</li>
+<li>"Don't argue" spared China ideological infighting, but shelved fundamental disputes like political reform and passed the bill to later generations.</li>
+</ol>
 </section>
 
 <section class="card">

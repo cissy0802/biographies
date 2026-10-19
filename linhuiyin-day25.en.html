@@ -38,6 +38,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -127,6 +139,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <p>Lin Huiyin's first lesson for the "AI super-individual" is that <strong>crossing disciplines is itself the moat</strong>: she spanned architecture, poetry, and craft design, often mocked as a jack-of-all-trades — yet that very range made her irreplaceable, able to carry aesthetic judgment into engineering and engineering's rigor into writing. The second is harder: <strong>when the institution gives you no place, routing around is smarter than battering</strong> — Penn locked the department's door, so she took its courses through Fine Arts and stood at the lectern anyway. The third lives in the shadow: <strong>talent and sharpness, confidence and a craving for adoration, are often two ends of the same nerve.</strong> What the super-individual truly lacks is not brighter light, but the discipline not to let the salon end with only oneself still shining.</p>
 </section>
 
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Distributed systems · routing around failure</b>: the internet treats a cut link as damage and sends packets another way; John Gilmore famously said the Net treats censorship the same way. Penn locked the architecture department, so she took every architecture course through the fine-arts school: no wall-ramming, just rerouting. The difference: a router only cares that the packet arrives, while she detoured to get back into the very field that refused her, and ended up teaching in it.</li>
+<li><b>Philosophy of science · Popper's falsifiability</b>: "no Tang-dynasty timber building survives in China" is a universal claim, and one black swan topples it; Foguang Temple was that swan. Unlike the textbook picture, falsification leans on auxiliary assumptions: the date had to be trusted, which is why the beam inscription and the pillar date had to agree.</li>
+<li><b>Buddhism · impermanence (anicca)</b>: she heard old gate-towers and temple bases "sing" of time's changes, almost an aesthetic contemplation of impermanence. But the direction is reversed: Buddhism sees impermanence in order to let go, while she saw it and held on harder, fighting for Beijing's city walls because a genuine antique, once torn down, never comes back.</li>
+<li><b>Evolutionary biology · pleiotropy</b>: one gene often shapes several traits at once, so selection cannot keep only the good half. Her eloquence, confidence, sharpness, and taste for the spotlight look like several phenotypes of one trait cluster. The difference: temperament is not a fixed sequence, and context and self-awareness can turn down one of its expressions.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Lin Huiyin (1904–1955) was an architect and poet whose romantic "April of this world" image hides the field scholar who climbed temple beams to survey them.</li>
+<li>Penn's architecture school refused women in 1924, so she enrolled in fine arts, took every architecture course, and became a design teaching assistant.</li>
+<li>In 1937 Liang and Lin followed a clue in a Dunhuang mural of Mount Wutai and rode mules into the mountains to find Foguang Temple's East Hall.</li>
+<li>Lin first spotted faint ink writing on Foguang Temple's main beam, then matched it to a date on the stone pillar outside: 857 CE, Tang dynasty.</li>
+<li>The Foguang find overturned Japanese scholars' claim that no Tang timber building survived in China, weeks before the Marco Polo Bridge Incident.</li>
+<li>In exile at Lizhuang, Sichuan (1940–1946), tuberculosis kept Lin bedridden and coughing blood, yet she edited the whole History of Chinese Architecture and wrote its Liao and Song parts.</li>
+<li>The couple's weekend salon in 1930s Beiping drew Jin Yuelin, Shen Congwen, Xiao Qian and others, with the hostess usually at its center.</li>
+<li>Bing Xin's 1933 story "Our Lady's Salon" was widely read as a jab at Lin, while the tale of a jar of vinegar sent in reply has no solid evidence.</li>
+<li>After 1949 she helped design the national emblem and the Monument to the People's Heroes, and fought in vain to save Beijing's city walls.</li>
+<li>Talent and sharpness behave like pleiotropy: one cluster of traits brings both brilliance and edge, and you cannot keep only the good half.</li>
+</ol>
+</section>
 <section class="card think">
 <h2><span class="icon">◆</span>Going Deeper</h2>
 <details>

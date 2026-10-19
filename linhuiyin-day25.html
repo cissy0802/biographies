@@ -39,6 +39,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -121,6 +133,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2 data-tts="26d90af787b97f07"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>林徽因给「AI 超级个体」的第一层启示是<strong>跨界即护城河</strong>：她横跨建筑、诗与工艺设计，常被讥为样样通样样松，但正是这种跨界让她不可替代——能把美学判断带进工程，把工程的严谨带进写作。第二层更硬：<strong>制度不给你位置时，绕路比硬撞高明</strong>——宾大锁了系门，她从美术系选课照样站上讲台。第三层在阴面：<strong>才华与尖锐、自信与对崇拜的贪恋，常是同一条神经的两端</strong>。超级个体真正稀缺的不是更强的光芒，而是别让自己的客厅，最后只剩自己一人在发光。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>分布式系统 · 绕过故障的路由</b>：互联网把断掉的链路当作故障，自动改走别的路径，John Gilmore 那句名言说网络连审查也当故障绕过去。宾大锁了建筑系的门，她改从美术系把课选齐，是同一种「不撞墙、换路由」。不像在于：路由只求把包送到，她绕路是为了最终回到被拒的那门学问，还站上了它的讲台。</li>
+<li><b>科学哲学 · 波普尔的可证伪性</b>：「中国已无唐代木构」是一个全称判断，一只黑天鹅就能推翻它，佛光寺就是那只天鹅。不像的是，证伪也要靠辅助假设：先得相信年代判得准，所以梁上题字和经幢纪年两处证据必须互相对上。</li>
+<li><b>佛学 · 无常（anicca）</b>：她在古城楼和殿基里听见时间变迁的「歌唱」，近乎对无常的审美观照。方向却相反：佛学看见无常是为了放下执着，她看见无常反而更要抓住，替北京城墙去争，因为拆掉的真古董回不来。</li>
+<li><b>进化生物学 · 基因多效性（pleiotropy）</b>：一个基因常同时影响好几种性状，自然选择没法只留好的那一半。她的谈锋、自信、尖锐和对焦点的享受，像同一组特质的几种表型。不像的是，性格不是写死的序列，环境和自觉能调低其中一项的表达。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>林徽因（1904–1955）是建筑学家兼诗人，「人间四月天」的才女形象遮住了她爬梁测绘的田野学者身份。</li>
+<li>1924 年宾大建筑系不收女生，她注册美术系、选修全部建筑课，最后当上建筑设计课助教。</li>
+<li>1937 年梁林夫妇循敦煌壁画《五台山图》的线索，骑骡进山找到五台山佛光寺东大殿。</li>
+<li>林徽因先认出佛光寺大梁上的淡墨题字，再与殿前经幢纪年对上，定为唐大中十一年（857 年）。</li>
+<li>佛光寺的发现推翻了日本学者「中国已无唐代木构」的论断，几周后卢沟桥事变爆发。</li>
+<li>流亡四川李庄（1940–1946）期间肺结核全面爆发，林徽因卧床咯血，仍校阅并执笔《中国建筑史》辽、宋部分。</li>
+<li>1930 年代北平梁林家的周末沙龙聚集金岳霖、沈从文、萧乾等人，女主人往往是全场中心。</li>
+<li>冰心 1933 年的小说《我们太太的客厅》被普遍读作影射林徽因，「送醋回敬」一说则并无确证。</li>
+<li>1949 年后参与国徽和人民英雄纪念碑设计，并力争保留北京古城墙，最终没能保住。</li>
+<li>才华与尖锐像基因多效性：同一组特质同时带来光芒和锋芒，没法只挑好的一半。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="29d642c8eb8d39d7"><span class="icon">◆</span>【深入思考】</h2>

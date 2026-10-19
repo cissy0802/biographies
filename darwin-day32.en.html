@@ -36,6 +36,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -122,6 +134,31 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <p>Darwin's lesson for the "AI super-individual" lies not in his gifts but in his <strong>methodological discipline</strong>. First, he deliberately hunted for evidence against himself — knowing the brain favors agreeable thoughts and forgets inconvenient ones, he wrote the latter down at once. In an age where AI amplifies the echo chamber, this counter-instinctive habit is a moat against self-deception. Second, he outsourced "thinking" to a fixed bodily ritual (the Sandwalk), freeing the mind from trivia. Third, he proved that <strong>a person need not be fast</strong>: slow, sick, and doubtful, so long as you will take responsibility for one idea for twenty years, you can move an entire worldview. Depth and patience are themselves scarce leverage.</p>
 </section>
 
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Psychology · Wason's 2-4-6 task</b>: In 1960 Wason found that people guessing a rule test only examples that fit their guess and rarely try a counterexample. Darwin's habit of jotting down contrary facts at once patches that confirmation bias, but with a notebook rather than willpower.</li>
+<li><b>Philosophy · Popper's falsification</b>: Popper held that science advances by hunting refutations, not piling up confirmations, and Darwin's vow to drop any hypothesis the facts opposed reads like a preview. The tempo differs: Popper wanted bold conjectures tested fast, Darwin sat on his for twenty years. Popper once called natural selection a "metaphysical research programme" and retracted that in 1978.</li>
+<li><b>Neuroscience · the default mode network</b>: When the brain stops attending to an outside task, a network tied to mind-wandering and free association gets busier; a 2014 Stanford study found walking boosts divergent thinking. The Sandwalk loops made room for that offline work, though walking helps ideas flow, not come out right.</li>
+<li><b>Complexity science · the adjacent possible</b>: Kauffman argues new things grow only from combinations within reach. With Malthus and long collecting voyages in place, natural selection became adjacent possible, so Darwin and Wallace each stumbled onto it. It cannot say who arrives first or who gets the credit.</li>
+<li><b>Distributed systems · the write-ahead log</b>: A database writes each change to a log before committing, so it can recover after a crash. The 1844 essay locked in a drawer for his wife to publish if he died was Darwin's write-ahead log, except a log exists to be replayed fast, while his let him take his time not publishing.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Darwin nearly missed the 1831 Beagle voyage because Captain FitzRoy, a phrenology believer, disliked the shape of his nose.</li>
+<li>Island-by-island differences in Galapagos mockingbirds and tortoises began to shake a would-be parson's belief in fixed species.</li>
+<li>Reading Malthus on population in 1838 gave him the mechanism: survival pressure keeps helpful variations, which is natural selection.</li>
+<li>The 230-page 1844 essay on natural selection went into a drawer, with a note asking his wife to publish it after his death.</li>
+<li>Annie's death in 1851 ended his faith in a benevolent God and deepened his fear of what publishing would do to religion.</li>
+<li>The 1858 joint Linnean Society reading secured Darwin's priority, but it was arranged without Wallace's knowledge.</li>
+<li>Writing down every fact against your own theory the moment it occurs to you is a habit that counters confirmation bias.</li>
+<li>Walking the Sandwalk and kicking away a flint each lap handed the body a routine and freed the mind for hard problems.</li>
+<li>Family wealth and forty years of chronic illness together bought Darwin focus, with no job to hold and every social call declined.</li>
+<li>A man who hated slavery saw his theory used for racial hierarchy and eugenics: authors cannot control where their ideas go.</li>
+</ol>
+</section>
 <section class="card think">
 <h2><span class="icon">◆</span>Questions to Sit With</h2>
 <details>

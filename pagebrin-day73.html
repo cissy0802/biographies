@@ -43,6 +43,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -134,6 +146,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2 data-tts="88c2ef798c5ae896"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p><strong>一，把昂贵的语义判断换成廉价的结构信号。</strong>PageRank 没有去读懂网页，它只数链接。做 AI 系统前先问：这个需要模型判断的问题，有没有一个结构信号能绕开它？<strong>二，运营与控制可以拆开。</strong>交出执行权不等于交出方向权——多数人把这两件事捆在一起谈判，因此要么什么都不放，要么全放。<strong>三，只活在个人执念里的原则会随人消失。</strong>2010 年退出中国靠布林一人，2018 年 Dragonfly 就回来了；原则没有写进流程和考核，就等于没有。<strong>四，别立你不打算被量的标准。</strong>「不作恶」写进 IPO 文件那天起就成了后人量他们的尺子——公开承诺的价值和风险是同一件事。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>复杂性科学 · 偏好依附</b>：Barabási 与 Albert 1999 年用「富者愈富」解释网络为何长出少数巨型枢纽，PageRank 正是靠这种入链的不均来排序。像在都把「谁重要」交给连接结构；不像在 PageRank 不只是测量这种不均——排在前面的网页会拿到更多新链接，排序本身成了偏好依附的加速器。</li>
+<li><b>生物进化 · 诚实信号</b>：Zahavi 1975 年的累赘原理说，信号要可信就得难以伪造。早期链接由人手工放置、有成本，所以是诚实投票；SEO 让伪造变便宜，就像拟态者混进警戒色种群。不像在，自然界没有一个排序者能单方面改规则。</li>
+<li><b>分布式系统 · 控制面与数据面分离</b>：软件定义网络把「定规则」和「执行转发」拆到两层，双层股权也是这样把控制与运营拆开。不像在，SDN 控制器的状态对全网可见；Alphabet 的控制层恰恰不对外交代自己的决策理由。</li>
+<li><b>进化人类学 · 邓巴数</b>：Dunbar 1992 年估计人类能维持稳定关系的群体上限约 150 人，约 130 名工程师直接向一位总监汇报，几乎压在这条线上。像在都是扁平协作的规模天花板；不像在，邓巴数量的是社交关系，工程协调成本还随相互依赖成倍增长。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>佩奇与布林同生于 1973 年，1995 年在斯坦福相遇，1998 年注册 Google，2019 年退出管理层。</li>
+<li>1999 年与 Excite 的 75 万美元交易谈崩，关键是佩奇要求对方整个换用 Google 的搜索技术，拒绝被降级成一个功能。</li>
+<li>2001 年接受 Schmidt 出任 CEO，2004 年 IPO 又用一股十票的双层股权，让出运营却把控制权锁在自己手里。</li>
+<li>2015 年重组为 Alphabet，把赚钱的 Google 交给 Pichai，创始人只保留自己想做的登月项目。</li>
+<li>PageRank 把学术引文计数搬到网页链接上：网页值不值得看，由指向它的链接结构而非内容判断。</li>
+<li>2010 年退出中国主要靠布林的个人坚持，2018 年审查版 Dragonfly 项目重现，说明原则没有写进制度。</li>
+<li>两位创始人都把思维方式归功于蒙台梭利教育：任何默认做法都必须给出理由。</li>
+<li>2001 年取消全部工程经理的实验几个月后被迫撤回，「管理层等于噪音」的假设被证伪了一次。</li>
+<li>「不作恶」写进 2004 年 IPO 致股东信，2024 年 Google 却因花钱买断默认搜索位置被判非法垄断。</li>
+<li>退出管理层后仍握约 51% 投票权却不再出面解释，权力与问责的分离在监管期变成了负债。</li>
+</ol>
 </section>
 <section class="card">
 <h2 data-tts="1555a2067a56980f"><span class="icon">◆</span>【深入思考】</h2>

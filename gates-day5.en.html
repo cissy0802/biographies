@@ -39,6 +39,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -116,6 +128,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 </ul>
 </section>
 
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Complexity science · increasing returns and lock-in (W. Brian Arthur, 1989)</b>: a small, accidental early lead gets amplified by positive feedback until it locks in a market, and the winner need not be the best technology. MS-DOS spreading with every clone, and more software written for it, traces that curve. Where it differs: in Arthur's model the starting edge is random, while Gates used one copyright clause to route the feedback loop's gains to himself in advance.</li>
+<li><b>Buddhism · the rains retreat (vassa)</b>: monks stop wandering for the three monsoon months to stay put and practice, a periodic withdrawal that mirrors Think Week twice a year. The difference: the retreat cuts input to quiet the mind, while Think Week crams a hundred-plus papers into a week; he withdraws to take in more.</li>
+<li><b>Philosophy · Wittgenstein's "meaning is use"</b>: a word means what it does in ordinary life, and questioning it outside that use sets language idling. Parsing "compete" in the deposition pulled words out of use until they weighed nothing. The difference: Wittgenstein did this to dissolve false problems; the deposition did it to dodge a real one.</li>
+<li><b>Distributed systems · single point of failure</b>: one central node deciding skips consensus overhead and moves fast, but when it errs no other node can correct it; the "unelected" critique targets exactly that structure. Where it differs: a system fixes this with replicas, whereas the foundation lacks outside accountability.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>In 1980 IBM lacked an operating system, so Microsoft bought QDOS for $50,000, renamed it MS-DOS, and licensed it to IBM.</li>
+<li>Gates kept MS-DOS copyright with Microsoft and the right to license others, so every clone PC shipped with it.</li>
+<li>Keeping the copyright was not foresight about clones but an early conviction that software is worth paying for.</li>
+<li>In 1998 the Justice Department sued Microsoft for bundling IE; the breakup order was reversed on appeal in 2001, ending in settlement.</li>
+<li>Hair-splitting through the videotaped antitrust deposition turned Gates's image from American genius to arrogant monopolist.</li>
+<li>In 2000 Microsoft's CEO job passed to Steve Ballmer, and in 2008 the founder left day-to-day operations.</li>
+<li>Think Week means a week alone twice a year with 100-plus papers; the 1995 one produced the internet pivot memo.</li>
+<li>Waiting 24 hours after a book, then writing notes from memory, digests it by recall rather than rereading.</li>
+<li>Early Microsoft meetings ran on shouting and arguing people down; Paul Allen left after a fight over diluting his stake.</li>
+<li>The later controversies reduce to one question: may an unelected billionaire reshape the world on his own?</li>
+</ol>
+</section>
 <section class="card think">
 <h2><span class="icon">◆</span>This week's question</h2>
 <p>It is August 27, 1998. You sit in front of a video camera; across from you is one of the strongest antitrust litigators in American history. You know every sentence over the next twenty hours will be replayed on national television, and you know every sharp email you wrote in your twenties will be produced one envelope at a time. You have three options. (A) Cooperate. Admit plainly, "Yes, we were trying to bury Netscape — that is competition." (B) Parse. Take every verb apart for thirty minutes. (C) Refuse to appear, let your CEO take the punishment. Gates chose B and paid 25 years of public-image cost. The deeper question: when "winning the case" and "winning the public" cannot both be won, which do you choose? Gates has spent the last 25 years using philanthropy to atone for the verbs he picked apart that day. Is there a moment in your own life where you won a fight and lost a generation of trust?</p>

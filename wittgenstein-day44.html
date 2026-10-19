@@ -38,6 +38,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -112,6 +124,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2 data-tts="945ff449d121a29f"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>维特根斯坦留给「AI 超级个体」最锋利的一课，是<strong>「敢于推翻自己最得意的框架」</strong>。你越是靠某套方法论取得成功，它就越可能悄悄变成你的牢笼；他四十岁时亲手拆掉三十岁盖起的大厦，正因为他忠于真实甚于忠于面子。对每天与语言模型打交道的人，他的另一份洞见近在眼前：<strong>意义不在词的「图像」里，而在使用的场景中</strong>——这几乎是提示工程和人机协同的哲学底座，语言的边界，确实框定了你能调动的世界。但他也给出一记反向的警醒：把纯粹与诚实逼到极致，会滑向对自己和他人的残忍。<strong>追求卓越可以严苛，但当这份严苛开始碾压身边最弱的人、或变成自我惩罚时，它就不再是美德，而是需要被看见和收住的病。</strong></p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>佛学 · 维摩一默</b>：《维摩诘经》里文殊问何为「入不二法门」，维摩诘默然无言，文殊赞这才是真入。和「凡不可说的应保持沉默」像在都把沉默放在语言尽头；不像在维摩的沉默本身就是回答、是一种演示，维特根斯坦的沉默却是逻辑划出的边界线，线外什么也不说。</li>
+<li><b>心理学 · 原型理论</b>：1970 年代 Eleanor Rosch 发现人的范畴不靠「必要充分条件」定义，而靠离典型样例有多近，知更鸟比企鹅更像「鸟」。这和「意义即用法」同构：概念长在使用里，不在定义里；不同的是 Rosch 用实验测出了这种梯度。</li>
+<li><b>生物进化 · 适应度景观</b>：Sewall Wright 1932 年提出，种群会困在局部高峰，要去更高的峰得先穿过适应度更低的谷。推翻《逻辑哲学论》就是主动下山；区别是自然选择只会往上爬，过谷要靠漂变的运气，人却能明知会掉下来仍选择离开山顶。</li>
+<li><b>心理学 · 决策疲劳</b>：「每顿都一样」常被拿来对照「自我损耗」理论，即选择会耗尽意志力。但 2016 年 Hagger 等人的多实验室重复研究几乎没测到这个效应，所以他的单调饮食更可能是在保护注意力的去向，而不是在节省某种会耗光的意志燃料。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>维特根斯坦两次抵达哲学的「终点」，又亲手推翻了自己的成名作《逻辑哲学论》。</li>
+<li>《逻辑哲学论》写于一战战壕与意大利战俘营，作者自认已终结哲学，随即离开学界近十年。</li>
+<li>1919 年散尽遗产时，钱全给了已很富的兄姐，理由是更多的钱不会再腐蚀他们。</li>
+<li>一生刻意清贫，背后的信念是：财产会在人和真实的思考之间隔上一层。</li>
+<li>斯拉法的那不勒斯手势让人看到，意义未必来自图像式的对应，而来自使用它的场景。</li>
+<li>后期哲学转向「语言游戏」：词的意义就是它在生活中的用法，这推翻了早期的图像论。</li>
+<li>每顿吃一样的饭、讲完课冲进影院看西部片，是给高压思维配的减压阀。</li>
+<li>维特根斯坦在山村教书时体罚学生，1926 年男孩昏倒后辞职，十年后专程回村道歉。</li>
+<li>把对命题不妥协的标准搬到孩子和朋友身上，思想上的锋利就成了待人的残忍。</li>
+<li>放弃最得意的框架，像演化中离开局部高峰穿过低谷，区别是人可以主动选择下山。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="924393315fc42738"><span class="icon">◆</span>【深入思考】</h2>

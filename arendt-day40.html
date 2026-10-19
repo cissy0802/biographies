@@ -38,6 +38,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -112,6 +124,31 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2 data-tts="7a6dea7c42d9fd35"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>阿伦特留给「AI 超级个体」最锋利的一课，是关于<strong>「不放弃判断」</strong>。她笔下的平庸之恶，本质是外包思考——把「对不对」交给流程、命令、上级、共识，自己只负责高效执行。这在今天有了新的形态：当算法、大模型、组织流程越来越能替我们给出「标准答案」，最危险的不是机器出错，而是人渐渐习惯了「照章办事」，不再停下来问一句「我此刻在做的这件事，本身是对的吗」。<strong>越是能被自动化的时代，独立判断越是不可外包的核心能力。</strong>但她也是一面警钟：独立到极致，可能演变成对海德格尔的盲点、对种族议题的傲慢。真正的独立不是「我谁都不信」，而是既敢逆众而立，又肯在证据面前承认自己看错了。前者需要勇气，后者需要更大的勇气。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>心理学 · 米尔格拉姆服从实验（1961 年起，耶鲁）</b>：普通人听从白大褂的指令，按下自以为会电伤他人的按钮，Milgram 称之为把责任交给权威的「代理状态」，正是「我只是执行命令」。连修正都同构：Haslam 与 Reicher 重读档案，认为服从者其实认同实验目标，并非无思，正像 Stangneth 对艾希曼的改判。</li>
+<li><b>心理学 · 卡尼曼的系统 1 与系统 2（2011）</b>：「照章办事」像让快速、自动的系统 1 一路放行，「停下来想一想」像唤起慢而费力的系统 2。不像在于：系统 2 检查的是答案算得对不对，阿伦特的思考追问的是这件事本身该不该做。</li>
+<li><b>复杂性科学 · 谢林隔离模型（1971）</b>：每个人只有一点点「想和同类做邻居」的偏好，整座城却涌现出严重隔离；平庸之恶也是每人只走完局部流程，合起来成了暴行。不像的是，模型里的个体不会反思，阿伦特偏要说人能停下来，所以责任落不到「系统」头上。</li>
+<li><b>佛学 · 正念（sati）</b>：佛教修行从「知道自己此刻在做什么」起步，像阿伦特说的停下来想一想。差别在于：正念要放下内心的喋喋对话，阿伦特却把「与自己对话、能和自己相处」当作不作恶的底线。</li>
+<li><b>分布式系统 · 成员资格（membership）</b>：节点再健康，只要不在集群的成员表里，就拿不到任何一致性保证；无国籍者也是先失去「被共同体承认」这一层，其余权利才全部落空。不像的是，节点可以重新申请加入，难民往往无处可申请。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>1933 年替犹太复国组织搜集反犹材料而被捕，获释后逃亡，阿伦特从此告别纯思辨的哲学。</li>
+<li>让她最幻灭的不是纳粹本身，而是知识界的朋友主动「一体化」、向纳粹靠拢。</li>
+<li>流亡后整整 18 年无国籍，1951 年入籍，同年出版《极权主义的起源》一举成名。</li>
+<li>1961 年自荐为《纽约客》旁听艾希曼审判，看到的不是魔鬼，而是满口官僚套话的普通职员。</li>
+<li>「平庸之恶」指恶能规模化，靠的不是狂热仇恨，而是无数人放弃了停下来想一想的能力。</li>
+<li>「没有扶手的思考」是不靠任何现成教条或体系，每个概念都自己重新走一遍。</li>
+<li>思考是与自己的内部对话，能和自己好好相处的人，最难被裹挟去作恶。</li>
+<li>战后重访入过纳粹党、从未真正道歉的海德格尔并为其回护，是阿伦特最受诟病的判断之一。</li>
+<li>书中指责部分犹太委员会配合遣送，被读成怪罪受害者，大批老友就此与她绝交。</li>
+<li>Stangneth 依据新材料指出艾希曼远比法庭上所见狂热：「平庸之恶」作为理论可以对，例证却可能错。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="929bab4f4c22c071"><span class="icon">◆</span>【深入思考】</h2>

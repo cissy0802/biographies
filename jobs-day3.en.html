@@ -38,6 +38,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -112,6 +124,32 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <span class="src">— Isaacson, <em>Steve Jobs</em>, on his delayed 2003 surgery</span>
 </li>
 </ul>
+</section>
+
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Evolution · fitness landscapes</b>: Sewall Wright argued in 1932 that species get stuck on local peaks: reaching a higher one means going downhill first, which selection won't do. Greenlighting the iPhone was Apple deliberately walking down the iPod peak. The difference: evolution can't see the far mountain; Jobs was betting on exactly that view.</li>
+<li><b>Distributed systems · hedged requests</b>: Dean and Barroso (2013) suggest sending one request to two replicas and using whichever answers first, trading spare compute for certainty. The P1/P2 race did the same, except the two teams were not replicas: they explored two different designs.</li>
+<li><b>Psychology · the Pygmalion effect</b>: Rosenthal found in 1968 that pupils whom teachers believed were about to bloom really did improve. The reality distortion field also used expectation to lift performance, but openly and face to face, and the cost was burnout.</li>
+<li><b>Neuroscience · synaptic pruning</b>: Around adolescence the brain cuts away many little-used synapses, and what remains runs faster and more reliably. Going from 350 SKUs to 10 was the same "fewer is stronger" move, but top-down by taste rather than bottom-up by use.</li>
+<li><b>Psychology · omission bias</b>: Ritov and Baron (1990) showed people fear harm from their own actions more than equal harm from inaction. Not wanting his body opened was fear of the act of surgery, yet Jobs did act: he swapped the cut for gentler measures like juices and acupuncture.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>With the iPod bringing in nearly half of Apple's revenue, Jobs greenlit the iPhone in 2005 to kill his own cash cow.</li>
+<li>The iPhone began as an 18-month secret race between P1, an iPod with a phone, and P2, a full touchscreen.</li>
+<li>At the 2007 iPhone launch the prototype still crashed often, so the demo followed a rehearsed "golden path."</li>
+<li>The eleven years after Jobs was ousted from Apple in 1985 nearly bankrupted NeXT and were harder than his speech admits.</li>
+<li>Buying Pixar in 1986 and giving Lasseter free rein taught that protecting others' creativity is harder than showing taste.</li>
+<li>Apple's 1996 purchase of NeXT was really a buyback of NeXTSTEP, the core of Mac OS X and iOS.</li>
+<li>The "reality distortion field" got the impossible done on absurd deadlines, at the cost of steadily wearing people down.</li>
+<li>A daily "what if today were my last day" question drove the 1997 cut from 350 SKUs to 10.</li>
+<li>Greatness had three shadows: denying his daughter Lisa, humiliating staff in public, and delaying cancer surgery nine months.</li>
+<li>Imitating Jobs's harshness is easy and copying his taste nearly impossible; read him to resist the myth.</li>
+</ol>
 </section>
 
 <section class="card think">

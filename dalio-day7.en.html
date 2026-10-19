@@ -48,6 +48,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}.timeline li{padding-left:16px;margin-left:8px}.timeline li::before{position:static;display:block;margin-bottom:4px;text-align:left;width:auto}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -160,6 +172,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <p>The portable lesson is not "radical transparency" — Dalio himself made that slogan its own counter-example. The portable lesson is <strong>"build an external braking system for your own cognitive biases."</strong> He knew the "100% sure" feeling of 1982 would return, and so he engineered four independent mechanisms — Dot Collector, believability-weighted voting, the Depression Gauge, twice-daily meditation — to forcibly score that feeling whenever it surfaced. The AI era confronts every super-individual with the same problem: decisions are now ten times faster, but cognitive biases have not been reduced by even one. The answer isn't to "be smarter." It is to install a machine that, the moment you are about to say "I'm certain," forces three counter-arguments in front of you. Dalio's life proves two things at once. First, even a very smart person needs an external reality check. Second, the cleanest system collapses from within the moment its designer makes himself the exception.</p>
 </section>
 
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Psychology · The conjunction fallacy</b>: Tversky and Kahneman's 1983 "Linda problem" showed that more detailed stories feel more plausible even though each added link can only lower the odds. The 1982 chain (Mexican default, bank write-downs, credit crunch, depression) had that shape: every link sensible, the whole treated as 100%. The difference is that Dalio afterwards built a machine to correct himself, where most people just move on to the next story.</li>
+<li><b>Neuroscience · Reward prediction error</b>: Schultz and colleagues showed in 1997 that dopamine neurons dip sharply when an outcome is worse than expected, and the brain uses that error to update its forecasts. "Pain + Reflection = Progress" is the same learning rule. Where it differs: dopamine updates automatically, while Dalio's version requires deliberately stopping to review, or the pain leaves only a mood.</li>
+<li><b>Evolutionary biology · Bet-hedging</b>: Dan Cohen showed in 1966 that desert annuals germinate only part of their seeds each year, giving up some gain in good years so the line never dies out in bad ones; evolution maximizes geometric, not arithmetic, mean fitness. All Weather spreads risk across four quadrants for the same trade: a modest ceiling in exchange for surviving any weather. The plant, unlike Dalio, never has to model which weather is coming.</li>
+<li><b>Distributed systems · Byzantine fault tolerance</b>: Lamport and colleagues' 1982 "Byzantine Generals" paper proved that 3f+1 nodes can tolerate f faulty ones, provided no node's vote is beyond override. Believability-weighted voting resembles a reputation-weighted consensus protocol, but hard-coding the founder's weight at the top plants a single point that cannot be voted out; Bridgewater's eleven-year succession struggle is that point failing to exit.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>In 1982 Dalio declared on television that a U.S. depression was coming; stocks bottomed that very month and Bridgewater shrank to one person.</li>
+<li>The lesson of the 1982 near-bankruptcy: give forecasts a probability distribution and seek out the smartest people who disagree with you.</li>
+<li>All Weather allocates equal risk, not equal capital, across four quadrants of growth and inflation, betting on no single scenario.</li>
+<li>In 2008 a classic 60/40 portfolio lost about 27% while All Weather lost about 4%, showing that not betting can be a structural edge.</li>
+<li>The Depression Gauge flagged the debt crisis in 2007; Pure Alpha made 9.5% in 2008 and Dalio became the face of global macro.</li>
+<li>The Dot Collector lets colleagues score each other live in meetings and feeds believability-weighted voting based on track records.</li>
+<li>Rob Copeland's The Fund alleges the founder's believability was hard-coded at the top, so radical transparency never applied to him.</li>
+<li>While preaching that honesty outranks relationships, he turned evasive on China, where his business interests are largest.</li>
+<li>Pure Alpha returned only about 3.2% a year from 2012 to 2022, and succession dragged from the 2011 announcement to a 2022 handover.</li>
+<li>A decision system whose designer exempts himself is like a consensus protocol with a node that cannot be voted out: it fails from within.</li>
+</ol>
+</section>
 <section class="card">
 <h2><span class="icon">◆</span>Further Reading</h2>
 <ul class="read-list">

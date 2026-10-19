@@ -41,6 +41,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -131,6 +143,32 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2><span class="icon">◆</span>【Takeaways for BigCat】</h2>
 <p>Tu's lesson for the "AI super-individual" lies in <strong>how she shrank the search space</strong>. While the main force brute-forced tens of thousands of compounds, she turned back to the classical pharmacopeia — <strong>a "prior" distilled from millennia of human clinical experience</strong>, effectively pruning an astronomically large search space. That is the core posture of solving hard problems with AI today: rather than brute-force search, first find a high-quality prior to constrain the direction. Subtler still was the "re-read an old text, change the method" move — real breakthroughs often come from <strong>taking one overlooked old clue and re-reading it inside today's problem</strong>. But her shadow is also a warning: the lone-hero narrative flattens the whole system that lifts you up. Two things to take from her — the wisdom of pruning search with priors, and the plodding grit to sit the coldest bench and test it on yourself.</p>
+</section>
+
+<section class="card crossx">
+<h2><span class="icon">◆</span>【Crossovers】</h2>
+<ul>
+<li><b>Cognitive psychology · Functional fixedness</b>: In Duncker's 1945 candle problem, people miss that the tack box can be a candle shelf because they see it only as a container. Project 523 treated boiling as the default way to extract an herb — the same fixedness. Alike in that a reframing unlocks it; unlike in that Tu's shift came not from a flash of insight but from re-reading one ancient line.</li>
+<li><b>Philosophy · Polanyi's tacit knowledge</b>: Michael Polanyi held that "we can know more than we can tell." Ge Hong wrote "wring out the juice," not "because the active compound is heat-sensitive" — the temperature constraint was stored as a procedure, not a reason. Tu translated tacit practice into explicit, engineerable knowledge; the difference is that the ancients may not have known what they knew.</li>
+<li><b>Evolutionary biology · Red Queen hypothesis</b>: Van Valen proposed in 1973 that species must keep evolving just to stay in place. Chloroquine resistance forced Project 523 into being, and around 2008 western Cambodia reported artemisinin working more slowly. The arms race between drug and parasite has no finish line; artemisinin is one round, not the end.</li>
+<li><b>Reinforcement learning · Credit assignment</b>: Minsky named the problem in 1961: when a long chain of actions finally succeeds, which step earns the credit? Project 523 spanned 60-plus institutions and 500-plus researchers, ether extraction, purification and structure work all interlocked, yet a Nobel can carry only a few names. Alike in that credit resists splitting; unlike in that an algorithm can apportion it, while prizes and academies tend to choose.</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>【Ten takeaways】</h2>
+<ol class="takeaways">
+<li>Tu Youyou was the first mainland-trained Chinese scientist to win a science Nobel, with no doctorate, no study abroad and no academy membership.</li>
+<li>Project 523 began during the Vietnam War against chloroquine-resistant malaria, after tens of thousands of screened compounds had yielded almost nothing.</li>
+<li>In 1969 her team turned to classical Chinese remedies, compiling over 640 recipes and sharply narrowing the search space.</li>
+<li>Ge Hong's fourth-century handbook said to wring out qinghao juice rather than boil it, suggesting heat might destroy the active compound.</li>
+<li>Switching to low-temperature extraction with ether, which boils at 35°C, sample No. 191 reached 100% inhibition in rodent and monkey malaria in 1971.</li>
+<li>When human trials stalled in 1972, Tu as team leader took the extract first; once it proved safe, field trials on Hainan succeeded.</li>
+<li>To do the work she sent both daughters away, and years of solvent fumes in an unventilated lab gave her toxic hepatitis.</li>
+<li>Project 523 involved 60-plus institutions and 500-plus researchers, so a Nobel for one person fueled decades of dispute over who deserved first credit.</li>
+<li>Secrecy and the Cultural Revolution meant the first artemisinin paper, in 1977, appeared under a collective byline, clouding priority for decades.</li>
+<li>Wringing out the juice hid a heat constraint inside a procedure; reading the old recipe meant turning tacit practice into explicit method.</li>
+</ol>
 </section>
 
 <section class="card think">

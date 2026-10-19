@@ -44,6 +44,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -136,6 +148,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2 data-tts="58cbe285d518ca44"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>最值得取走的是<strong>「窄而深」</strong>：她一生只写一件事——普通人在乱世里如何计算利益并为此自欺——却写到无人可替。<strong>在能力被工具普遍拉平的时代，可防御的位置不来自覆盖面，而来自一个别人不愿长期盯着看的角落。</strong>其次是退出纪律：1952 年她判断自己的题材在新环境无处安放，于是提前离场，不申辩也不改造自己去适配——<strong>退得早是判断力，退得晚是被赶走。</strong>第三条是反面的：她的洞察几乎从不指向行动，看穿了父亲、母亲、丈夫与时代，却没修复过任何一段关系，也没建过任何支撑系统。<strong>看得清和活得好是两件事——洞察若不外接关系与协作，只会把人一步步收缩成一个越来越小的房间。</strong></p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>心理学 · 回避型依恋</b>：Ainsworth 的「陌生情境」实验里，照料者缺席或粗暴的孩子学会不哭不找、装作不在乎。她对至亲的关闭是同一结构；不像在哪：依恋理论讲受损，她却把疏离炼成了看人的工具。</li>
+<li><b>生物进化 · 生态位转移</b>：物种遇到强敌常不正面竞争，而是挪进对手不屑占的位置；她被批判后改写剧本、再转翻译，是同一个动作。不像在哪：物种转移攒下了适应，她每换一次赛道都清零重来。</li>
+<li><b>佛学 · 悲智双运</b>：大乘说智慧与慈悲是鸟之两翼，看清诸法如幻后还要回身度人，一翼飞不起来。她的「懂得」近乎照见，悲却停在纸上：看透父亲、母亲、丈夫与时代，从未转成修复或照料。都从看清苦出发，不同在她看清之后选择转身离开。</li>
+<li><b>分布式系统 · fail-stop</b>：节点察觉环境出错就干净停机，不带病继续制造混乱；1945 与 1952 年她都是不辩解、直接下线。不像在哪：集群里有别的节点接管、有人重启它，她却拆掉了所有冗余。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>张爱玲出身张佩纶、李鸿章一脉的没落世家，父亲吸鸦片，母亲留洋离婚、常年不在。</li>
+<li>1938 年被父亲软禁近半年后，她算准巡警换班夜逃，定下不争辩、算好路径再消失的决策原型。</li>
+<li>1943 年把稿子投给鸳鸯蝴蝶派编辑周瘦鹃而非新文学阵营，两年内成为沦陷区上海最红的作家。</li>
+<li>张爱玲此后五十年的文学声誉，几乎全部建立在 1943 到 1945 年不到两年的爆发上。</li>
+<li>战后被列入「文化汉奸」批判，她不辩解不检讨，改写电影剧本：环境敌对时只换赛道，不修复关系。</li>
+<li>1952 年借回港大复学提前离沪，时机极准，代价是此后四十年再无第一手中国经验可写。</li>
+<li>产量低不是懒，而是反复重写同一批故事：《十八春》改成《半生缘》，《金锁记》改成《怨女》。</li>
+<li>嫁给汪伪宣传要员胡兰成却始终视为私事，1947 年分手的理由是感情背叛而非政治立场。</li>
+<li>受美国新闻处资助、按对方大纲写的《赤地之恋》，是她唯一的命题作文，也是最经不起读的一部。</li>
+<li>母亲病危不去、弟弟投奔被拒：看透亲情的冷眼成就了张爱玲的小说，也切断了她自己的退路。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="28dc76d2f2136e16"><span class="icon">◆</span>【深入思考】</h2>

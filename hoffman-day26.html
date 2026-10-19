@@ -39,6 +39,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -126,6 +138,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2 data-tts="6a51efee16f54436"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>霍夫曼给「AI 超级个体」的第一层启示是<strong>把自己当产品迭代</strong>：永远的测试版意味着不追求一次成型，而是「先丑陋上线、再快速纠错」——这恰是与 AI 协同最健康的姿态，因为 AI 时代最大的成本是等待完美。第二层是<strong>网络即杠杆</strong>：单打独斗的超级个体是伪命题，真正的放大器是你能调动的人与关系网，先给予、再获取的复利比任何单点能力都更抗替代。第三层在阴面：<strong>「速度压倒一切」是把双刃剑</strong>——从 Epstein 到假信息实验，都是「为了更大的好目标而放松手段审查」的同一种病。对追求高效的人，真正的纪律不是跑得更快，而是在加速前先想清楚：自己正在为哪种代价背书。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>复杂性科学 · 优先连接</b>：Barabási 与 Albert 1999 年用「优先连接」解释无标度网络：新节点更爱连向连接已多的节点，先到者于是滚成枢纽。LinkedIn 在泡沫谷底先沉淀职业身份、等复苏时网络已成，押的正是这条富者愈富的曲线。不像在：模型里的节点只是被动被选中，霍夫曼却靠牵线和沙龙晚宴主动把自己做成枢纽。</li>
+<li><b>生物进化 · r/K 选择</b>：生态学曾把繁殖策略分成两头：r 策略在不稳定环境里拼增殖速度，K 策略在接近承载量时拼效率。闪电式扩张是 r，LinkedIn 早期的慢是 K。不像在：物种的策略由基因定死，公司却能看窗口换挡。</li>
+<li><b>佛学 · 无常与无我</b>：「永远的测试版」和无常同构：没有哪个版本的自己是定型的。不像在：佛学讲无我，是要放下对「我」的执着；permanent beta 却在不停优化一个更强的「我」，把执着做成了迭代。</li>
+<li><b>心理学 · 道德许可效应</b>：Monin 与 Miller 2001 年的实验发现，人刚证明过自己「没有偏见」，随后反而更敢做带偏见的选择。为好目标放松手段审查是同一种自我豁免；不像在：实验里的许可来自刚做过的好事，霍夫曼的许可来自对目标本身的确信。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>霍夫曼在牛津读哲学后放弃学术，因为他想影响的规模远超学术界那点杠杆。</li>
+<li>「人如何连接」这个哲学问题，被他换成了「去造连接人的东西」这个产品问题。</li>
+<li>2002 年在互联网泡沫谷底创办 LinkedIn：无人敢做时竞争最少，复苏时先发者已建好网络。</li>
+<li>LinkedIn 早期刻意功能极简，押的是网络效应的慢变量：先沉淀真实的职业身份。</li>
+<li>1997 年的 SocialNet 方向超前却执行全错：追求完美迟迟不上线，精力耗在分销谈判上。</li>
+<li>先丑陋上线、再快速迭代的信条，来自 SocialNet 失败的复盘和随后在 PayPal 当二把手的学徒期。</li>
+<li>重大决策前先写一套「游戏理论」，像推演棋局一样理清局势、各方动机和可能的走法。</li>
+<li>把自己当作永远的测试版来迭代，人脉则是靠先给予、再获取累积起来的可复利资本。</li>
+<li>霍夫曼与 Epstein 的往来和阿拉巴马假信息项目，暴露的是为大目标放松手段审查的同一种病。</li>
+<li>闪电式扩张只在赢家通吃、强网络效应、资本充裕时成立，该学的是判断何时快、何时慢的分寸。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="4e8a49ec139a6877"><span class="icon">◆</span>【深入思考】</h2>

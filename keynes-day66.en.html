@@ -43,6 +43,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -126,6 +138,31 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2><span class="icon">◆</span>What BigCat Can Take Away</h2>
 <p><strong>One: when you are falsified, rewrite the model instead of patching it.</strong> Errors come in two kinds — a wrong parameter (adjust) and a wrong premise (demolish); most people handle the second as if it were the first. <strong>Two: your greatest strength, applied to the wrong setting, is a liability</strong> — macro judgement was a first-rate asset for writing theory and a pure liability for timing markets. <strong>Three: correct, plus a time constraint you cannot survive, equals wrong</strong> — for any judgement with leverage, a deadline or a review cycle attached, work out how long you can hold before you work out whether you are right. <strong>Four: make your roles power one another rather than drain each other in parallel</strong> — that is the real structure of a "super-individual." <strong>Five: authority does not travel between domains</strong> — a person can be first-rate in one place and utterly wrong in another, which applies to assessing any expert, models included.</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Philosophy of science · Kuhn's paradigm shifts</b>: In <i>The Structure of Scientific Revolutions</i> (1962), Kuhn argued that once anomalies pile up, a scientific community stops patching the old paradigm and replaces it wholesale — the same shape as Keynes tearing down his own model three times. The difference: Kuhn thought paradigms change mostly as the old guard retires and a new generation takes over, rarely by personal conversion; Keynes ran three generations inside one head.</li>
+<li><b>Evolution · selection has no foresight</b>: A mutation that would pay off in the long run is still eliminated if it hurts survival now, before it can prove useful — just like the 1920 short on the mark, right in direction but dead before it could be proven right. Unlike organisms, though, he could borrow time: Cassel's loan kept him alive.</li>
+<li><b>Psychology · implementation intentions</b>: Peter Gollwitzer's research shows that tying a behavior to a fixed "when and where" works far better than relying on willpower in the moment. Locking trading into the half hour before getting up is the same mechanism — except implementation intentions are usually used to trigger action, and Keynes used it to fence in emotion.</li>
+<li><b>Complexity science · autocatalytic sets</b>: In the autocatalytic sets Stuart Kauffman described, each molecule's product catalyzes another reaction, so the whole network sustains itself. Five or six jobs feeding one another has the same structure; the difference is that an autocatalytic network has no center, while his ran entirely through one man and would fall apart when he did.</li>
+<li><b>Distributed systems · centralized scheduling</b>: A central scheduler works best when the objective function is clear and mistakes can be rolled back, and macro demand management comes close to that. Eugenics fails because "what to optimize" is not a technical parameter — and a scheduler can be restarted, but decisions applied to people cannot be rolled back.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Keynes resigned from the Paris Peace Conference in 1919 and wrote <i>The Economic Consequences of the Peace</i> in two months, moving his voice from inside government to the public.</li>
+<li>The 1920 short on the mark was right in direction but blown up by margin calls when the currencies first rebounded: a correct call plus a time limit you cannot survive equals being wrong.</li>
+<li>After nearly losing everything in 1920 and again in 1929, Keynes admitted macro timing gave him no edge and in 1938 switched to holding a few businesses he truly understood.</li>
+<li>With <i>The General Theory</i>, he chose to attack the core assumptions of Marshall and Pigou rather than write patching papers, at the cost of a difficult book every school could later claim.</li>
+<li>Handling trades in bed for half an hour before rising locked the most emotion-prone activity into the shortest, most fixed slot of the day.</li>
+<li>Holding five or six posts at once worked because the roles powered each other: Treasury insight fed investment judgment, and investment returns funded the arts.</li>
+<li>Serving as a director of the British Eugenics Society and siding with the "educated bourgeoisie" share one root: letting a trained few optimize for the whole.</li>
+<li>Mantoux charged that <i>The Economic Consequences of the Peace</i> sapped the English-speaking world's will to enforce the treaty: a book can be broadly right on economics and disastrous in politics.</li>
+<li>The defeat of the bancor plan at Bretton Woods showed that the variable at the table was creditor status, not the quality of the argument.</li>
+<li>Kuhnian paradigm shifts usually happen as one generation replaces another, yet Keynes tore down his own model three times within a single life.</li>
+</ol>
 </section>
 <section class="card">
 <h2><span class="icon">◆</span>Questions Worth Sitting With</h2>

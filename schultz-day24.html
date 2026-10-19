@@ -39,6 +39,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -117,6 +129,32 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <h2 data-tts="de9a84fb644aae02"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>舒尔茨给「AI 超级个体」的启示是：<strong>价值观最强的时候，是它同时也是精算的时候</strong>——给兼职上医保既是道义也是降低流失的算盘，二者不必对立。但他更深的教训在阴面：当你太相信自己的叙事，叙事会变成你看不见自己的盲区。他真心觉得星巴克是「一家人」，于是对工会的合法诉求本能地视为背叛。对一个靠使命感驱动的人来说，最该练的不是更强的信念，而是定期问一句：<strong>「如果我的叙事是错的，会从哪里先裂开？」</strong>——并真的去听那个最不顺耳的声音。</p>
 </section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>心理学 · 认知失调（Leon Festinger，1957）</b>：信念撞上事实，人常改写事实来保住信念，预言落空后信徒反而更热心传教。「一家人」撞上建会诉求，最省力的化解是把组织者看成背叛者。不像在于：信徒只赔上自己，CEO 的失调会写进劳资政策。</li>
+<li><b>生物进化 · 昂贵信号（Zahavi 累赘原理，1975）</b>：孔雀尾巴可信，因为昂贵、装不出来；2008 年关店重训丢掉约 600 万美元营收，也是付了真钱的信号。不同在于尾巴天天挂着，关店重训只能用一次，再来就成了作秀。</li>
+<li><b>经济学 · 效率工资（Shapiro 与 Stiglitz，1984）</b>：付高于市场的待遇换更低流失，给兼职上医保正是这套算术。不像在于：模型里员工卖力是怕丢饭碗，舒尔茨押的是归属感，归属感一破，反弹更烈。</li>
+<li><b>复杂性科学 · West 的标度律（2017）</b>：城市越大人均创新越多，公司却越大越像官僚机器，多数终将死去。靠自动咖啡机、密封豆包这类标准件七年扩到 15000 家，正是公司式标度。不同的是，2008 年的回炉说明公司的老化能局部逆转。</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>1961 年父亲摔断脚踝、没有保险也没有赔偿，这段困顿成了舒尔茨一生的底色。</li>
+<li>1983 年米兰街角的意式咖啡吧让他想把「第三空间」搬回美国，却被星巴克两位创始人否决。</li>
+<li>1985 年出走创办 Il Giornale，1987 年以 380 万美元反手买下老东家星巴克。</li>
+<li>1988 年给每周工作 20 小时以上的兼职员工上全额医保，既是道义，也是降低流失的精算。</li>
+<li>2007 年备忘录《星巴克体验的商品化》直言：自动咖啡机和密封豆包让门店失了灵魂。</li>
+<li>2008 年重返 CEO 后，全美 7100 家门店同时关门三个半小时重训 espresso，以示回到根本。</li>
+<li>清晨 4:30 起床、每周巡 25 家店、爱写长信，舒尔茨用叙事而不是数据动员人。</li>
+<li>「我们是一家人」的叙事在 2021 年起的建会浪潮里破裂，星巴克多次被 NLRB 裁定违法。</li>
+<li>Race Together 的说教尴尬、卖掉超音速队、试探竞选总统，都暴露了使命感越界的代价。</li>
+<li>关店重训像生物学的昂贵信号：代价越高、越装不出来，「我们承认变质了」才越可信。</li>
+</ol>
+</section>
+
 <section class="card think">
 <h2 data-tts="c52f283565cdba2e"><span class="icon">◆</span>【深入思考】</h2>
 <details>

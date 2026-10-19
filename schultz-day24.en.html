@@ -33,6 +33,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -115,6 +127,32 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2><span class="icon">◆</span>Takeaways for BigCat</h2>
 <p>Schultz's lesson for the "AI super-individual" is this: <strong>values are strongest when they are also the math</strong> — health insurance for part-timers was both ethics and an attrition calculation, and the two need not oppose. But his deeper lesson lives in the shadow: when you believe your own narrative too much, that narrative becomes the blind spot where you cannot see yourself. He sincerely felt Starbucks was "a family," and so he instinctively read the union's legitimate demands as betrayal. For a mission-driven person, the muscle worth training is not stronger conviction but a recurring question: <strong>"If my narrative is wrong, where would it crack first?"</strong> — and actually listening to the most unwelcome voice.</p>
+</section>
+
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Psychology · Cognitive dissonance (Leon Festinger, 1957)</b>: When belief collides with fact, people often rewrite the fact to save the belief, and believers whose prophecy failed proselytized harder. When "we are a family" ran into union demands, the easiest resolution was to see organizers as traitors. The difference: believers pay only for themselves, while a CEO's dissonance gets written into labor policy.</li>
+<li><b>Evolutionary biology · Costly signaling (Zahavi's handicap principle, 1975)</b>: A peacock's tail is credible because it is expensive and impossible to fake; the 2008 retraining shutdown, which gave up about $6 million in sales, was a signal paid for in real money. The difference: the tail is worn every day, while a shutdown works once, and repeating it turns it into theater.</li>
+<li><b>Economics · Efficiency wages (Shapiro and Stiglitz, 1984)</b>: Paying above market buys lower turnover, which is the arithmetic behind health coverage for part-timers. The difference: in the model workers try hard for fear of losing the job, whereas Schultz bet on belonging, and when belonging breaks the backlash is fiercer.</li>
+<li><b>Complexity science · West's scaling laws (2017)</b>: Bigger cities produce more innovation per person, but bigger companies come to resemble bureaucratic machines, and most eventually die. Reaching 15,000 stores in seven years on standardized parts like automatic espresso machines and sealed bags was company-style scaling. The difference: the 2008 overhaul showed a company's aging can be partly reversed.</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>In 1961 his father broke an ankle with no insurance and no compensation, and that hardship shaped Schultz for life.</li>
+<li>Milan's espresso bars in 1983 inspired a plan to bring the "third place" to America, but Starbucks' two founders rejected it.</li>
+<li>He left in 1985 to start Il Giornale, then in 1987 bought his old employer, Starbucks, for $3.8 million.</li>
+<li>Full health insurance in 1988 for part-timers working 20+ hours a week was both an ethical choice and a calculation to cut turnover.</li>
+<li>The 2007 memo "The Commoditization of the Starbucks Experience" admitted that automatic espresso machines and sealed bags had drained stores of their soul.</li>
+<li>Back as CEO in 2008, he closed all 7,100 U.S. stores for three and a half hours to retrain baristas on espresso, a public return to fundamentals.</li>
+<li>Rising at 4:30 a.m., visiting 25 stores a week and writing long letters, Schultz mobilized people with narrative rather than data.</li>
+<li>The "we are a family" story broke down under the unionization wave from 2021, and the NLRB repeatedly found Starbucks had broken the law.</li>
+<li>The preachy Race Together campaign, the sale of the SuperSonics and a flirtation with a presidential run all showed the cost of mission overreach.</li>
+<li>The 2008 retraining shutdown works like a costly biological signal: the harder it is to fake, the more credible the admission "we lost our way."</li>
+</ol>
 </section>
 
 <section class="card think">

@@ -40,6 +40,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -121,6 +133,32 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2><span class="icon">◆</span>Takeaways for BigCat</h2>
 <p>What's most worth taking from Cook is <strong>"the wisdom of the successor" and "doing the boring thing to perfection."</strong> First, don't imitate: when you inherit any powerful predecessor or legacy system, copying is the biggest trap; his answer was to amplify his own real strengths. For anyone chasing the "AI super-individual" — you need not be a Jobs-style universal genius; doing one "unsexy" thing world-class (operations, engineering, supply chain) is just as decisive a lever, and in human-machine collaboration, the operational mind that defines the right metrics and asks "why" ten times is precisely what machines replace least and humans must fill most. Second, his cautionary mirror: <strong>when personal values collide with the largest interest, the consistency of word and deed is tested again and again</strong>. The "China double standard" warns that a principle upheld only when cheap is no longer a principle.</p>
+</section>
+
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Operations research · Little's law</b>: In 1961 John Little proved that the average amount in a system equals the arrival rate times the average time each item stays. Cutting inventory from a month to days at the same sales volume is pure work on the "time in system" term. Where it differs: the law speaks only of averages, and says nothing about the day supply breaks.</li>
+<li><b>Psychology · When intuition can be trusted</b>: Kahneman and Klein concluded in a 2009 joint paper that intuition is reliable only in environments with stable regularities and quick feedback, like firefighting or chess. Cook's five-minute decision looks like an expert's snap judgment; but a career leap happens a few times in a life with no feedback to practice on, so it was closer to a bet on one person and one window than to trained pattern recognition.</li>
+<li><b>Complexity science · Highly optimized tolerance (HOT)</b>: Carlson and Doyle argued in 1999 that systems tuned hard against common disturbances become unusually fragile to rare ones. Inventory counted in days is superbly efficient day to day, yet one supply problem in Asia means someone must fly to China that same afternoon. Efficiency and redundancy are two sides of one ledger.</li>
+<li><b>Buddhism · Linji's "kill the Buddha"</b>: The Chan master Linji told students not to lean on the patriarchs as crutches but to see their own nature. Jobs forbidding Cook to ask "what would I have done" has the same shape: the best way to inherit is not to copy. Where it differs: Linji attacks every attachment, Jobs only dependence on himself; Apple's values were still meant to be kept.</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Cook grew up in a working-class Alabama family, studied industrial engineering, spent 12 years in supply chain at IBM, and became Apple's operations brain rather than a product genius.</li>
+<li>In 1998 he gave up a safe vice-president track at Compaq to join an Apple that had just lost about $1 billion and was thought to be under a quarter from bankruptcy.</li>
+<li>An operations expert known for data and logic made the biggest career choice of his life on intuition, after a five-minute first meeting with Jobs.</li>
+<li>Closing Apple's own factories and most warehouses and outsourcing manufacturing to contractors like Foxconn cut inventory turnover from about a month to a few days.</li>
+<li>Managing inventory like perishable milk turned operations from a cost-cutting tool into a strategic weapon behind the iPhone's global rollout and high margins.</li>
+<li>Jobs told his successor never to ask what Jobs would have done, so Apple would not repeat Disney's paralysis after Walt's death.</li>
+<li>As CEO, Cook did not imitate Jobs: he handed product and design authority to his teams and focused on operations, capital allocation, and values.</li>
+<li>With a 2014 Bloomberg Businessweek essay, Cook became the first openly gay CEO in the Fortune 500.</li>
+<li>Apple refused the FBI an iPhone backdoor yet pulled VPN apps and moved iCloud data in China, drawing charges that its privacy principle holds only when cheap.</li>
+<li>Apple's value rose from about $350 billion to over $3 trillion, but few new product categories and heavy iPhone dependence keep the "maintainer, not innovator" question alive.</li>
+</ol>
 </section>
 
 <section class="card">

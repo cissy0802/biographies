@@ -39,6 +39,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -113,6 +125,32 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <span class="src">— SXSW Conference, 2013</span>
 </li>
 </ul>
+</section>
+
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Evolutionary biology · bet-hedging</b>: desert annuals let only part of each year's seeds germinate, giving up average yield so that a bad year can't wipe them out. Splitting the last money between SpaceX and Tesla has the same shape: in a random environment, first avoid extinction, then think about returns. The difference: nature spreads risk across thousands of seeds; he had two companies, both already at the edge, so the hedge was razor-thin.</li>
+<li><b>Neuroscience · synaptic pruning</b>: the developing brain grows a surplus of synapses, then trims the little-used ones, and the network gets more efficient. "Delete first, add back 10% if you were wrong" runs the process in reverse: the brain prunes slowly by usage, while he cuts hard up front and lets failures signal what to restore.</li>
+<li><b>Psychology · outcome bias</b>: Baron and Hershey's 1988 experiments showed that people grade a decision by the result it happened to produce. Had the split failed, the same choice would read as a gambler's sickness; the week's question about holding on versus cutting losses asks you to pull decision quality apart from luck.</li>
+<li><b>Eastern philosophy · listen to words, watch deeds</b>: after his disciple Zai Yu was caught napping by day, Confucius said he would now hear what people say and then watch what they do. That is the discipline of separating what Musk built from what he says. The difference: Confucius used deeds to test whether words could be trusted; here the two ledgers stay apart, and the rockets do not pay off the bad statements.</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>2008 was Musk's "year of death": three straight Falcon 1 failures, Tesla nearly out of cash, and his marriage ending at the same time.</li>
+<li>At the end of 2008 the last money was split between SpaceX and Tesla rather than bet on one, because going all-in might have killed both.</li>
+<li>Survival in the crisis became an equation of cash arrival time against burn rate, leaving both companies just 30 days from making it.</li>
+<li>Falcon 1's fourth launch reached orbit in September 2008, making SpaceX the first private company to put a liquid-fueled rocket into orbit.</li>
+<li>About three months after Falcon 1 reached orbit, NASA awarded SpaceX a $1.6 billion space station resupply contract, and the company was taken seriously.</li>
+<li>The rocket business began with first principles: raw materials turned out to be only about 2% of a rocket's sale price, so he decided to build his own.</li>
+<li>"The algorithm" runs in fixed order: question every requirement, delete, simplify, speed up, automate; doing it backwards leads to ruin.</li>
+<li>After the $44 billion Twitter purchase, about 75% of staff were cut and the valuation was marked down to a fifth of the price; an engineering algorithm failed on a content platform.</li>
+<li>Years of unmet full self-driving promises and an SEC fine over the "funding secured" tweet show Musk repeatedly spending credibility when talking to the public.</li>
+<li>The discipline for reading Musk is to keep separate ledgers for what he built and what he says; only both together show the whole person.</li>
+</ol>
 </section>
 
 <section class="card think">

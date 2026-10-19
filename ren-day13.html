@@ -52,6 +52,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}.tl-yr{width:70px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -134,6 +146,32 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <h2 data-tts="a0d585537d9c493a"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>任正非最可拿走的是<strong>「在巅峰时主动制造危机感」与「把价值从个人占有中解绑」</strong>：他不靠愿景画饼，而用真实的恐惧驱动组织；只持股 1%、把价值分散出去，换来长期忠诚。对追求 AI 超级个体的人，这是一种反脆弱：主动设「蓝军」反对自己。但他也是警镜：<strong>当效率与「奋斗」被推到极致，最先被牺牲的往往是最难量化、却最不可逆的——人本身</strong>。学他的危机感与自我批判，别学那张把人耗干的床垫。</p>
 </section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>分布式系统 · 混沌工程</b>：Netflix 2011 年公开的 Chaos Monkey 在生产环境里随机关掉服务器，逼系统在平时就学会扛故障。华为「蓝军」是同一个结构：主动制造攻击，趁还输得起时找出弱点。不像在于，Chaos Monkey 随机打基础设施，蓝军是有意图地打战略，而且攻击者和被攻击者是同一群人。</li>
+<li><b>心理学 · 耶克斯–多德森定律</b>：1908 年 Yerkes 与 Dodson 的实验显示，唤醒水平与表现呈倒 U 形，适度压力提升绩效，过了拐点反而崩溃。「把恐惧当燃料」在曲线左半段有效，床垫文化把人推到了右半段。</li>
+<li><b>神经科学 · 技能学习三阶段</b>：Fitts 与 Posner（1967）把动作学习分为认知、联结、自动化三段：先一板一眼照做，再修正，最后不假思索。「先僵化、后优化、再固化」几乎是同一张图，只是主体从一个大脑换成了几万人的组织。</li>
+<li><b>佛学 · 中道</b>：佛陀在苦行与享乐之间取中道，拒绝非此即彼。任正非的「灰度」同样不肯黑白二分，但用途相反：中道为了放下执着，灰度是为了在混沌里更快地抓住方向。</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>任正非 1944 年生于贵州贫寒教师家庭，转业深圳被骗后，43 岁借两万一千元创办华为。</li>
+<li>1991 年前后华为把代理交换机赚的利润全押上自研 C&amp;C08，1993 年量产，第一次有了核心技术。</li>
+<li>放着中间商的舒服日子不过，主动选九死一生的自研，是华为长期主义的起点。</li>
+<li>1997 年起花数十亿请 IBM 移植 IPD 与 ISC，先照搬、再改良、后固化，把草莽公司改成流程型组织。</li>
+<li>2000–2001 年站上巅峰时，爱将李一男出走、母亲车祸离世、本人患抑郁焦虑，几重打击同时落下。</li>
+<li>《华为的冬天》在销售额最高时发出最冷的警告，那份危机感来自真实的恐惧与丧失，不是姿态。</li>
+<li>华为设「蓝军」部门专门攻击自家战略，把自我批判从个人修养变成组织制度，形同组织层面的混沌工程。</li>
+<li>任正非厌恶空谈、极端低调，在自己创办的公司里只持股约 1%，把虚拟受限股分给十几万员工。</li>
+<li>奋斗者协议与床垫文化撑起高效率，2006 年工程师胡新宇之死暴露了把人当零件的代价。</li>
+<li>工会持股的不透明结构让外界疑虑无法证伪也无法平息，思科诉讼和孟晚舟案又叠加了知识产权与制裁阴影。</li>
+</ol>
+</section>
+
 <section class="card">
 <h2 data-tts="accfd2ea52c2e8a8"><span class="icon">◆</span>【深入思考】</h2>
 <details>

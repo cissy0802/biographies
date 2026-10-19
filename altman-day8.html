@@ -55,6 +55,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}.timeline li,.hours li{padding-left:16px;margin-left:8px}.timeline li::before,.hours li::before{position:static;display:block;margin-bottom:4px;text-align:left;width:auto}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -175,6 +187,33 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <h2 data-tts="0875625ed83ba77d"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>Sam 真正可拿走的是<strong>"把判断力做成核心资产"的职业架构</strong>——从 do-er 转 judge-of-do-ers，放弃工资换长期股权，在每个决策点用 60 秒做主然后保护它不要轻易改变。在 AI 让执行成本趋零的时代，这是唯一不会被工具吃掉的资产。但同时必须警惕的是：他被 11/17 拆穿的那种"对每个对象呈现最讨喜版本"的沟通模式——LLM 即将让每个人都拥有"对每个收件人定制不同版本"的工具，零成本零摩擦。<strong>当工具让"分版本"成为默认，你必须主动选择"单一版本"作为你的人生算法</strong>。这不是道德选择，而是系统设计：因为信息会流动、版本会对照、人会比对——系统终将按你的最差代价计算最终回报。Sam 在 2023 年 11 月 17 日付了第一笔账。今天我们用 AI 的人，决定的是要不要也走那条路。</p>
 </section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>分布式系统 · 拜占庭将军问题</b>：Lamport 等人 1982 年描述的拜占庭故障，就是一个节点对不同同伴发出不同消息；识破它的办法和 Mira 一样，靠节点互相比对收到的版本。不像的是，协议里的叛徒是故障或恶意，Altman 的多版本更像读人能力的副作用，结果却同样让共识失效。</li>
+<li><b>心理学 · 自我监控</b>：Mark Snyder 1974 年提出「高自我监控者」，会按在场的人调整自我呈现。YC 时期对每个创始人换一种说法正是如此；但量表测的是表演风格，董事会追究的是事实不一致。</li>
+<li><b>决策科学 · 直觉何时可信</b>：Kahneman 与 Klein 2009 年指出，直觉只在规律稳定、反馈及时的环境里可靠。上万次面试给了 60 秒决策练习量，但创业成败要几年才见分晓，反馈其实很慢。</li>
+<li><b>生物进化 · 多细胞合作与癌症</b>：繁殖权留给生殖细胞，体细胞只顾自身增殖就成了癌。capped-profit 把监督和激励分开，11 月正是「体细胞」压倒了监督者；不同的是，赢家没有毁掉宿主。</li>
+<li><b>佛学 · 两舌</b>：十善业把「两舌」列为口业，指对不同人说不同的话、使彼此离间。分版本沟通未必有离间之心，却有同样的结构风险：话一被对照，信任就裂开。</li>
+</ul>
+</section>
+
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>Loopt 七年烧掉约 3900 万美元，2012 年以 4340 万美元卖给 Green Dot，几乎不算成功。</li>
+<li>2014 年 Paul Graham 选 28 岁的 Altman 当 YC 总裁，看中的是他攒下的判断记录。</li>
+<li>从做事的人转成判断做事者的人：判断力能复利，执行力一离场就归零。</li>
+<li>2019 年 OpenAI 改为 capped-profit：监督留在非营利董事会，激励放进营利子公司。</li>
+<li>激励与监督分离过远时监督会先死，2023 年 11 月的解雇风波暴露了这个结构 bug。</li>
+<li>2023 年 11 月 Altman 被董事会以沟通不坦诚为由解雇，738 名员工联署施压，4 天后回归。</li>
+<li>回归后不是修补而是重写治理：推进公益公司转型，削弱非营利母实体的监督权。</li>
+<li>60 秒拍板、慢慢改的决策习惯，建立在 YC 五年约一万次快速看人的练习量上。</li>
+<li>对不同对象讲不同版本，在 YC 是读人能力，到董事会就成了被比对出来的失信证据。</li>
+<li>Altman 不拿 OpenAI 现金薪酬，靠 Helion、Reddit 等投资致富，常在合约两端都有利益。</li>
+</ol>
+</section>
+
 <section class="card">
 <h2 data-tts="d8eb9a2d38e48ceb"><span class="icon">◆</span>【深入资源】</h2>
 <ul class="read-list">

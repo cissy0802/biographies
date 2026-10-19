@@ -38,6 +38,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -114,6 +126,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 </ul>
 </section>
 
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Behavioral economics · the ultimatum game</b>: In Güth and colleagues' 1982 experiments, responders often reject lowball splits, walking away with nothing just to punish unfairness. Buffett buying Berkshire over 12.5 cents is the same costly-punishment reflex. The difference: a lab rejection costs a few dollars once, while his locked an entire pool of capital into a dying textile mill, with the cost compounding for decades.</li>
+<li><b>Evolution · exaptation</b>: Gould and Vrba (1982) named the pattern where a structure evolved for one job is later repurposed, as feathers that may first have served for warmth came to serve flight. Berkshire's textile shell, refitted as an insurance-and-acquisition compounding engine, has the same shape; unlike evolution, Buffett was a deliberate designer.</li>
+<li><b>Distributed systems · the Byzantine generals problem</b>: Lamport and colleagues showed in 1982 that a few dishonest nodes can keep a whole system from reaching agreement. One Salomon trader nearly sinking 8,000 jobs is that failure mode. Protocols tolerate up to a third bad nodes; Buffett instead screens out dishonest managers at the door.</li>
+<li><b>Psychology · self-determination theory</b>: Deci and Ryan separate intrinsic from extrinsic motivation, and the intrinsic kind lasts longer and bends less under rewards and judgment. The Inner Scorecard reads like its investing version, except Buffett still keeps score; he has simply made himself the scorekeeper.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>From 1962 Buffett bought Berkshire Hathaway because it traded below working capital, a classic Graham "cigar butt."</li>
+<li>When owner Seabury Stanton shaved 12.5 cents off a promised buyback price, Buffett bought more, took control in 1965 and fired him.</li>
+<li>Tying his capital to a declining textile mill out of spite was, by his own 2010 letter, a mistake worth about $200 billion.</li>
+<li>The mistake was repurposed rather than erased: textiles were wound down and the Berkshire shell filled with GEICO, See's Candies and Coca-Cola.</li>
+<li>During the 1991 Salomon Brothers Treasury-auction scandal he served nine months as interim chairman and saved its dealer status.</li>
+<li>Salomon's new rule was that lost money is forgivable but lost reputation is not; afterward, honest management became Berkshire's first test for any acquisition.</li>
+<li>The "Inner Scorecard," learned from his father Howard, measures a life by inner satisfaction rather than outside opinion.</li>
+<li>An old house, McDonald's breakfasts, five or six hours of daily reading and no meetings or email keep his time free for thinking.</li>
+<li>The twenty-hole punch card rule forces only decisions that truly matter; in sixty years he made only about a dozen big bets.</li>
+<li>Beneath the "Oracle of Omaha" image lie shadows: hesitation over Sokol, emotional distance from family, and a low tax rate despite urging higher taxes on the rich.</li>
+</ol>
+</section>
 <section class="card think">
 <h2><span class="icon">◆</span>This week's question</h2>
 <p>Buffett spent sixty years proving that the real obstacle to compounding is not strategy but character. Put yourself in his shoes that day in 1964: you are already wealthy and respected, and an old man has just "insulted" you over twelve and a half cents. Do you fight to win the round (and buy out Berkshire), or do you walk away? The deeper question: in your own life, how many of your decisions are actually scoring points on the inner scorecard — and how many are quietly tallying on the outer one?</p>

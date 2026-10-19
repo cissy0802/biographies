@@ -52,6 +52,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}.tl-yr{width:70px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -140,6 +152,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2 data-tts="8993b31abb9182ee"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>邓小平最可拿走的是<strong>「务实的耐心」与「把自我与职位解绑」</strong>：他三次被打倒都不写绝命书、不表演悲情，而是在底层做钳工、等待窗口，一旦窗口打开就用最小的意识形态摩擦撬动最大的现实改变（「不争论」）。对追求 AI 超级个体的人，这是一种反脆弱——把价值感与头衔松绑，让判断力在失去平台后仍然成立。但他也是一面警镜：「不争论」既能避开内耗、加速执行，也能成为回避正当质疑的挡箭牌；1989 年那只手提醒我们，当效率压倒一切，被牺牲的往往是最难量化、却最不可逆的东西。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>佛学 · 十四无记与毒箭喻</b>：《中部·摩罗迦小经》里，弟子追问世界是否永恒、如来死后是否存在，佛陀拒答，说中箭的人该先拔箭，而不是先查射箭者的姓名。「不争论」是同一个结构：把一时争不出结果的形而上问题搁置，先做能减轻痛苦的事。不像的地方在于，佛陀的沉默是为了解脱，也不禁止别人发问；「不争论」却同时被用来封住提问的人。</li>
+<li><b>哲学 · William James 的实用主义</b>：James 在 1907 年的《实用主义》里说，观念之真要看它在经验中兑现出什么后果。「实践是检验真理的唯一标准」与此同构。不同的是，James 的检验交给每个探究者，1978 年那场讨论里，哪种实践算数仍由党来裁定。</li>
+<li><b>分布式系统 · 单点故障与领导者选举</b>：1992 年一个退休老人仍能扭转国策，说明整个系统的转向挂在一个节点上，这正是单点故障。Raft 这类共识协议把换领导者做成例行流程，任何节点离线系统照常运转；这里缺的恰恰是这套机制。</li>
+<li><b>复杂性科学 · 涌现</b>：改革的许多关键一步是局部先冒出来的，比如 1978 年小岗村十八户农民私下包产到户，中央事后认可再推广，这像涌现：秩序自下而上长出来。不像的是，放行还是掐掉仍由顶层一手决定，「总设计师」更像筛选者，而不是画图纸的人。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>邓小平一生三落三起：1933、1966、1976 年三度被打倒，又三度回到权力中心。</li>
+<li>1978 年借真理标准讨论压过「两个凡是」，在没有最高职务时先夺下了定义路线的权力。</li>
+<li>十一届三中全会把全党重心从阶级斗争转向经济建设，改革开放由此开启。</li>
+<li>1992 年南巡时邓小平已交出全部职务，仅凭个人威望把社会主义市场经济推进了十四大。</li>
+<li>国策转向全系于一位退休老人，说明影响力可以脱离职位，也暴露出体制的单点故障。</li>
+<li>1969—1973 年下放江西拖拉机修配厂当钳工，靠劳动、读书、照料瘫痪的儿子和反复写信等待复出窗口。</li>
+<li>周恩来以举重若轻形容邓小平：厌恶冗长文件、话少决断快，对身体和治理都讲规律与节制。</li>
+<li>1989 年六四动用军队清场是他最不可回避的阴面：松开经济的同一只手也扣动了扳机。</li>
+<li>主持 1957 年反右、逮捕魏京生、以四项基本原则封顶政治改革，经济放开而政治始终收紧。</li>
+<li>不争论既让中国绕开意识形态内耗，也把政治改革等根本分歧搁置，账单递延给了后人。</li>
+</ol>
 </section>
 <section class="card">
 <h2 data-tts="a29492888d70d6c9"><span class="icon">◆</span>【深入思考】</h2>

@@ -37,6 +37,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -130,6 +142,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <p>Hoffman's first lesson for the "AI super-individual" is to <strong>iterate on yourself as a product</strong>: permanent beta means not chasing a finished form but "ship ugly, then correct fast" — the healthiest posture for collaborating with AI, because the age's biggest cost is waiting for perfection. The second is that <strong>network is leverage</strong>: the lone-wolf super-individual is a false premise; the real amplifier is the people and relationships you can mobilize, and the compounding of "give first, then get" resists replacement more than any single skill. The third lies in the shadow: <strong>"speed over everything" is a double-edged sword</strong> — from Epstein to the disinformation experiment, both are the same disease of "loosening scrutiny of the means for the sake of a larger, good end." For those who prize efficiency, the real discipline is not running faster, but, before accelerating, thinking clearly about which cost you are underwriting.</p>
 </section>
 
+<section class="card crossx">
+<h2><span class="icon">◆</span>Crossovers</h2>
+<ul>
+<li><b>Complexity science · Preferential attachment</b>: In 1999 Barabási and Albert explained scale-free networks with preferential attachment: new nodes favor nodes that already have many links, so early arrivals snowball into hubs. Building LinkedIn in the bust, banking professional identities so the network was in place by the recovery, is a bet on exactly that rich-get-richer curve. Where it breaks: nodes in the model are chosen passively, while Hoffman made himself a hub on purpose, through introductions and curated dinners.</li>
+<li><b>Evolutionary biology · r/K selection</b>: Ecologists once split reproductive strategies in two: r-strategists race to multiply in unstable environments, K-strategists compete on efficiency near carrying capacity. Blitzscaling is r; early LinkedIn's slowness is K. Where it breaks: a species' strategy is fixed by its genes, while a company can shift gears as the window changes.</li>
+<li><b>Buddhism · Impermanence and non-self</b>: "Permanent beta" shares a shape with impermanence: no version of the self is ever final. Where it breaks: non-self is meant to loosen the grip on "I," whereas permanent beta keeps upgrading a stronger "I," turning attachment into an iteration loop.</li>
+<li><b>Psychology · Moral licensing</b>: Monin and Miller's 2001 experiments found that people who had just shown they were "not prejudiced" were then more willing to make a biased choice. Relaxing scrutiny of means for a good cause is the same self-exemption. Where it breaks: in the lab the license came from a recent good deed; Hoffman's came from certainty about the goal itself.</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Hoffman left academic philosophy at Oxford because the leverage of a scholar was far too small for the scale he wanted to influence.</li>
+<li>He turned a philosophical question, how people connect, into a product question: build the thing that connects them.</li>
+<li>LinkedIn was founded in 2002 at the bottom of the dot-com bust, when competition was thinnest and an early network would be ready for the recovery.</li>
+<li>Early LinkedIn was deliberately bare-bones, betting on the slow variable of network effects: first accumulate real professional identities.</li>
+<li>SocialNet (1997) had the right idea but the wrong execution: it chased polish, launched late, and spent its energy on distribution deals.</li>
+<li>The creed of shipping something ugly and iterating fast came from the SocialNet post-mortem and an apprenticeship as PayPal's number two.</li>
+<li>Before any major decision he writes a "theory of the game," mapping the board, each player's motives and the possible moves.</li>
+<li>Treat yourself as a permanent beta, and treat your network as compounding capital built by giving first and taking later.</li>
+<li>Hoffman's ties to Epstein and the Alabama disinformation project show the same flaw: loosening scrutiny of means for a larger goal.</li>
+<li>Blitzscaling only holds with winner-take-all markets, strong network effects and abundant capital; the real skill is judging when to go fast and when to go slow.</li>
+</ol>
+</section>
 <section class="card think">
 <h2><span class="icon">◆</span>Questions to Sit With</h2>
 <details>

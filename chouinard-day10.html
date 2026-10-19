@@ -43,6 +43,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -115,6 +127,31 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2 data-tts="0fd138e829d1fe10"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>乔伊纳德给「AI 超级个体」的启示不在环保，而在两次「亲手杀死现金牛」的勇气，与「缺席式管理」背后的设计思维：他真正的产品，不是岩钉、夹克或那 30 亿美元，而是<strong>一套能在他不在场时仍按价值观自转的系统</strong>。对一个想用 AI 放大自己的人，这正是关键——别做那个唯一的天才螺丝钉，而要造一台离开你也能运转、且不会背叛你初衷的机器。他同时也是一面警镜：理想主义一旦做成品牌，就可能反噬成它最初反对的东西。真诚与精明可以共存，但别骗自己说只有真诚。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>生物进化 · 自切（autotomy）</b>：壁虎遇险时断掉自己的尾巴保命，和 1972 年砍掉占七成营收的岩钉是同一个结构——舍掉最值钱的部分换整体存续。不像的是：壁虎断尾是被天敌逼出来的反射，乔伊纳德面前没有天敌，逼他的只是自己的信念。</li>
+<li><b>生态学 · 逻辑斯蒂增长与承载力</b>：Verhulst 1838 年的逻辑斯蒂方程说明，任何种群的指数增长终会撞上环境承载力。1991 年的 Patagonia 正是撞了墙；不同在于，事后它没有等环境替它设上限，而是自己把上限写进了公司信条。</li>
+<li><b>分布式系统 · 单点故障</b>：「缺席式管理」就是去掉单点故障——创始人这个节点宕机，系统照常运行。但分布式系统靠共识协议同步状态，Patagonia 靠的是只招同类人，相当于让每个节点出厂时就装好同一份配置。</li>
+<li><b>生物进化 · 累赘原理</b>：Zahavi 1975 年提出，孔雀拖着笨重的尾羽，恰恰证明自己够强、负担得起。「别买这件夹克」也是昂贵信号：越劝人少买，越证明品牌不缺这一单，结果反而销量大涨。</li>
+<li><b>佛学 · 舍</b>：「过度拥有本身就是失败」近于佛家的舍，送出公司像一次大布施。不像在于：真正的舍不留执取，他却把 2% 表决权留在家族信托——放下了财富，没放下方向盘。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>1957 年自学打铁、在后院锤出可重复使用的岩钉，是 Patagonia 前身 Chouinard Equipment 的起点。</li>
+<li>1972 年为保护岩壁，乔伊纳德主动停产占营收七成的岩钉，改推不留痕迹的铝制岩塞。</li>
+<li>停产岩钉与 2022 年送出公司隔了半世纪，逻辑一致：核心资产与更深信念冲突时，选择杀死资产。</li>
+<li>1991 年衰退中银行收紧信贷，Patagonia 一天之内裁掉约 120 人，近两成团队。</li>
+<li>1991 年危机后的巴塔哥尼亚徒步得出结论：无节制增长本身是病，公司从此主动限速。</li>
+<li>「缺席式管理」的前提是：一个组织离开创始人就垮掉，那是创始人的失败。</li>
+<li>「让我的员工去冲浪」的弹性工作制不是福利噱头，而是只招热爱户外之人的招聘哲学。</li>
+<li>2011 年「别买这件夹克」广告后销售反增约 30%，反消费成了最有效的卖货术。</li>
+<li>2022 年乔伊纳德送出约 30 亿美元的 Patagonia：98% 股票归 Holdfast Collective，2% 表决权股归家族信托。</li>
+<li>「送公司」的结构只付约 1750 万美元赠与税，理想主义与避税、保留控制权出自同一套设计。</li>
+</ol>
 </section>
 <section class="card">
 <h2 data-tts="0423078acc950182"><span class="icon">◆</span>【深入思考】</h2>

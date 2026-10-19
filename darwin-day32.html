@@ -41,6 +41,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -116,6 +128,31 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card">
 <h2 data-tts="c5155e00e138cc48"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>达尔文给「AI 超级个体」的启示不在他的天赋，而在他的<strong>方法论纪律</strong>：一是刻意搜集反对自己的证据——他知道顺意的念头会被大脑偏爱、逆意的会被遗忘，于是立刻记下后者。在被 AI 放大回音室效应的今天，这条反本能的习惯是防自欺的护城河。二是把「思考」外包给身体的固定仪式（沙径），把心智从琐碎中解放。三是他证明：<strong>一个人不必快</strong>——慢、病、多疑的人，只要肯用二十年为一个想法负责，也能撬动整个世界观。深度与耐心，本身就是稀缺杠杆。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>心理学 · Wason 的 2-4-6 任务</b>：1960 年 Wason 发现，人猜规则时只拿顺着猜想的例子去验证，很少试反例。达尔文「反面念头立刻记下」正是对这种证实偏差的补丁，只是他不靠意志力，靠笔记本。</li>
+<li><b>东西方哲学 · Popper 的证伪</b>：Popper 说科学靠找反例而非堆正例，达尔文「事实相悖就放弃假设」几乎是它的预演。不像在节奏：Popper 要大胆猜想、尽快受检，达尔文却压了二十年。Popper 曾称自然选择是「形而上学研究纲领」，1978 年才收回。</li>
+<li><b>神经科学 · 默认模式网络</b>：脑子不盯外部任务时，一组管走神和联想的脑区反而更忙；2014 年斯坦福实验发现散步能提升发散思维。沙径绕圈正给这种离线加工腾地方，但散步助发散，不保证想对。</li>
+<li><b>复杂性科学 · 相邻可能</b>：Kauffman 说新东西只能从伸手可及的组合里长出来。马尔萨斯和远洋考察都已就位，自然选择便成了相邻可能，难怪达尔文和华莱士各自撞上。但它解释不了谁先到、谁署名。</li>
+<li><b>分布式系统 · 预写日志</b>：数据库提交前先把改动写进日志，宕机后照日志恢复。1844 年那份锁进抽屉、嘱妻子身后出版的论文，就是达尔文的预写日志；只是日志为快速重放而写，他的却让自己可以慢慢不发。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>达尔文差点因船长 FitzRoy 信颅相学、嫌他鼻形，错过 1831 年的小猎犬号航行。</li>
+<li>加拉帕戈斯各岛不同的嘲鸫与陆龟，让一个牧师候选人开始怀疑物种不变。</li>
+<li>1838 年读马尔萨斯《人口论》，让他想通机制：生存压力保留有利变异，即自然选择。</li>
+<li>1844 年的 230 页自然选择论文被锁进抽屉，只嘱妻子在他死后出版。</li>
+<li>1851 年长女 Annie 病逝，使他失去对仁慈上帝的信仰，也加深了发表理论的顾虑。</li>
+<li>林奈学会 1858 年的联合宣读保住了达尔文的优先权，却是在华莱士不知情时安排的。</li>
+<li>一想到不利于自己理论的事实就立刻记下，是用习惯对抗证实偏差的办法。</li>
+<li>绕沙径散步、踢燧石计圈，是把身体交给重复、让心智腾出来解难题的仪式。</li>
+<li>家族财富与四十年慢性病，一起为达尔文买下了无需工作、谢绝社交的专注。</li>
+<li>痛恨奴隶制的人，学说仍被拿来论证种族等级与优生学：思想的下游用途不由作者控制。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="6eb63e692c0bebd4"><span class="icon">◆</span>【深入思考】</h2>

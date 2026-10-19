@@ -49,6 +49,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}.timeline li{padding-left:16px;margin-left:8px}.timeline li::before{position:static;display:block;margin-bottom:4px;text-align:left;width:auto}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -150,6 +162,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <section class="card think">
 <h2 data-tts="7b4d6c71cf67d9b7"><span class="icon">◆</span>【对 BigCat 的启示】</h2>
 <p>Dalio 真正可拿走的不是"激进透明"——那是个被他自己活成反例的口号。真正可拿走的是<strong>"给自己的认知偏误配一台外部刹车机"</strong>。他知道自己 1982 年那种"100% 确定"会反复来，所以他给自己设计了 Dot Collector、可信度加权投票、Depression Gauge、每天 2 次打坐——四套独立机制，让"100% 确定"的冲动在系统里被反复打分。AI 时代每个超级个体都面对同一件事：决策速度上升 10 倍，而你的认知偏误一个没少。你需要的不是"更聪明"，是给自己装一台机器，在你即将"100% 确定"时强制让你看到 3 种反对意见。Dalio 一辈子证明了：再聪明的人也需要外置 reality check。同时也证明了：再好的系统，如果设计者把自己设为例外，系统会从内部坍塌。</p>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>心理学 · 合取谬误</b>：Tversky 与 Kahneman 1983 年的「Linda 问题」显示，细节越多的故事越显得可信，尽管每加一环概率只会更低。1982 年「墨西哥违约→银行减计→信贷收缩→萧条」正是这种结构：每环都合理，连起来却被当成 100%。不同在于，Dalio 事后为自己造了一整套纠偏机器，多数人只是换下一个故事。</li>
+<li><b>神经科学 · 奖赏预测误差</b>：Schultz 等人 1997 年发现，多巴胺神经元对「比预期差」的结果放电骤降，大脑靠这个误差信号更新预期。「痛苦 + 反思 = 进步」是同一套学习规则。不像的地方：多巴胺的更新是自动的，Dalio 的版本必须刻意停下来复盘，否则痛苦只留下情绪。</li>
+<li><b>生物进化 · 对冲下注</b>：Dan Cohen 1966 年用沙漠一年生植物说明：种子每年只萌发一部分，牺牲好年份的平均收益，换取坏年份不灭绝，演化优化的是几何平均而非算术平均。All Weather 按四个象限摊开风险，也是用平庸的上限换「哪种天气都不死」。区别是植物不需要知道下一年是哪种天气。</li>
+<li><b>分布式系统 · 拜占庭容错</b>：Lamport 等人 1982 年的「拜占庭将军问题」证明：3f+1 个节点里最多容忍 f 个坏节点，前提是没有哪个节点的票不可推翻。可信度加权投票像一种按信誉加权的共识协议，但把创始人的权重硬编码为最高，相当于埋下一个无法被投出局的单点，Bridgewater 十一年的接班拉锯就是这个单点退不出去。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>1982 年 Dalio 在电视上断言美国将陷入萧条，美股却恰在当月触底，Bridgewater 裁到只剩他一人。</li>
+<li>1982 年破产留下的教训：对未来的判断要给概率分布，并主动找最不同意自己的聪明人来质问自己。</li>
+<li>All Weather 按增长与通胀的四个象限等额分配风险而非资金，不押注任何一种经济情景。</li>
+<li>2008 年传统 60/40 股债组合亏约 27%，All Weather 只亏约 4%，「不押注」显出结构性优势。</li>
+<li>萧条计量表在 2007 年提前预警债务危机，2008 年 Pure Alpha 赚 9.5%，Dalio 由此成为全球宏观代言人。</li>
+<li>Dot Collector 让同事在会议中实时互相打分，并衍生出按过往战绩加权的「可信度加权」投票。</li>
+<li>《The Fund》指控创始人的可信度在系统里被硬编码为最高，「激进透明」从不适用于他本人。</li>
+<li>公开倡导「诚实优先于关系」，在涉及巨大商业利益的中国问题上却选择了含糊其辞。</li>
+<li>Pure Alpha 在 2012–2022 年年化仅约 3.2%，接班从 2011 年宣布拖到 2022 年才交出投票控制权。</li>
+<li>一套决策系统若让设计者自己成为例外，就像共识协议里一个无法被投出局的节点，迟早从内部失衡。</li>
+</ol>
 </section>
 <section class="card">
 <h2 data-tts="939ab295d901f601"><span class="icon">◆</span>【深入资源】</h2>

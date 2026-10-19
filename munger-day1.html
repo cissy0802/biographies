@@ -42,6 +42,18 @@ nav a{display:inline-block;padding:12px 28px;border:1px solid #d4af37;border-rad
 nav a:hover{background:#d4af37;color:#1a1f2e}
 footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 @media(max-width:600px){header h1{font-size:1.6rem}.card{padding:22px 18px}.container{padding:18px 14px 40px}}
+.crossx{border-left-color:#8fb3c9;background:rgba(143,179,201,0.05)}
+.crossx h2{color:#a9c6d8;border-bottom-color:rgba(143,179,201,0.3)}
+.crossx ul{list-style:none}
+.crossx li{padding:10px 0;font-size:0.95rem;color:#c8c4b8;border-bottom:1px dashed rgba(143,179,201,0.2)}
+.crossx li:last-child{border-bottom:none;padding-bottom:0}
+.crossx b{color:#a9c6d8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0}
+.takeaways li{counter-increment:tk;position:relative;padding:10px 0 10px 40px;border-top:1px solid rgba(212,175,55,0.14);font-size:0.95rem;line-height:1.75;color:#e8e4d8}
+.takeaways li:first-child{border-top:none;padding-top:0}
+.takeaways li:last-child{padding-bottom:0}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#d4af37}
+.takeaways li:first-child::before{top:2px}
 </style>
 </head>
 <body>
@@ -108,6 +120,30 @@ footer{text-align:center;padding:30px 0 0;font-size:0.8rem;color:#6a6e78}
 <span class="src">— Poor Charlie's Almanack, 2005</span>
 </li>
 </ul>
+</section>
+<section class="card crossx">
+<h2><span class="icon">◆</span>【越界 · 跨学科的联想】</h2>
+<ul>
+<li><b>生物进化 · 间断平衡</b>：Eldredge 与 Gould 1972 年提出，物种长期几乎不变，再在较短时间里剧变。芒格三十年守着一家报纸、2009 年一把重仓，节奏很像；不像在演化里没有谁在「等时机」，剧变是环境逼出来的，芒格的出手却是自己选的。</li>
+<li><b>东方哲学 · 老子「为道日损」</b>：《道德经》说求学一天天加，求道一天天减。芒格「持续不犯傻」也是做减法，先删掉会出错的路。像在都靠去掉而非添加；不像在老子减的是欲望，芒格减错误是为了赢得更多。</li>
+<li><b>分布式系统 · 单一 leader</b>：Raft 这类共识协议让一个 leader 统一写入，比人人协商快得多。Berkshire 几乎没有委员会、芒格推崇集权效率，是同一种取舍；不像在 Raft 的 leader 有任期、挂了会被选掉，政治集权往往缺这道换人机制。</li>
+<li><b>神经科学 · 预测编码</b>：大脑用先验去预测感官输入，先验越自信，越会压低与之冲突的误差信号。芒格的阿里巴巴盲点藏在他最自信的框架里，结构相同；不同在大脑这样做多半为了省力，投资里却要付真金白银。</li>
+</ul>
+</section>
+<section class="card tk">
+<h2><span class="icon">◆</span>【十条要点】</h2>
+<ol class="takeaways">
+<li>芒格 1977 年在破产拍卖中买下洛杉矶法律公告报纸 Daily Journal，几十年里把它当现金流小生意经营。</li>
+<li>2009 年金融危机最深处，Daily Journal 把约 1500 万美元现金几乎全部投进富国银行等银行股。</li>
+<li>2009 年那笔约 1500 万美元的银行股投资，到 2013 年变成超过 1.3 亿美元。</li>
+<li>长期不动、机会来临时重仓出击，并坚持集中：最好的三个想法远胜第一百个。</li>
+<li>Wheeler, Munger 合伙基金前 11 年年化回报约 24%，却在 1973–74 年累计亏损 53%。</li>
+<li>1975 年清算合伙公司并非因为判断错了，而是芒格不想再为外部投资人的情绪负责。</li>
+<li>反向思考（inversion）先找出会导致失败的地方，再刻意避开，而不是直接去追求成功。</li>
+<li>约 100 个来自心理学、物理、生物、历史的精神模型挂在一张「格栅」上，互相交叉验证现实。</li>
+<li>推崇李光耀式集权效率并重仓阿里巴巴，在 2021 年中国监管整顿后成了芒格自认的最严重错误之一。</li>
+<li>再聪明的人也有盲点，而盲点往往就藏在他最自信的那个判断框架里。</li>
+</ol>
 </section>
 <section class="card think">
 <h2 data-tts="7be7cc85e10631cc"><span class="icon">◆</span>【本周思考题】</h2>
